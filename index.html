@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aildo Lab Web</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      min-height: 100vh;
+    }
+    .lab-header {
+      padding: 24px 32px;
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .lab-header h1 { font-size: 20px; font-weight: 600; }
+    .lab-header p { font-size: 13px; color: #888; margin-top: 4px; }
+    .lab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      padding: 24px 32px;
+    }
+    .lab-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      padding: 20px;
+      cursor: pointer;
+      transition: box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .lab-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+    .lab-card-icon { font-size: 28px; margin-bottom: 10px; }
+    .lab-card-name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .lab-card-desc { font-size: 12px; color: #888; line-height: 1.5; }
+    .lab-card-tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 8px;
+      font-size: 10px;
+      border-radius: 4px;
+      background: #f0f0f0;
+      color: #666;
+    }
+    .lab-empty {
+      text-align: center;
+      padding: 80px 32px;
+      color: #aaa;
+    }
+    .lab-empty-icon { font-size: 48px; margin-bottom: 12px; }
+    .lab-empty-text { font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="lab-header">
+    <h1>Aildo Lab Web</h1>
+    <p>前端实验工程 — UI / 动效 / 交互技术探索</p>
+  </div>
+  <div id="lab-content"></div>
+
+  <script>
+    // 实验列表配置 — 新增实验只需在此追加
+    var EXPERIMENTS = [
+      // { name: "视差滚动", icon: "🌊", desc: "PixiJS/GSAP 多图层鼠标偏移视差效果", tag: "动效", path: "experiments/parallax/index.html" },
+    ];
+
+    function render() {
+      var el = document.getElementById('lab-content');
+      if (EXPERIMENTS.length === 0) {
+        el.innerHTML = '<div class="lab-empty">' +
+          '<div class="lab-empty-icon">🧪</div>' +
+          '<div class="lab-empty-text">暂无实验，新增实验请编辑 index.html 的 EXPERIMENTS 数组</div>' +
+          '</div>';
+        return;
+      }
+      el.innerHTML = '<div class="lab-grid">' +
+        EXPERIMENTS.map(function(exp) {
+          return '<a class="lab-card" href="' + exp.path + '">' +
+            '<div class="lab-card-icon">' + exp.icon + '</div>' +
+            '<div class="lab-card-name">' + exp.name + '</div>' +
+            '<div class="lab-card-desc">' + exp.desc + '</div>' +
+            '<span class="lab-card-tag">' + exp.tag + '</span>' +
+            '</a>';
+        }).join('') +
+        '</div>';
+    }
+    render();
+  </script>
+</body>
+</html>
