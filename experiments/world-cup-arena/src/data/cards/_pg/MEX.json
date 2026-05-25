@@ -1,0 +1,19 @@
+{
+  "id": "MEX_001",
+  "country": "MEX",
+  "level": "pg",
+  "name": "玛雅金字塔",
+  "nameEn": "Maya Pyramids",
+  "category": "historical",
+  "rarity": "rare",
+  "era": "Ancient",
+  "description": "尤卡坦半岛丛林深处，玛雅人在公元前 2000 年开始建造梯状金字塔。奇琴伊察的库库尔坎神庙每年春分秋分,夕阳投射出蛇形阴影沿阶梯爬下,象征羽蛇神的降临。玛雅人精通天文,他们的历法精度比当时任何文明都高,却在哥伦布抵达前夕诡异地放弃了大城市。",
+  "emoji": "🏛",
+  "attributes": {
+    "historical": 92,
+    "artistic": 78,
+    "influence": 70,
+    "uniqueness": 88
+  },
+  "tags": ["pre-columbian", "architecture", "unesco", "astronomy"]
+}
