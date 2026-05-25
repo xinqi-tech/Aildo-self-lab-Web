@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { onMounted, ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 import { loadSchedule, getFeaturedMatch, type MatchView } from '@/services/scheduleService';
+
+const router = useRouter();
 
 const loading = ref(true);
 const error = ref<string | null>(null);
@@ -122,7 +125,10 @@ const statusLabel = computed(() => {
       </div>
 
       <div class="banner-actions">
-        <button class="nat-btn nat-btn-gold" disabled title="阶段 2 开放">
+        <button
+          class="nat-btn nat-btn-gold"
+          @click="router.push('/match-picker')"
+        >
           ⚔ 进入对战
         </button>
         <button class="nat-btn" disabled title="阶段 3 开放">👁 AI 观战</button>

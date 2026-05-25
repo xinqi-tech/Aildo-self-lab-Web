@@ -15,18 +15,37 @@ const routes: RouteRecordRaw[] = [
     meta: { title: '设置' },
   },
   {
-    path: '/country/:id',
+    path: '/country/:iso3',
     name: 'country',
-    component: () => import('../views/PlaceholderView.vue'),
-    props: (route) => ({ pageName: `国家 · ${route.params.id}`, stage: 2 }),
+    component: () => import('../views/CountryDetail.vue'),
+    props: true,
     meta: { title: '国家详情' },
+  },
+  {
+    path: '/match-picker',
+    name: 'matchPicker',
+    component: () => import('../views/MatchPicker.vue'),
+    meta: { title: '选择对战' },
   },
   {
     path: '/battle',
     name: 'battle',
-    component: () => import('../views/PlaceholderView.vue'),
-    props: { pageName: '文化对战', stage: 2 },
-    meta: { title: '对战' },
+    // 缺 query 时回选场次
+    beforeEnter: (to) => {
+      if (!to.query.matchId || !to.query.side) {
+        return { path: '/match-picker' };
+      }
+      return true;
+    },
+    component: () => import('../views/Battle.vue'),
+    meta: { title: '文化对战' },
+  },
+  {
+    path: '/battle/result/:id',
+    name: 'battleResult',
+    component: () => import('../views/BattleResult.vue'),
+    props: true,
+    meta: { title: '对战结果' },
   },
   {
     path: '/wall',
