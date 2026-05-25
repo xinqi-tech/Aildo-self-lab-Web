@@ -189,12 +189,28 @@ onMounted(async () => {
     .attr('stroke-opacity', 0.55)
     .style('pointer-events', 'none');
 
+  // 聚焦国家高亮（最上层金边 + 发光）
+  const focusPath = svg
+    .append('path')
+    .attr('class', 'focus-highlight')
+    .attr('fill', 'none')
+    .attr('stroke', 'var(--accent-gold)')
+    .attr('stroke-width', 2.5)
+    .attr('stroke-linejoin', 'round')
+    .attr('stroke-linecap', 'round')
+    .style('pointer-events', 'none')
+    .style('filter', 'drop-shadow(0 0 6px rgba(212, 160, 23, 0.75))');
+
   // 拖拽旋转
   function redraw() {
     svg.selectAll('path.sphere').attr('d', path as any);
     svg.selectAll('path.graticule').attr('d', path as any);
     countryPaths.attr('d', path as any);
     svg.selectAll('path.borders').attr('d', path as any);
+    // 聚焦高亮跟着旋转更新
+    const iso3 = focusedIso3.value;
+    const f = iso3 ? featureByIso3[iso3] : null;
+    focusPath.attr('d', f ? ((path(f) as string) ?? '') : '');
   }
 
   let v0: [number, number, number] | null = null;
