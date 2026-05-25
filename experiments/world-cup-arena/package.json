@@ -1,0 +1,42 @@
+{
+  "name": "world-cup-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "World Cup Arena — 2026 世界杯文化对战（NatGeo 风）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{vue,ts,tsx,css,json}\""
+  },
+  "dependencies": {
+    "@types/d3": "^7.4.3",
+    "d3": "^7.9.0",
+    "dexie": "^4.0.10",
+    "pinia": "^2.3.1",
+    "topojson-client": "^3.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/topojson-client": "^3.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "eslint": "^9.18.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "vue-demi"
+    ]
+  }
+}

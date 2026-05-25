@@ -1,0 +1,84 @@
+/**
+ * NatGeo 风视觉令牌 — World Cup Arena
+ * 详见 docs/world-cup-arena/design.md §4.2
+ */
+
+:root {
+  /* ── 底色 ───────────────────────────────────────── */
+  --bg-parchment: #f4e8d0; /* 老地图羊皮纸米黄 */
+  --bg-parchment-dark: #2a2419;
+  --bg-ocean: #d8dec8; /* 大洋灰绿 */
+  --bg-ocean-deep: #c5cdb4;
+
+  /* ── 12 个小组配色（赭石/青/赭/橄榄 4 大类各 3 渐变）── */
+  --group-a: #8b4513; /* 赭石 */
+  --group-b: #a0522d; /* 浅赭 */
+  --group-c: #cd853f; /* 暗金 */
+  --group-d: #2f4f4f; /* 深青 */
+  --group-e: #5f8a8b; /* 浅青 */
+  --group-f: #708090; /* 蓝灰 */
+  --group-g: #6b4423; /* 深棕红 */
+  --group-h: #800020; /* 勃艮第红 */
+  --group-i: #722f37; /* 暗酒红 */
+  --group-j: #556b2f; /* 橄榄绿 */
+  --group-k: #6b8e23; /* 浅橄榄 */
+  --group-l: #8b8b00; /* 暗黄绿 */
+
+  /* ── 强调色 ─────────────────────────────────────── */
+  --accent-gold: #d4a017; /* NatGeo 经典金线 */
+  --accent-gold-dim: #b88a13;
+  --accent-deep: #1a1a2e; /* 深蓝黑（封面感） */
+  --accent-blood: #6f1d1b; /* 深血红，标题点缀 */
+
+  /* ── 文字 ───────────────────────────────────────── */
+  --text-primary: #2a2419;
+  --text-secondary: #6b5d4f;
+  --text-tertiary: #968670;
+  --text-on-deep: #f4e8d0;
+  --text-error: #8b0000;
+  --text-ok: #355e3b;
+
+  /* ── 描边/分隔 ──────────────────────────────────── */
+  --border-thin: rgba(42, 36, 25, 0.18);
+  --border-strong: rgba(42, 36, 25, 0.42);
+  --border-gold: var(--accent-gold);
+
+  /* ── 字体 ───────────────────────────────────────── */
+  --font-title: 'Cinzel', 'Noto Serif SC', Georgia, serif;
+  --font-body:
+    'IBM Plex Sans', 'Noto Serif SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif-cn: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ── 间距/阴影 ──────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --shadow-card: 0 2px 8px rgba(42, 36, 25, 0.12), 0 1px 2px rgba(42, 36, 25, 0.08);
+  --shadow-elevated: 0 8px 24px rgba(42, 36, 25, 0.18);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* ── 羊皮纸渐变（阶段 3 替换为真实纹理图） ── */
+  --bg-parchment-gradient: radial-gradient(
+      ellipse at 30% 20%,
+      #faf0d6 0%,
+      var(--bg-parchment) 35%,
+      #ecdcb8 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(139, 69, 19, 0.02) 0px,
+      rgba(139, 69, 19, 0.02) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+}

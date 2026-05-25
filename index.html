@@ -70,8 +70,10 @@
 
   <script>
     // 实验列表配置 — 新增实验只需在此追加
+    // 注：完整体验请 `cd experiments/world-cup-arena && pnpm install && pnpm dev`
+    //     此处 path 指向 `dist/index.html`，需先 `pnpm build` 才能从首页跳转打开
     var EXPERIMENTS = [
-      // { name: "视差滚动", icon: "🌊", desc: "PixiJS/GSAP 多图层鼠标偏移视差效果", tag: "动效", path: "experiments/parallax/index.html" },
+      { name: "World Cup Arena", icon: "⚽", desc: "世界杯文化对战 - NatGeo 风格（dev: pnpm dev）", tag: "游戏", path: "experiments/world-cup-arena/dist/index.html" },
     ];
 
     function render() {
