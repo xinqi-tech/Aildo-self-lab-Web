@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SEN_001",
+    "country": "SEN",
+    "level": "pg",
+    "name": "戈雷岛与诗人桑戈尔",
+    "nameEn": "Gorée Island & Senghor",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1960-present",
+    "description": "1960 年塞内加尔独立首任总统 Léopold Sédar Senghor 是非洲第一个法兰西学院院士，写了一辈子法语诗鼓吹 'négritude'——黑人身份不是问题而是自信。他主政 20 年没贪过一分，1980 年自愿下台移居法国诺曼底，2001 年 95 岁去世。今天达喀尔的国家剧院、广场、机场都以他名字命名。塞内加尔是西非唯一从未军事政变的国家，宪法稳定到非洲其他领导人羡慕。Senghor 名言：'征服我们的不是法国，是法语，但它现在是我们的了。'",
+    "emoji": "🎨",
+    "attributes": { "historical": 78, "artistic": 80, "influence": 72, "uniqueness": 88 },
+    "tags": ["senghor", "negritude", "francophone", "post-colonial"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ENG_r001",
+    "country": "ENG",
+    "level": "r",
+    "name": "东印度公司",
+    "nameEn": "British East India Company",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1600-1874",
+    "description": "1600 年伊丽莎白一世特许的私营贸易公司，到 1803 年拥有 26 万人的私军，是当时英国正规军两倍。1757 年普拉西战役后实际统治孟加拉，1857 年印度大起义前控制了全南亚次大陆。把印度棉花换成英国工业品再卖回印度，把鸦片走私到中国换茶叶——东印度公司一家就贡献了大英帝国 GDP 的 50%。1874 年解散时已绑架了一个文明 270 年。",
+    "emoji": "⚔",
+    "attributes": { "historical": 95, "artistic": 30, "influence": 95, "uniqueness": 85 },
+    "tags": ["colonialism", "corporation", "opium", "india"]
+  }
+]

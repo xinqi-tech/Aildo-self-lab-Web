@@ -1,0 +1,16 @@
+[
+  {
+    "id": "JPN_001",
+    "country": "JPN",
+    "level": "pg",
+    "name": "浮世绘与葛饰北斋",
+    "nameEn": "Ukiyo-e & Hokusai",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1760-1849",
+    "description": "葛饰北斋 1760 年生在江户穷木匠家，14 岁当木刻学徒，70 年画了 30000 多幅作品。1830 年代 70 岁出《富岳三十六景》系列彩色木版画，其中《神奈川冲浪里》——一道翻卷海浪盖过远处富士山——成为最被复制的亚洲艺术形象。他用了 30 个不同笔名、改了 90 多次住所、在 89 岁死前最后一句话：'如果上天再给我十年，我就能成为真正的画家'。19 世纪欧洲船员从日本带回的浮世绘是莫奈、梵高、德加、惠斯勒的灵感源，史称 Japonisme。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 98, "influence": 92, "uniqueness": 92 },
+    "tags": ["hokusai", "ukiyo-e", "edo", "japonisme"]
+  }
+]

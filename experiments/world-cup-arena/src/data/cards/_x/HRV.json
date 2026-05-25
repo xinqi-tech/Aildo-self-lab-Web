@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HRV_x001",
+    "country": "HRV",
+    "level": "x",
+    "name": "莫德里奇与孤儿院",
+    "nameEn": "Modrić & the War Orphan Saga",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1991-present",
+    "description": "1991 年 12 月 6 日，6 岁的卢卡·莫德里奇亲眼看到祖父 Luka Sr. 在自家屋后被塞族民兵枪杀。家被烧成废墟，全家逃到扎达尔市的酒店住了 7 年，莫德里奇就在酒店停车场踢球长大。2018 年 7 月 15 日世界杯决赛，33 岁的他率队 1-4 输法国但赢金球奖，从克里姆林宫总统包厢的普京手里接过奖杯时，他抬头看天的样子像在跟那个塞族民兵说话。",
+    "emoji": "🃏",
+    "attributes": { "historical": 50, "artistic": 60, "influence": 75, "uniqueness": 88 },
+    "tags": ["football-legend", "war-survivor", "modric", "personal-history"]
+  }
+]

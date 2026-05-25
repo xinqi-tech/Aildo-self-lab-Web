@@ -1,0 +1,16 @@
+[
+  {
+    "id": "QAT_x001",
+    "country": "QAT",
+    "level": "x",
+    "name": "黄金驯鹰与皇家骆驼选美",
+    "nameEn": "Falconry & Camel Beauty Pageant",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Eternal-2025",
+    "description": "卡塔尔贝都因家族每年 12 月在多哈郊外办 King Abdulaziz 骆驼节，30 万人参加，单峰骆驼按 6 维评分：耳朵、嘴唇、脖子、驼峰、四肢、整体。冠军骆驼 200 万美元、母骆驼最多 1500 万。但 2018 年起 12 头被取消资格——主人给骆驼打 botox 让嘴唇丰满、用激素拉长睫毛、塑料假驼峰。猎鹰也是卡国痴：一只皇家 gyrfalcon 卖 25 万美元，私人飞机给猎鹰单独座位（带护照），多哈机场专设 'falcon lounge'。皇室成员车牌号 1 位数字 1-9，'1' 永远空着等先知，'7' 现在归足球明星 Akram Afif（卡国版梅西）。",
+    "emoji": "🃏",
+    "attributes": { "historical": 50, "artistic": 60, "influence": 60, "uniqueness": 98 },
+    "tags": ["camel-beauty", "falconry", "bedouin", "luxury"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "FRA_r001",
+    "country": "FRA",
+    "level": "r",
+    "name": "断头台与恐怖统治",
+    "nameEn": "Guillotine & Reign of Terror",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1793-1794",
+    "description": "1789 年法国大革命攻陷巴士底狱，4 年后理想主义滑向血腥。雅各宾派的罗伯斯庇尔上台 10 个月（1793 年 9 月 - 1794 年 7 月）斩首 17000 人，含路易十六、玛丽·安托瓦内特、化学家拉瓦锡，最后罗伯斯庇尔自己也被同党送上断头台。断头台是医生 Guillotin 推荐的 '人道' 处决方式：刀片下落 0.5 秒，比剑斩首疼得短。1981 年法国才正式废除。",
+    "emoji": "⚔",
+    "attributes": { "historical": 92, "artistic": 35, "influence": 90, "uniqueness": 80 },
+    "tags": ["revolution", "execution", "jacobin", "terror"]
+  }
+]

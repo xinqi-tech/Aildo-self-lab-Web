@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BRA_r001",
+    "country": "BRA",
+    "level": "r",
+    "name": "贫民窟战争 BOPE",
+    "nameEn": "Favela Wars & BOPE",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1990s-present",
+    "description": "里约市 600+ favela（贫民窟）住 150 万人，自 1990 年代被毒贩集团（Comando Vermelho、ADA、TCP）武装控制。州政府 1995 年成立 BOPE（特警营），骷髅 + 匕首 + 手枪标志，电影《Tropa de Elite》（2007）让他们成全球流行符号。每年 BOPE 致死的非武装居民数百人——2019 年里约警方杀 1810 人，是同年全美警方致死 1099 人的 1.6 倍。2010 年 UPP'安抚警察'计划入驻 264 favela 想取代毒贩，10 年后 60% 已撤、毒贩重新接管。2018 年 favela 出身议员 Marielle Franco 被前警察暗杀，至今未结案。",
+    "emoji": "⚔",
+    "attributes": { "historical": 50, "artistic": 30, "influence": 75, "uniqueness": 88 },
+    "tags": ["favela", "bope", "drug-war", "police-violence"]
+  }
+]

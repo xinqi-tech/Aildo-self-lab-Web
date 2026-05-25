@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUR_x001",
+    "country": "TUR",
+    "level": "x",
+    "name": "埃尔多安的 1100 间房宫殿",
+    "nameEn": "Erdoğan's 1,100-Room Palace",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2014-present",
+    "description": "2014 年埃尔多安在安卡拉郊外建成 Beştepe Külliyesi（白宫总统府），占地 20 万平方米、1150 间房间、造价 6.15 亿美元，比白宫大 30 倍、比凡尔赛大 4 倍。法院判决禁止建造时已开工，埃尔多安说 'judge can't sue me'——继续建。每天保养费 28 万美元（电费、园林、安保）。配套每月固定开支：总统私人专机 1 架（A330）、皇家专列、苏丹时代仪仗队 16 人欢迎外宾。普京 2014 年首访说 '比我克里姆林宫还气派'，被克里姆林宫外交官公开否认。",
+    "emoji": "🃏",
+    "attributes": { "historical": 25, "artistic": 30, "influence": 75, "uniqueness": 92 },
+    "tags": ["erdogan", "palace", "vanity", "authoritarian"]
+  }
+]

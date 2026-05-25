@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUT_r001",
+    "country": "AUT",
+    "level": "r",
+    "name": "希特勒的故乡 Braunau",
+    "nameEn": "Hitler's Birthplace Braunau",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1889-1945",
+    "description": "1889 年 4 月 20 日希特勒生在奥地利 Braunau am Inn 的一家旅馆，4 岁随家移居林茨。1907 年报考维也纳美术学院落榜两次，靠卖明信片画为生 6 年，在这段时间形成反犹理论。1938 年 3 月 12 日德军不放一枪开进维也纳，希特勒站在英雄广场对 25 万狂热奥地利人讲话——'我把我故乡的人民带回母祖国'。战后奥地利官方定调为 '纳粹首位受害者'，逃避了 50 年的反思责任。Braunau 那家旅馆 2023 年才被改建成警察站，1 楼匾额刻 '为和平、自由、民主'。",
+    "emoji": "👹",
+    "attributes": { "historical": 90, "artistic": 10, "influence": 92, "uniqueness": 78 },
+    "tags": ["nazi", "hitler", "ww2", "anschluss"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NZL_001",
+    "country": "NZL",
+    "level": "pg",
+    "name": "毛利战吼 Haka",
+    "nameEn": "Maori Haka",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "Pre-1840-present",
+    "description": "毛利战舞 Haka 数百种类型，最有名 'Ka Mate' 是 1820 年代 Ngāti Toa 酋长 Te Rauparaha 躲在 sweet potato 坑里逃过追兵后写的胜利之歌。1888 年新西兰原住民橄榄球队首次海外巡演就在赛前跳 Haka，到 1905 年 All Blacks 队列入仪式，今天每场国际赛事前 15 名肌肉巨汉伸舌头到下巴、瞪眼、捶胸、用毛利语吼，对面爱尔兰、英格兰队员需要忍住不笑站定。2003 年世界杯英队 Will Greenwood 站到 All Blacks 鼻尖 5 厘米回瞪——后被认为是 '尊重毛利文化的最高方式'。Haka 不只是表演，是 mana（精神能量）的传递。",
+    "emoji": "🍜",
+    "attributes": { "historical": 80, "artistic": 70, "influence": 80, "uniqueness": 98 },
+    "tags": ["haka", "maori", "all-blacks", "ritual"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "JOR_r001",
+    "country": "JOR",
+    "level": "r",
+    "name": "黑九月与巴解组织流亡",
+    "nameEn": "Black September",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1970-1971",
+    "description": "1970 年 9 月约旦境内有 30 万巴勒斯坦难民 + Yasser Arafat 巴解组织建立 'state within a state'，公然劫机、绑架。9 月 6 日 PFLP 同日劫持 4 架民航迫降约旦沙漠引爆。国王 Hussein 9 月 16 日宣布戒严，约旦军队 11 天血洗巴解营，估死 3500-30000 巴勒斯坦人（双方数字差 10 倍）。Arafat 化装逃出大马士革。这场冲突让巴解迁黎巴嫩，间接引爆 1975 年黎巴嫩内战。'Black September' 派 1972 年慕尼黑奥运袭击以色列代表团 11 死，命名就源于此。",
+    "emoji": "⚔",
+    "attributes": { "historical": 78, "artistic": 5, "influence": 75, "uniqueness": 80 },
+    "tags": ["black-september", "plo", "hussein", "palestinian"]
+  }
+]

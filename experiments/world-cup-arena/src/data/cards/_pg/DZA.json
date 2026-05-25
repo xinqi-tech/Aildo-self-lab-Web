@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DZA_001",
+    "country": "DZA",
+    "level": "pg",
+    "name": "卡斯巴老城",
+    "nameEn": "Casbah of Algiers",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "10th century-present",
+    "description": "阿尔及尔老城建在地中海岸 122 米高的悬崖上，密密麻麻的白色立方体房屋一层叠一层。10 世纪柏柏尔人 Ziri ibn Manad 始建，16 世纪奥斯曼海盗 Barbarossa 加固。米黄色阶梯巷道像迷宫，宽 1-2 米永远晒不到太阳。1830 年法国征服阿尔及利亚就从这里开始；1957 年阿尔及利亚独立战争 'Casbah 之战' 让法军血腥镇压；1992 年 UNESCO 列遗。今天 5 万人住在 4000 户老房子里，60% 房屋已破败，意大利和法国援助修复中。",
+    "emoji": "🏛",
+    "attributes": { "historical": 85, "artistic": 75, "influence": 65, "uniqueness": 92 },
+    "tags": ["casbah", "berber", "unesco", "labyrinth"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BRA_001",
+    "country": "BRA",
+    "level": "pg",
+    "name": "里约狂欢节与桑巴学校",
+    "nameEn": "Rio Carnival & Samba Schools",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1928-present",
+    "description": "1928 年 Rio 贫民窟 Estácio 区一群音乐人成立 Deixa Falar，是世界第一个 escola de samba（桑巴学校），把非洲根 batuque 节奏 + 葡萄牙旋律融合。1932 年里约市政府办首届桑巴学校游行竞赛。今天 Sambódromo 大道 700 米看台坐 9 万人，狂欢节 4 天 12 所顶级学校每所派 4000 人 + 8 部 9 米高彩车花费一年准备，主题歌 enredo 必须紧扣社会议题（2024 年 Mangueira 学校演 '我们的天主是耶马雅'，把非洲海女神嫁接给天主教，结果赢了冠军）。狂欢节期间整个里约停摆 1 周，警察休假。",
+    "emoji": "🎨",
+    "attributes": { "historical": 70, "artistic": 95, "influence": 90, "uniqueness": 95 },
+    "tags": ["carnival", "samba", "rio", "escola-de-samba"]
+  }
+]

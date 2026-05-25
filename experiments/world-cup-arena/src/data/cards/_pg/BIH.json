@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BIH_001",
+    "country": "BIH",
+    "level": "pg",
+    "name": "莫斯塔尔古桥",
+    "nameEn": "Stari Most",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1566-present",
+    "description": "1566 年奥斯曼建筑师 Mimar Hayruddin 在内雷特瓦河两岸架石桥连接东西莫斯塔尔老城，单拱跨 28.7 米、高 24 米。设计师在揭幕前一天逃走躲在山里，因为苏莱曼一世威胁'垮就斩首'。这桥站了 427 年，1993 年 11 月 9 日波黑战争期间被克族炮兵故意炸塌——3 颗炮弹一颗击中拱顶。2004 年用沉到河底打捞回的原石按 16 世纪工艺复原，UNESCO 列遗。每年 7 月当地跳水手从 24 米跳台跃入 50 米深河水，是 16 世纪奥斯曼成年礼传承。",
+    "emoji": "🏛",
+    "attributes": { "historical": 85, "artistic": 80, "influence": 60, "uniqueness": 92 },
+    "tags": ["ottoman", "bridge", "unesco", "war-reconstruction"]
+  }
+]

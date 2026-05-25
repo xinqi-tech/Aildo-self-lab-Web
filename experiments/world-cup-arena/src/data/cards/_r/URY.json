@@ -1,0 +1,16 @@
+[
+  {
+    "id": "URY_r001",
+    "country": "URY",
+    "level": "r",
+    "name": "Tupamaros 与 Mujica 监狱年月",
+    "nameEn": "Tupamaros & Mujica's Prison Years",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1960s-1985",
+    "description": "1960 年代乌拉圭左翼游击 Movimiento de Liberación Nacional-Tupamaros 用 Robin Hood 战术劫银行散给穷人。1971 年绑架英国大使 Geoffrey Jackson 关 8 个月，1973 年武装政变成军政府。3 位 MLN 领袖（含未来总统 José Mujica）被关 12-13 年，其中 2 年在井底（2 米深 1.5 米直径）单独囚禁、无水冲厕、不准说话。Mujica 出狱后开拖拉机种花卖养老婆。1985 年文民化后他从政，2010-2015 年总统期间：拒绝总统府住自家农舍、月薪 90% 捐慈善、开 1987 年 VW Beetle，被全球媒体称'最穷总统'。2024 年 90 岁因癌症去世。",
+    "emoji": "⚔",
+    "attributes": { "historical": 78, "artistic": 30, "influence": 75, "uniqueness": 88 },
+    "tags": ["tupamaros", "mujica", "junta", "minimalism"]
+  }
+]

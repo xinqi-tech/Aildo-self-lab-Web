@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NZL_r001",
+    "country": "NZL",
+    "level": "r",
+    "name": "Waitangi 条约背叛",
+    "nameEn": "Treaty of Waitangi Betrayal",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1840-present",
+    "description": "1840 年 2 月 6 日英国代表 William Hobson 在北岛 Waitangi 与 540 毛利酋长签条约，划主权给英国但保毛利人 'tino rangatiratanga'（完全主权）于自己土地。问题：英文版与毛利文版关键词 'sovereignty/kawanatanga' 意思不同——毛利人以为他们让出的是治理权不是主权。后续 50 年 White Settler 政府靠 1862 年《Native Land Act》、1863 年《New Zealand Settlements Act》合法没收 95% 毛利土地（北岛 65% + 南岛 100%）。1840 年 200 万英亩毛利所有，今天 600 万人毛利后裔只占 8% 国土。1975 年 Waitangi Tribunal 成立处理历史索赔，到 2024 年付了 26 亿新元——估算还差 5000 亿。",
+    "emoji": "⚔",
+    "attributes": { "historical": 88, "artistic": 5, "influence": 65, "uniqueness": 82 },
+    "tags": ["waitangi", "land-confiscation", "maori", "treaty"]
+  }
+]

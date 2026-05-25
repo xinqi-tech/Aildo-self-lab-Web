@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MEX_x001",
+    "country": "MEX",
+    "level": "x",
+    "name": "锡那罗亚卡特尔",
+    "nameEn": "Sinaloa Cartel",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1989-present",
+    "description": "由 El Chapo 古斯曼于 1980 年代末在锡那罗亚州的山区果园里起家。这家公司自造潜水艇运可卡因到加州，给毒贩拍 narcocorrido 民谣 MV 在 YouTube 上 1 亿播放，2014 年 Chapo 越狱靠的是手下从他卧室浴室挖到 1.5 公里外的地下隧道。2019 年他儿子被捕，墨军被卡特尔围攻 5 小时被迫释放——史称 Culiacanazo。",
+    "emoji": "💉",
+    "attributes": { "historical": 35, "artistic": 25, "influence": 92, "uniqueness": 95 },
+    "tags": ["cartel", "narco", "el-chapo", "modern-myth"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUN_001",
+    "country": "TUN",
+    "level": "pg",
+    "name": "迦太基与汉尼拔的大象",
+    "nameEn": "Carthage & Hannibal's Elephants",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "9th century BC-146 BC",
+    "description": "公元前 814 年腓尼基公主 Elissa 从黎巴嫩泰尔逃来北非建迦太基，靠商船成为地中海西部霸主。公元前 218 年汉尼拔率 38 头大象、6 万兵从西班牙翻阿尔卑斯山进意大利打罗马，打了 16 年杀罗马 30 万兵。Cannae 战役以少胜多至今军校必修案例。但前 146 年罗马反攻，迦太基被夷为平地、城墙用犁推、土地撒盐让 50 年长不出庄稼。今天突尼斯首都郊外只剩残柱，UNESCO 列遗。'Carthago delenda est' 是西方学术圈最著名的拉丁咒语。",
+    "emoji": "⚔",
+    "attributes": { "historical": 95, "artistic": 60, "influence": 85, "uniqueness": 88 },
+    "tags": ["carthage", "hannibal", "punic-war", "unesco"]
+  }
+]

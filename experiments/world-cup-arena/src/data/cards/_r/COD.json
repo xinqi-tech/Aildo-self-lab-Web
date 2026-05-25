@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COD_r001",
+    "country": "COD",
+    "level": "r",
+    "name": "第二次刚果战争",
+    "nameEn": "Second Congo War",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1998-2003",
+    "description": "1998-2003 年 9 国 25 军阀混战，估死 540 万人（含战争直接死亡 + 饥荒 + 流离失所），是二战后全球死亡最多的冲突。起因：1994 卢旺达大屠杀后图西族追胡图族民兵逃进刚果东部，引发地区互相干涉。安哥拉、津巴布韦、纳米比亚帮 Kabila；卢旺达、乌干达、布隆迪反 Kabila。背后大国为钴矿（电池）、钽矿（手机）、金、钻石输血。儿童兵估 3 万人、强奸成战术武器、2002 年 Bukavu 一周内 4 万女性被系统性强奸。今天东部刚果仍乱，M23 民兵 2025 年初占领 Goma。",
+    "emoji": "👹",
+    "attributes": { "historical": 92, "artistic": 5, "influence": 78, "uniqueness": 85 },
+    "tags": ["second-congo-war", "africa-world-war", "rape-as-weapon", "resource-curse"]
+  }
+]

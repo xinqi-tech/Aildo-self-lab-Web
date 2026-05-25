@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BIH_x001",
+    "country": "BIH",
+    "level": "x",
+    "name": "维舍格勒龙桥与卡夫卡式行政",
+    "nameEn": "Bosnian Bureaucratic Hell",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1995-present",
+    "description": "1995 年代顿和平协议把波黑切成 2 个实体 + 1 个特区 + 10 个州 + 142 个市，3 位总统（穆、克、塞各一）每 8 个月轮值。结果：开个体户要盖 27 个章、平均 67 天；婴儿出生证 2013 年因议会卡死 5 个月不能签发，全国 100 多新生儿无法入境治病；2018 年通过国旗设计稿提案花了 3 年。萨拉热窝市中心一条街可能横跨 3 个行政区，垃圾归 3 拨人收。GDP 增长被估算每年因冗余行政损失 5%。",
+    "emoji": "🃏",
+    "attributes": { "historical": 40, "artistic": 25, "influence": 50, "uniqueness": 95 },
+    "tags": ["bureaucracy", "dayton-accord", "balkanization", "kafka"]
+  }
+]

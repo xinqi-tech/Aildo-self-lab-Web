@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DZA_r001",
+    "country": "DZA",
+    "level": "r",
+    "name": "阿尔及利亚独立战争",
+    "nameEn": "Algerian War of Independence",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1954-1962",
+    "description": "1954 年万圣节阿尔及利亚民族解放阵线（FLN）对法军发动 70 处同步袭击，史称 'Toussaint Rouge'。8 年游击战 + 反殖民战争，法军用了 50 万兵力、电刑、'失踪'（plongée）（把活人扔出直升机）、酷刑院（如 Salembier 别墅）。法属阿尔及利亚 100 万 pieds-noirs 移民被强制遣返。1962 年戴高乐承认独立时，约 30-150 万阿尔及利亚人死亡（数字至今争议），50 万法军牺牲。今天巴黎北郊还住着 200 万阿尔及利亚移民，每年独立纪念日仍把'血红色'喷在前殖民地纪念碑上。",
+    "emoji": "⚔",
+    "attributes": { "historical": 92, "artistic": 25, "influence": 82, "uniqueness": 80 },
+    "tags": ["independence-war", "fln", "colonialism", "torture"]
+  }
+]

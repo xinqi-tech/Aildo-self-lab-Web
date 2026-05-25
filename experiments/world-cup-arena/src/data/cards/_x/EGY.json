@@ -1,0 +1,16 @@
+[
+  {
+    "id": "EGY_x001",
+    "country": "EGY",
+    "level": "x",
+    "name": "法老的诅咒",
+    "nameEn": "Curse of the Pharaohs",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1923-1929",
+    "description": "1922 年 11 月英国考古学家 Howard Carter 与赞助人 Lord Carnarvon 打开图坦卡蒙墓——18 王朝少年法老 3300 年未被盗过的完整陵墓。5 个月后 Carnarvon 在开罗酒店被蚊子叮的伤口感染败血症死亡，开罗全城断电 5 分钟。接下来 7 年内 11 名当时在现场的人陆续死于各种原因，《纽约时报》造出 'Curse of the Pharaohs' 标题。1929 年开罗大学医学院教授解释：墓里 3000 年厌氧霉菌（曲霉、毛霉）孢子封闭释放，弱免疫者吸入即肺部感染。但今天 95% 游客仍相信法老怒了。",
+    "emoji": "🛸",
+    "attributes": { "historical": 65, "artistic": 30, "influence": 78, "uniqueness": 92 },
+    "tags": ["curse", "tutankhamun", "carter", "mystery"]
+  }
+]

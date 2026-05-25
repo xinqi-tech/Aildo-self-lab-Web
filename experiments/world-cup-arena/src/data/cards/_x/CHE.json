@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CHE_x001",
+    "country": "CHE",
+    "level": "x",
+    "name": "Dignitas 安乐死旅游",
+    "nameEn": "Dignitas Assisted Suicide",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1998-present",
+    "description": "1998 年瑞士律师 Ludwig Minelli 在苏黎世郊外一栋蓝色小屋创立 Dignitas，是全球唯一合法接受外国人 '协助自杀' 的机构。客户付 1.1 万瑞郎，喝下医师配的戊巴比妥钠 15 克，5 分钟内无痛死。已服务 4400+ 人，60% 是德国人、英国人来。法律基础是瑞士刑法 1942 年第 115 条：只有出于自私动机协助自杀才违法。2023 年新出 'Sarco' 太空舱式安乐死设备首次使用就被警方扣押，因为发明人没注册医师证。",
+    "emoji": "🍆",
+    "attributes": { "historical": 25, "artistic": 30, "influence": 78, "uniqueness": 98 },
+    "tags": ["euthanasia", "dignitas", "ethics", "tourism"]
+  }
+]

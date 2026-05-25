@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CZE_x001",
+    "country": "CZE",
+    "level": "x",
+    "name": "Sedlec 万人骨教堂",
+    "nameEn": "Sedlec Ossuary",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1278-1870",
+    "description": "1278 年 Sedlec 修道院长去耶路撒冷带回一捧各各他山的土撒在墓地，从此中欧贵族都想埋在这里。14 世纪黑死病 + 15 世纪胡斯战争塞满 4 万具骨头。1870 年捷克木匠 František Rint 被请来 'organize' 骨头，他用 4 万人骨拼出：教堂吊灯（含人体每块骨头各一块）、Schwarzenberg 家族纹章（4 米高、用 1 万颗骷髅）、4 座骨锥金字塔。Rint 在角落用骨头签名。今天每年 30 万游客来 Kutná Hora 小镇看这个 1.5 万欧元能买下的 '骨头室内设计'。",
+    "emoji": "🃏",
+    "attributes": { "historical": 65, "artistic": 75, "influence": 60, "uniqueness": 98 },
+    "tags": ["ossuary", "macabre", "kutna-hora", "death-art"]
+  }
+]

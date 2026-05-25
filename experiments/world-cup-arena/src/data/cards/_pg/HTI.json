@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HTI_001",
+    "country": "HTI",
+    "level": "pg",
+    "name": "Citadelle Laferrière 加勒比凡尔赛",
+    "nameEn": "Citadelle Laferrière",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1805-1820",
+    "description": "1805 年海地刚独立（西半球第二个独立国 + 第一个黑人共和国 + 第一个废奴国），国王 Henri Christophe 在北部 Bonnet à L'Évêque 山顶 970 米建堡垒防法军反扑——15 年用 2 万奴隶建成，墙厚 4 米、面积 1 万平方米、可容 5000 兵 + 100 门英国法国西班牙缴获的大炮。1820 年完工那年 Christophe 中风半身瘫，他举枪自杀（用纯金弹）让国家不内乱。今天 1982 UNESCO 列遗。法军预测的反攻从未来——他们看到这堡垒就放弃了。",
+    "emoji": "🏛",
+    "attributes": { "historical": 88, "artistic": 70, "influence": 65, "uniqueness": 92 },
+    "tags": ["citadelle", "henri-christophe", "haiti-revolution", "unesco"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ECU_001",
+    "country": "ECU",
+    "level": "pg",
+    "name": "加拉帕戈斯与达尔文",
+    "nameEn": "Galápagos & Darwin",
+    "category": "tech",
+    "rarity": "legendary",
+    "era": "1835",
+    "description": "1835 年 9 月 22 岁的查尔斯·达尔文乘 HMS Beagle 抵达加拉帕戈斯，在 19 个火山岛上观察 5 周。他注意到每个岛上的 finch 雀类喙形不同——大种子岛喙大、小虫岛喙细——以及陆龟壳形差异。24 年后这些观察沉淀成 1859《物种起源》，永远改变了人类对自己的理解。加拉帕戈斯今天是 UNESCO 世遗 + 国家公园，地球上最严格生物保育区——游客随身行李过 X 光防带种子、靠岸前船底刷一遍。岛上 9000 种特有物种含 100 公斤大龟（最老 Lonesome George 2012 年死于 100+ 岁）。",
+    "emoji": "🔬",
+    "attributes": { "historical": 88, "artistic": 50, "influence": 95, "uniqueness": 98 },
+    "tags": ["darwin", "galapagos", "evolution", "unesco"]
+  }
+]

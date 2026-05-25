@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUN_r001",
+    "country": "TUN",
+    "level": "r",
+    "name": "本·阿里独裁与阿拉伯之春起点",
+    "nameEn": "Ben Ali & the Spark of Arab Spring",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1987-2011",
+    "description": "1987 年 Zine El Abidine Ben Ali 以医生证明前总统 Bourguiba 老年痴呆为由 '医疗政变' 上台，23 年间靠秘密警察 Trabelsi 家族（夫人 Leïla 的家族）控制全国经济、抢私人公司股权。2010 年 12 月 17 日 26 岁水果贩 Mohamed Bouazizi 在 Sidi Bouzid 被警察打耳光没收推车，他冲到市政府门口浇汽油自焚——4 周后 Ben Ali 携夫人乘空军一号逃沙特，开启阿拉伯之春多米诺。今天突尼斯虽是阿拉伯之春唯一民主化幸存国，但 2025 年 Saied 总统集权解散议会，民主倒退。",
+    "emoji": "⚔",
+    "attributes": { "historical": 80, "artistic": 15, "influence": 88, "uniqueness": 80 },
+    "tags": ["ben-ali", "arab-spring", "bouazizi", "self-immolation"]
+  }
+]

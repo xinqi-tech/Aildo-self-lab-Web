@@ -1,0 +1,16 @@
+[
+  {
+    "id": "JPN_r001",
+    "country": "JPN",
+    "level": "r",
+    "name": "南京大屠杀",
+    "nameEn": "Nanjing Massacre",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1937-1938",
+    "description": "1937 年 12 月 13 日日军占领中华民国首都南京，6 周内系统屠杀战俘与平民。东京战犯法庭 1948 年判定死亡人数 20 万+，中国官方统计 30 万+。日方军纪处于崩溃：松井石根大将下令 'no quarter'、谷寿夫师团组织 '杀人比赛'（《东京日日新闻》追踪报道两军官斩首竞赛 105 vs 106 颗头），系统性强奸约 2-8 万女性。德国西门子商人 John Rabe 设安全区救 25 万平民。1985 年南京建大屠杀纪念馆。今天右翼日相参拜靖国神社引争议、保守教材淡化甚至否认事件、'南京大虐杀' 在日本国会公开质疑——是中日关系永久伤疤。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 5, "influence": 88, "uniqueness": 80 },
+    "tags": ["nanjing", "war-crime", "denial", "ww2"]
+  }
+]

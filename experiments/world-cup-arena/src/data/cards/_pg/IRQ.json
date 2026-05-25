@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRQ_001",
+    "country": "IRQ",
+    "level": "pg",
+    "name": "巴比伦与汉谟拉比法典",
+    "nameEn": "Babylon & Hammurabi's Code",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "1792-1750 BC",
+    "description": "公元前 1792 年汉谟拉比成为巴比伦王，统治 42 年间统一两河流域并立 282 条法律刻在 2.25 米玄武岩柱上，是人类现存最完整最早成文法典之一。著名条款 '以眼还眼，以牙还牙'（lex talionis）但区分阶级：贵族打贵族 1 倍赔、贵族打平民 60 西克勒、贵族打奴隶半价。规定酒商兑水死刑、医生开刀致死断手。今天石碑藏卢浮宫一楼（1901 年法国考古队在伊朗 Susa 挖出，因为公元前 12 世纪埃兰人作为战利品搬走）。巴比伦遗址距巴格达 90 公里仍在伊拉克。",
+    "emoji": "🏛",
+    "attributes": { "historical": 98, "artistic": 75, "influence": 92, "uniqueness": 95 },
+    "tags": ["hammurabi", "babylon", "ancient-law", "mesopotamia"]
+  }
+]

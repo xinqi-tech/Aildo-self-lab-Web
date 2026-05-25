@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ARG_x001",
+    "country": "ARG",
+    "level": "x",
+    "name": "马拉多纳的'上帝之手'",
+    "nameEn": "Maradona's Hand of God",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1986",
+    "description": "1986 年 6 月 22 日墨西哥城阿兹特克体育场，世界杯八分之一决赛阿根廷对英格兰——4 年前马岛战争阴影笼罩。第 51 分钟马拉多纳跳起左拳把球打进英格兰球门，裁判认是头球判进。赛后他说 'a little bit of Maradona's head, a little bit of the hand of God'。4 分钟后他从中圈带球过 6 个英格兰人射门得分——FIFA 后来评 '20 世纪最佳进球'。两球之间是一场关于神性与人性的辩论：'God 的手是作弊还是诗意？' 阿根廷人 40 年不需要回答。2020 年 60 岁马拉多纳死，全国 3 天哀悼。",
+    "emoji": "🃏",
+    "attributes": { "historical": 80, "artistic": 60, "influence": 95, "uniqueness": 95 },
+    "tags": ["maradona", "hand-of-god", "world-cup", "argentina-england"]
+  }
+]

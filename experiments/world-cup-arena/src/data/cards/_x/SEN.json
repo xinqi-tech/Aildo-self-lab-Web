@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SEN_x001",
+    "country": "SEN",
+    "level": "x",
+    "name": "Touba Mouride 与 Cheikh Bamba",
+    "nameEn": "Mouride Brotherhood & Cheikh Bamba",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1883-present",
+    "description": "1883 年塞内加尔苏菲学者 Cheikh Ahmadou Bamba 创立 Mouride 教派，反对法国殖民。法国把他流放加蓬 7 年、再流放毛里塔尼亚 4 年，每次他都奇迹般生还——信徒说他在船上被关进笼子还能向麦加方向礼拜，腾空 1 米。今天 Mouride 有 800 万信徒（塞内加尔 1700 万人口的近一半）。每年朝圣 Magal de Touba 200 万人涌入 Touba 圣城，是非洲最大的宗教集会。教派经济结构：信徒交 'addiya' 把一年收入 10% 上交，掌握达喀尔的批发零售商业。",
+    "emoji": "🛸",
+    "attributes": { "historical": 70, "artistic": 40, "influence": 78, "uniqueness": 95 },
+    "tags": ["mouride", "sufi", "bamba", "touba"]
+  }
+]

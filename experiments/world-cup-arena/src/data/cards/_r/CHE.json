@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CHE_r001",
+    "country": "CHE",
+    "level": "r",
+    "name": "纳粹黄金与银行保密",
+    "nameEn": "Nazi Gold & Banking Secrecy",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1934-1998",
+    "description": "1934 年瑞士《银行保密法》立法，泄露客户信息成刑事罪。二战中瑞士银行接收纳粹从被占领国央行抢的黄金（含从奥斯威辛囚犯金牙熔的金条）总值 4.4 亿美元（按当年价），换成瑞士法郎为德国买钨、铬等战略物资。1996 年世界犹太人大会起诉，1998 年瑞士两大银行（瑞银、瑞信）赔 12.5 亿美元给受害者后代。2009 年美国 FATCA 法案逼瑞士银行交出 4500 名美国逃税客户名单，'银行保密' 时代彻底结束。",
+    "emoji": "👹",
+    "attributes": { "historical": 88, "artistic": 5, "influence": 92, "uniqueness": 85 },
+    "tags": ["nazi-gold", "banking", "ww2", "neutrality"]
+  }
+]

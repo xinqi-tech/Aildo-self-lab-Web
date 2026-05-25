@@ -1,0 +1,16 @@
+[
+  {
+    "id": "FRA_001",
+    "country": "FRA",
+    "level": "pg",
+    "name": "印象派与莫奈的睡莲",
+    "nameEn": "Impressionism & Monet's Water Lilies",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1860s-1920s",
+    "description": "1874 年莫奈、雷诺阿、德加在巴黎的纳达尔摄影室办了第一次 '印象派' 联展，被评论家讥讽得名。他们放弃画室棚顶光，带画架去户外，用未调和的纯色短笔触捕捉一瞬间的光。莫奈晚年在吉维尼花园挖了池塘种睡莲，50 年画了 250 幅，现存巴黎橘园博物馆的 8 幅环形大壁画长 91 米，进去就像走进一汪光的池子。",
+    "emoji": "🎨",
+    "attributes": { "historical": 70, "artistic": 98, "influence": 95, "uniqueness": 85 },
+    "tags": ["impressionism", "painting", "monet", "modern-art"]
+  }
+]

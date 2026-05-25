@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HRV_001",
+    "country": "HRV",
+    "level": "pg",
+    "name": "杜布罗夫尼克古城墙",
+    "nameEn": "Walls of Dubrovnik",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "13th-17th century",
+    "description": "亚得里亚海岸的红屋顶要塞，1296 年开始用当地石灰石筑墙，最厚处 6 米、最高 25 米，2 公里环城。13-17 世纪杜布罗夫尼克共和国靠这堵墙挡住了威尼斯、奥斯曼、拿破仑，是中世纪欧洲少有的从未被攻陷的港口共和国。1991 年克罗地亚独立战争中被南斯拉夫军围攻 7 个月、666 枚炮弹砸中老城，今天弹痕仍清晰可见。HBO《权力的游戏》在这里拍 '君临城'。",
+    "emoji": "🏛",
+    "attributes": { "historical": 85, "artistic": 75, "influence": 60, "uniqueness": 88 },
+    "tags": ["fortress", "unesco", "adriatic", "got-filming"]
+  }
+]

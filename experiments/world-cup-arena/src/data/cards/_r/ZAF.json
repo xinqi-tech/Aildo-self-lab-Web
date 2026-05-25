@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ZAF_r001",
+    "country": "ZAF",
+    "level": "r",
+    "name": "种族隔离 Apartheid",
+    "nameEn": "Apartheid",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1948-1994",
+    "description": "1948 年南非国民党执政后立 317 条种族法律：黑人不准坐白人长椅、不准进白人海滩、跨种族婚姻刑事化、黑人必须随身带 'dompas' 通行证。1960 年 Sharpeville 警察对抗议黑人开枪 69 死、1976 年 Soweto 学生抗议被屠 176 死。300 万黑人被驱赶到 'homeland' 保留区——加起来面积只占南非 13% 但住 80% 人口。1990 年代南非真相与和解委员会让加害者公开自白换取赦免，是世界少见的转型正义模板。今天约翰内斯堡 Apartheid Museum 入场券分两种：白人入口 vs 黑人入口，游客随机抽。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 10, "influence": 92, "uniqueness": 85 },
+    "tags": ["apartheid", "segregation", "national-party", "trc"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NLD_x001",
+    "country": "NLD",
+    "level": "x",
+    "name": "阿姆斯特丹大麻咖啡馆",
+    "nameEn": "Amsterdam Coffee Shops",
+    "category": "modern",
+    "rarity": "common",
+    "era": "1976-present",
+    "description": "1976 年荷兰修订《鸦片法》：硬毒品归刑事、软毒品（大麻、致幻蘑菇）'容忍'，在 'coffee shop' 里 18+ 成人每天可买 5 克干花。今天阿姆斯特丹有 166 家持牌咖啡馆，菜单按 THC 浓度排序，从 14% 'Lemon Haze' 到 28% 'Bruce Banner'。游客占消费的 60%，市政府 2024 年要求市中心 6 家只对荷兰居民开放，结果游客围攻议会大楼。配套服务包括 'mushroom truffle tour'——荷兰特色，吃完去运河边坐 2 小时。",
+    "emoji": "💉",
+    "attributes": { "historical": 30, "artistic": 25, "influence": 85, "uniqueness": 95 },
+    "tags": ["cannabis", "drug-policy", "amsterdam", "liberal"]
+  }
+]

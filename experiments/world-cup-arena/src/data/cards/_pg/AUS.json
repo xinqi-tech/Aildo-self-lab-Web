@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUS_001",
+    "country": "AUS",
+    "level": "pg",
+    "name": "悉尼歌剧院",
+    "nameEn": "Sydney Opera House",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1959-1973",
+    "description": "1957 年丹麦建筑师 Jørn Utzon 在 233 人国际竞赛中胜出，灵感来自剥橘子皮。原预算 700 万澳元、4 年建成，实际花了 1.02 亿、14 年。1966 年 Utzon 与新州政府闹翻辞职回国，再没回来过；2008 年 89 岁逝世也没看过自己作品的完工形态。屋顶 105.8 万块 Höganäs 瑞典瓷砖在阳光下变色像贝壳。1973 年伊丽莎白二世剪彩，2003 年 Utzon 拿普利兹克奖。2007 年 UNESCO 列遗——是 20 世纪建筑里少数被列遗的。",
+    "emoji": "🎨",
+    "attributes": { "historical": 65, "artistic": 95, "influence": 90, "uniqueness": 95 },
+    "tags": ["sydney", "utzon", "modernism", "unesco"]
+  }
+]

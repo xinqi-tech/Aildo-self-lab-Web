@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MAR_x001",
+    "country": "MAR",
+    "level": "x",
+    "name": "阿特拉斯山的踩老虎魔法",
+    "nameEn": "Atlas Mountain Jinn Possession",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Eternal",
+    "description": "摩洛哥北部 Aïssawa 与 Hamadcha 苏菲教团仪式：成员吃玻璃、吞剑、用钉子戳脸颊不流血、披黑山羊皮在地上爬，是 13 世纪传下的精灵附体仪式。在 sema 圆形舞蹈中乐手击 t'bel 鼓使节奏渐快，舞者进入入神状态后据信被 jinn 短暂占有。Bowles 1950 年代在丹吉尔记录的录音让 Rolling Stones 的 Brian Jones 1968 年专门去 Joujouka 村录 The Master Musicians of Joujouka，那 6 张唱片让 William Burroughs 写下 '4000 年的硬摇滚'。今天仍有月度仪式，但不准外人拍。",
+    "emoji": "🛸",
+    "attributes": { "historical": 70, "artistic": 60, "influence": 60, "uniqueness": 98 },
+    "tags": ["sufi", "jinn", "aissawa", "trance-music"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRN_x001",
+    "country": "IRN",
+    "level": "x",
+    "name": "波斯地毯里的 Jinn",
+    "nameEn": "Persian Carpet Jinn",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Eternal",
+    "description": "古兰经认证的次维度生命体 Jinn 由烟火造（人是泥造、天使是光造），住在水、风、与人造物的纹路里——尤其爱伊朗 Kashan、Isfahan 的丝织地毯。织毯师每张毯必留 1 处故意瑕疵，因为 '完美属于真主'——也防止 Jinn 在完美对称里安家。波斯有一系列驱 Jinn 仪式：用蓝色琉璃 Nazar 防恶眼、烧 esfand 籽烟、孩子出生 7 天剪头发埋玫瑰下。今天德黑兰豪宅区年请驱 Jinn 师 1 万次，单次 50-300 美元。Khomeini 革命后政府禁迷信但门厅琉璃眼仍标配。",
+    "emoji": "🛸",
+    "attributes": { "historical": 60, "artistic": 50, "influence": 55, "uniqueness": 95 },
+    "tags": ["jinn", "carpet", "supernatural", "islamic-folklore"]
+  }
+]

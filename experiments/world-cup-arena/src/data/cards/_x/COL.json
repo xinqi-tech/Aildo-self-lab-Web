@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COL_x001",
+    "country": "COL",
+    "level": "x",
+    "name": "巴勃罗·埃斯科巴",
+    "nameEn": "Pablo Escobar",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1976-1993",
+    "description": "1976 年 26 岁 Pablo Escobar 在 Medellín 山顶建第一间古柯实验室，10 年内控制美国 80% 可卡因进口、个人净资产 300 亿美元（Forbes 1989 年第 7 富）。一周烧不掉的现金潮湿了 200 万美元，他给妈写 'mom I lost a fortune to rats'。1980 年代雇佣 sicarios 暗杀 4000+ 含 30 名法官、200 名警察、3 名总统候选人（Galán 1989）。1989 年炸 Avianca 客机 107 死只为杀 1 个证人。建私人动物园放河马、长颈鹿——他死后河马失控成 Magdalena 河外来物种，今天 215 头泛滥 600 公里河岸。1993 年 12 月 2 日 44 岁在 Medellín 屋顶被警方枪杀。Netflix《Narcos》5 季全球第 1。",
+    "emoji": "💉",
+    "attributes": { "historical": 60, "artistic": 30, "influence": 95, "uniqueness": 98 },
+    "tags": ["escobar", "narco", "medellin", "drug-lord"]
+  }
+]

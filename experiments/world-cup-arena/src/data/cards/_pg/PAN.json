@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PAN_001",
+    "country": "PAN",
+    "level": "pg",
+    "name": "巴拿马运河",
+    "nameEn": "Panama Canal",
+    "category": "tech",
+    "rarity": "legendary",
+    "era": "1881-1914",
+    "description": "1881 年法国 Lesseps（建苏伊士运河的人）首攻巴拿马，2.2 万工人死于黄热病 + 疟疾、公司破产。1903 年美国扶植巴拿马脱离哥伦比亚独立，换取 10 年内建成 77 公里运河。罗斯福派陆军军医 William Gorgas 用 DDT + 消蚊 + 接种黄热病疫苗，把死亡率降到 2%。1914 年 8 月 15 日船只 SS Ancón 首航通过，巴拿马成 '太平洋与大西洋的连接器'。每年通过 13000+ 船只占全球航运 6%，巴拿马收 30 亿美元运河费（占 GDP 1/4）。2016 年扩建新闸门可走 13 万吨 Panamax 船。1999 年美国把运河完全归还巴拿马。",
+    "emoji": "🔬",
+    "attributes": { "historical": 90, "artistic": 50, "influence": 95, "uniqueness": 92 },
+    "tags": ["panama-canal", "us-empire", "engineering", "global-trade"]
+  }
+]

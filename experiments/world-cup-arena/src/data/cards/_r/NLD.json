@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NLD_r001",
+    "country": "NLD",
+    "level": "r",
+    "name": "荷兰东印度公司 VOC",
+    "nameEn": "Dutch East India Company (VOC)",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1602-1799",
+    "description": "1602 年成立的全球第一家股份制公司、第一家发行股票的公司、第一家有有限责任的公司。它发行了 1 千万荷兰盾股本（相当今天 7800 亿美元市值），200 年内运回 250 万吨亚洲香料。1621 年攻占班达群岛大屠杀肉豆蔻原住民 14000 人——这场屠杀让一颗肉豆蔻的利润率达到 32000%。1740 年雅加达 '红溪事件' 7 天屠杀 1 万华人。1799 年破产时债务相当今天 4 千亿美元，由荷兰政府接管殖民地。",
+    "emoji": "⚔",
+    "attributes": { "historical": 95, "artistic": 30, "influence": 92, "uniqueness": 85 },
+    "tags": ["voc", "colonialism", "spice-trade", "corporation"]
+  }
+]

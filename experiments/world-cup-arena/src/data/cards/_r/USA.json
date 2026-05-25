@@ -1,0 +1,16 @@
+[
+  {
+    "id": "USA_r001",
+    "country": "USA",
+    "level": "r",
+    "name": "塔斯基吉梅毒实验",
+    "nameEn": "Tuskegee Syphilis Study",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1932-1972",
+    "description": "美国公共卫生署 1932 年招募 600 名阿拉巴马州贫困黑人男性，告诉他们在治 '坏血'，实际上是观察未治疗梅毒的自然病程。1947 年青霉素已成标准疗法，研究继续；直到 1972 年 AP 通讯社记者曝光才结束。399 名梅毒患者中 128 人死于梅毒及并发症，40 名妻子被感染，19 名婴儿先天梅毒。1997 年克林顿正式道歉。",
+    "emoji": "👹",
+    "attributes": { "historical": 78, "artistic": 15, "influence": 70, "uniqueness": 88 },
+    "tags": ["medical-ethics", "racism", "scandal", "cover-up"]
+  }
+]

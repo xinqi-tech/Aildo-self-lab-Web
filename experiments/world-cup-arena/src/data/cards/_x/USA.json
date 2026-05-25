@@ -1,0 +1,16 @@
+[
+  {
+    "id": "USA_x001",
+    "country": "USA",
+    "level": "x",
+    "name": "罗斯威尔 51 区",
+    "nameEn": "Roswell & Area 51",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1947-present",
+    "description": "1947 年 7 月 8 日罗斯威尔陆军机场发布新闻稿：'我们捕获了一艘 flying disc'。24 小时后五角大楼改口：'只是气象气球'。从此 51 区成了所有阴谋论的母舰——外星人尸体冷藏柜、反向工程的 UFO 飞行器、肯尼迪知道的太多所以被灭口。2019 年 Facebook 活动 'Storm Area 51, They Can't Stop All of Us' 报名 200 万人，最后真去了 150 个，没人冲进基地。",
+    "emoji": "🛸",
+    "attributes": { "historical": 35, "artistic": 20, "influence": 85, "uniqueness": 98 },
+    "tags": ["ufo", "conspiracy", "cold-war", "urban-legend"]
+  }
+]

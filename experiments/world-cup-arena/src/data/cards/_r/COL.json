@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COL_r001",
+    "country": "COL",
+    "level": "r",
+    "name": "FARC 半个世纪游击战",
+    "nameEn": "FARC Half-Century Guerrilla War",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1964-2016",
+    "description": "1964 年共产党农民武装在马尔克塔利亚山区成立 FARC，最初 48 人对抗大地主。靠绑架（人质 27000+ 含 Ingrid Betancourt 关 6 年）、毒品贸易（控制 70% 古柯种植）、税收 2 亿美元/年发展到 2 万兵。52 年战争 22 万死、800 万流离失所。2002 年总统 Uribe 美援 100 亿打击 FARC，2008 年特种部队伪装左翼联合救出 Betancourt + 15 人。2012-2016 哈瓦那和谈，总统 Santos 因谈判拿诺贝尔和平奖但全民公投以 50.2% vs 49.8% 否决和约。2016 年修订版国会通过，FARC 7000 人交武器、转政党 FARC（5% 国会席位）。今天残部 dissidentes 2000 人重操旧业。",
+    "emoji": "⚔",
+    "attributes": { "historical": 88, "artistic": 5, "influence": 75, "uniqueness": 82 },
+    "tags": ["farc", "guerrilla", "drug-war", "peace-process"]
+  }
+]

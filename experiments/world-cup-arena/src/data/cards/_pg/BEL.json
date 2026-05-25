@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BEL_001",
+    "country": "BEL",
+    "level": "pg",
+    "name": "丁丁与漫画第九艺术",
+    "nameEn": "Tintin & the Belgian Comics",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1929-present",
+    "description": "1929 年比利时记者 Hergé 在《20 世纪报》儿童副刊画第一格丁丁——头戴金毛、白衬衫蓝裤子的少年记者。25 卷漫画卖出 2.5 亿册，翻译成 110 种语言。比利时把漫画捧成 'le neuvième art'（第九艺术），布鲁塞尔市中心有 60 多面墙画漫画 mural，圣胡贝尔画廊里的丁丁专卖店 1 楼是博物馆。蓝精灵也是比利时人 1958 年画的。法国人发明的，比利时人发扬光大。",
+    "emoji": "🎨",
+    "attributes": { "historical": 60, "artistic": 88, "influence": 82, "uniqueness": 90 },
+    "tags": ["tintin", "comics", "herge", "ninth-art"]
+  }
+]

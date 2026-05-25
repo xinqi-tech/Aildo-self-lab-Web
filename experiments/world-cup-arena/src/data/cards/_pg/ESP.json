@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ESP_001",
+    "country": "ESP",
+    "level": "pg",
+    "name": "高迪的圣家堂",
+    "nameEn": "Gaudí's Sagrada Família",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1882-2026",
+    "description": "1882 年开工建造的巴塞罗那大教堂，原建筑师 Villar 走后 1883 年由 31 岁的安东尼·高迪接手，他改设计为 18 座尖塔象征 12 门徒 + 4 福音作者 + 圣母 + 耶稣。高迪 1926 年被有轨电车撞死前 43 年只完成 25%。建筑工程靠游客门票筹钱继续了 144 年，2026 年预计完工——正好赶上高迪百年祭。最高的耶稣塔将达 172.5 米，比附近的蒙特惠奇山低 1 米，因为 '人造之物不应高过神造之物'。",
+    "emoji": "🏛",
+    "attributes": { "historical": 80, "artistic": 98, "influence": 92, "uniqueness": 98 },
+    "tags": ["gaudi", "barcelona", "art-nouveau", "unesco"]
+  }
+]

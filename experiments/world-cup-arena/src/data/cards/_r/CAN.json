@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CAN_r001",
+    "country": "CAN",
+    "level": "r",
+    "name": "原住民寄宿学校",
+    "nameEn": "Indian Residential Schools",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1876-1996",
+    "description": "1876 年加拿大《印第安法案》强制原住民儿童离家送入教会寄宿学校，目的是 'kill the Indian in the child'。120 年间约 15 万儿童被带走，禁止说母语、禁止见父母，被拍照前要剪掉辫子。2021 年坎卢普斯前学校原址发现 215 具儿童遗骸，全国降半旗，特鲁多承认这是 '加拿大历史上最黑暗的一章'。后续调查在多个旧址发现总计超过 1300 个未标记墓穴。",
+    "emoji": "👹",
+    "attributes": { "historical": 88, "artistic": 20, "influence": 65, "uniqueness": 75 },
+    "tags": ["indigenous", "cultural-genocide", "religious-school", "truth-reconciliation"]
+  }
+]

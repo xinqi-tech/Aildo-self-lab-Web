@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CUW_001",
+    "country": "CUW",
+    "level": "pg",
+    "name": "彩色房子的威廉斯塔德",
+    "nameEn": "Willemstad's Pastel Houses",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1817-present",
+    "description": "1817 年库拉索总督 Albert Kikkert 抱怨眼睛被白色建筑反光晒坏（医学上他是偏头痛），于是颁令所有威廉斯塔德的房屋不准刷白。结果整个旧城区被涂成芒果黄、薄荷绿、桃粉、海蓝——这一调皮的命令让今天它成 1997 UNESCO 世遗。荷兰殖民时期 17-18 世纪建的水边商行（Handelskade）仍 daily 用作政府办公室。后来发现 Kikkert 本人在白屋墙刷漆生意里持股 5%——历史上最赚的偏头痛。",
+    "emoji": "🎨",
+    "attributes": { "historical": 75, "artistic": 85, "influence": 55, "uniqueness": 95 },
+    "tags": ["willemstad", "dutch-caribbean", "unesco", "colorful"]
+  }
+]

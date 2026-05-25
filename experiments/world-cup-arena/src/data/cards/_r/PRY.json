@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRY_r001",
+    "country": "PRY",
+    "level": "r",
+    "name": "三国同盟战争人口灭绝",
+    "nameEn": "Paraguayan War Depopulation",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1864-1870",
+    "description": "1864 年巴拉圭独裁者 Francisco Solano López 向巴西、阿根廷、乌拉圭三国同时宣战（号称为乌拉圭联邦党出头），5 年血战巴拉圭 52 万人口剩 22 万，男性 90% 战死。剩下的男人平均 1 个对 4 个寡妇。巴拉圭丢失 14 万平方公里领土（占总土地 1/3）给巴西阿根廷。这是西半球最惨烈的近代战争，死亡率人均高于一战、二战任何参战国。今天巴拉圭仍是南美最穷国，性别失衡延续到 20 世纪：1900 年成年男女比 1:2，1950 年 1:1.5，2020 年才回到正常。López 1870 年战败兵败被巴西兵砍头时高喊 'Yo muero con mi patria'。",
+    "emoji": "⚔",
+    "attributes": { "historical": 92, "artistic": 5, "influence": 60, "uniqueness": 88 },
+    "tags": ["paraguayan-war", "triple-alliance", "depopulation", "lopez"]
+  }
+]

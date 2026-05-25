@@ -1,0 +1,16 @@
+[
+  {
+    "id": "QAT_001",
+    "country": "QAT",
+    "level": "pg",
+    "name": "Al Jazeera 与新阿拉伯媒体",
+    "nameEn": "Al Jazeera & New Arab Media",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1996-present",
+    "description": "1996 年卡塔尔王室出资 1.37 亿美元在多哈成立 Al Jazeera，雇了刚被沙特关停的 BBC 阿拉伯语频道整个团队。2001 年阿富汗战争中独家直播本拉登录像让美军当年炸过它喀布尔办公室；2003 年伊拉克战争对萨达姆审判全程直播让阿拉伯世界第一次实时看西方军事行动。2006 年开英语频道。2011 年阿拉伯之春中它的现场画面是埃及 Tahrir 广场抗议的全球唯一稳定信号源，被沙特、埃及等多国封禁。今天 80 国办公室、12 种语言，是 BBC、CNN 之后世界第 3 大新闻网。",
+    "emoji": "⭐",
+    "attributes": { "historical": 40, "artistic": 30, "influence": 88, "uniqueness": 80 },
+    "tags": ["al-jazeera", "media", "arab-spring", "soft-power"]
+  }
+]

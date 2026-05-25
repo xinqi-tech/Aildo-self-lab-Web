@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUR_001",
+    "country": "TUR",
+    "level": "pg",
+    "name": "圣索菲亚大教堂",
+    "nameEn": "Hagia Sophia",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "537 AD-present",
+    "description": "537 年拜占庭皇帝查士丁尼一世建成，5 年 10 个月、10000 工人。中央穹顶 31.24 米直径、56 米高，开窗 40 个让光像神迹般洒下，900 年内是世界最大的室内空间。1453 年穆罕默德二世攻陷君士坦丁堡后改清真寺，加 4 座宣礼塔与镀金弯月。1934 年凯末尔改为博物馆，2020 年埃尔多安又改回清真寺。今天礼拜时基督教马赛克要用幕布盖住，闭馆后解开供游客参观——一栋建筑两种文明并存 1500 年。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 92, "influence": 90, "uniqueness": 95 },
+    "tags": ["byzantine", "ottoman", "istanbul", "religion"]
+  }
+]

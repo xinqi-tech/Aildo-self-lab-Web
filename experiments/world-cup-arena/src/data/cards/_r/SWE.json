@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SWE_r001",
+    "country": "SWE",
+    "level": "r",
+    "name": "瑞典优生绝育计划",
+    "nameEn": "Swedish Eugenics Sterilization",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1934-1976",
+    "description": "1934 年瑞典通过《绝育法》，授权对 '智力低下、流浪、贫困、不道德' 者强制绝育。42 年间 6.3 万人被绝育，95% 是女性，多数是萨米族原住民、芬兰裔、单亲妈妈、家暴受害者。1997 年记者 Maciej Zaremba 在《Dagens Nyheter》系列报道揭穿，国王公开道歉，2002 年立法每个受害者赔 17.5 万克朗（约 2 万美元）。瑞典的福利国家形象与北欧优生学历史并存了 50 年，没人愿意提。",
+    "emoji": "👹",
+    "attributes": { "historical": 80, "artistic": 5, "influence": 60, "uniqueness": 78 },
+    "tags": ["eugenics", "sterilization", "welfare-state", "scandal"]
+  }
+]

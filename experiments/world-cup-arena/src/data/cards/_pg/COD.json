@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COD_001",
+    "country": "COD",
+    "level": "pg",
+    "name": "刚果河与丛林心脏",
+    "nameEn": "Congo River & the Jungle Heart",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "Geological",
+    "description": "刚果河长 4700 公里、流量 4.1 万立方米/秒——仅次亚马逊全球第 2 大、最深处 220 米全球最深。横穿赤道两次，是地球唯一这么干的大河。流域覆盖刚果盆地热带雨林 200 万平方公里，是地球第二大肺、藏全球 30% 大猩猩、刚果孔雀、80 种地方特有鸟。1877 年探险家 Stanley 沿河漂 999 天、损 200 多人，发现 32 个瀑布（Inga Falls 落差 96 米能发 4 万兆瓦电）。今天刚果河给西非 5 亿人供水，但流域只电气化 12%。",
+    "emoji": "🏛",
+    "attributes": { "historical": 70, "artistic": 60, "influence": 70, "uniqueness": 92 },
+    "tags": ["congo-river", "rainforest", "biodiversity", "exploration"]
+  }
+]

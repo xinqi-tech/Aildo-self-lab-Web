@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SAU_001",
+    "country": "SAU",
+    "level": "pg",
+    "name": "麦加朝觐 Hajj",
+    "nameEn": "Hajj Pilgrimage",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "622 AD-present",
+    "description": "伊斯兰五功之一，每个有能力的穆斯林一生至少一次去麦加朝圣。每年伊斯兰历 Dhu al-Hijjah 月 8-13 日全球 200 万穆斯林同步抵达麦加大清真寺，绕黑色 Kaaba 逆时针走 7 圈、跑 Safa-Marwa 7 趟、Mina 平原扔石头 49-70 颗、在 Arafat 山禁食祷告一整天。男人穿两块无缝白布 ihram 代表死前的裹尸布，全程财富、地位、种族不分。Hajj 是地球上最大的年度宗教集会，沙特政府投资 70 亿美元基建支持，仍年均踩踏死 100+。",
+    "emoji": "🧠",
+    "attributes": { "historical": 95, "artistic": 50, "influence": 95, "uniqueness": 92 },
+    "tags": ["hajj", "islam", "mecca", "pilgrimage"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CUW_x001",
+    "country": "CUW",
+    "level": "x",
+    "name": "史上最小世界杯参赛国",
+    "nameEn": "Smallest World Cup Nation Ever",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "2025",
+    "description": "2025 年 11 月 18 日库拉索 0-0 战平牙买加锁定 2026 世界杯门票，成为史上最小的世界杯参赛国——人口 15 万 5 千人，比墨西哥城阿兹特克体育场单场最大上座 8 万 9 千还少 2 倍。岛长 67 公里、宽 14 公里、整个 444 平方公里只有 1 座国际机场。国家队 23 人名单：17 人在荷兰联赛、3 人在英超低级别、3 人在岛上俱乐部 SUBT。教练 Dick Advocaat 77 岁荷兰人当顾问，实际带队的 Remko Bicentini 是本地小学体育老师转职。首都 Willemstad 唯一足球场 Stadion Ergilio Hato 容量 1 万，2025 庆功夜挤进 4 万人——岛上每 4 人来了 1 个。",
+    "emoji": "🃏",
+    "attributes": { "historical": 15, "artistic": 25, "influence": 70, "uniqueness": 98 },
+    "tags": ["underdog", "first-time", "smallest-nation", "wc2026"]
+  }
+]

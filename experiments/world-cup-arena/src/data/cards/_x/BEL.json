@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BEL_x001",
+    "country": "BEL",
+    "level": "x",
+    "name": "撒尿小童的衣柜",
+    "nameEn": "Manneken Pis Wardrobe",
+    "category": "modern",
+    "rarity": "common",
+    "era": "1619-present",
+    "description": "布鲁塞尔市中心的撒尿小童铜像 1619 年立起，55 厘米高，喷泉穿过小弟弟流到水池里。1698 年巴伐利亚选帝侯第一次送了他一套衣服，从此各国政要来访都要献服装：日本武士、苏格兰短裙、宇航服、纳尔逊·曼德拉肖像 T 恤……今天他衣柜有 1200+ 套，存在 6 楼专门博物馆。每年公开换装 130 次，事件包括他生日（8 月 1 日穿假发）、皇室婚礼（穿燕尾）、足球世界杯（穿红魔球衣）。他还有妹妹（Jeanneke Pis）和狗（Zinneke Pis）配套尿。",
+    "emoji": "🃏",
+    "attributes": { "historical": 60, "artistic": 50, "influence": 65, "uniqueness": 95 },
+    "tags": ["mascot", "brussels", "absurd-tradition", "wardrobe"]
+  }
+]

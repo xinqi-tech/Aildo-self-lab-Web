@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CAN_x001",
+    "country": "CAN",
+    "level": "x",
+    "name": "鼻涕虫节庆与道歉怪",
+    "nameEn": "The Apologetic Stereotype",
+    "category": "modern",
+    "rarity": "common",
+    "era": "Eternal",
+    "description": "加拿大人对道歉的依赖被立法保护：2009 年安大略《Apology Act》明确规定 'I'm sorry' 不构成法律意义上的认错，只是 social lubricant。2016 年多伦多大学一项研究：加拿大学生平均每天说 sorry 9 次，最多记录 47 次/天。这种集体下跪式礼貌让美国人困惑：在 Tim Hortons 排队时撞到 Tim Hortons 的门，门也会说 sorry。被 SNL 拍成连续剧《The Beaver》。",
+    "emoji": "🃏",
+    "attributes": { "historical": 25, "artistic": 30, "influence": 60, "uniqueness": 88 },
+    "tags": ["stereotype", "politeness", "national-character", "meta"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "GHA_x001",
+    "country": "GHA",
+    "level": "x",
+    "name": "高仿棺材艺术",
+    "nameEn": "Ga Fantasy Coffins",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1950s-present",
+    "description": "1950 年代加纳南部 Ga 族开始把棺材做成死者一生喜欢的东西：渔夫装大鱼形棺、可乐司机装可乐瓶棺、教练装足球棺、酒鬼装啤酒瓶棺，最近新增 iPhone 棺、特斯拉 Model 3 棺、波音 747 棺。一具手工木雕彩绘棺 800-3000 美元（加纳人均月薪 200 美元），出殡时全村抬着唱歌跳舞，亲属去世是大事——办丧事比办婚礼隆重。今天 'fantasy coffin' 进入卢浮宫与 MoMA 收藏，但 Ga 工匠们坚持要做给死人用、不准当艺术品摆。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 85, "influence": 70, "uniqueness": 98 },
+    "tags": ["fantasy-coffin", "ga-people", "death-culture", "folk-art"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CAN_001",
+    "country": "CAN",
+    "level": "pg",
+    "name": "枫糖与冰球",
+    "nameEn": "Maple Syrup & Hockey",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1700s-present",
+    "description": "魁北克的原住民教法国殖民者用斧头敲枫树取糖浆，今天加拿大产全球 71% 的枫糖。冬天太冷孩子们就在结冰的湖面玩冰球，1875 年蒙特利尔大学第一次有组织的室内冰球比赛，今天 NHL 32 队里 7 队在加拿大，每周日酒吧里看不到比赛的人会被当成精神有问题。",
+    "emoji": "🍜",
+    "attributes": { "historical": 55, "artistic": 50, "influence": 60, "uniqueness": 78 },
+    "tags": ["maple-syrup", "hockey", "winter-culture", "national-identity"]
+  }
+]

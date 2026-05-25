@@ -1,0 +1,16 @@
+[
+  {
+    "id": "GHA_001",
+    "country": "GHA",
+    "level": "pg",
+    "name": "Kente 王室手织布",
+    "nameEn": "Kente Cloth",
+    "category": "art",
+    "rarity": "rare",
+    "era": "17th century-present",
+    "description": "17 世纪阿散蒂帝国 Bonwire 村，传说织工 Kwaku Ameyaw 看蜘蛛织网得灵感，发明 4 寸宽窄条手织、再缝合成大布。每种颜色有含义：金 = 皇家、绿 = 收获、红 = 牺牲、蓝 = 圣洁。原本只准国王穿，今天非裔美国人毕业典礼上挂 Kente 围巾成传统、奥巴马 2016 年宣誓时夫人米歇尔的开衫就是 Kente 纹。一块手工 Kente 布要 4-6 周，一套传统大袍要 12 人协作 3 个月。当代设计师把它印进 Off-White、Burberry 时装。",
+    "emoji": "🎨",
+    "attributes": { "historical": 78, "artistic": 88, "influence": 75, "uniqueness": 95 },
+    "tags": ["kente", "ashanti", "textile", "pan-african"]
+  }
+]

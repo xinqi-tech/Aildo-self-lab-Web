@@ -1,0 +1,16 @@
+[
+  {
+    "id": "USA_001",
+    "country": "USA",
+    "level": "pg",
+    "name": "好莱坞造梦工厂",
+    "nameEn": "Hollywood Dream Factory",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1910-present",
+    "description": "1911 年第一家电影制片厂在洛杉矶北郊的橘子林里搭起来，因为这里阳光稳定一年 300 天可拍外景。1939 年《乱世佳人》首映那晚亚特兰大封城三天，是美国梦的具象化。到 2019 年漫威《复仇者联盟 4》全球票房 28 亿美元，让所有非英语市场的小孩都先学会 'I am Iron Man' 才学会自己国家的总统名。",
+    "emoji": "⭐",
+    "attributes": { "historical": 50, "artistic": 85, "influence": 98, "uniqueness": 75 },
+    "tags": ["cinema", "soft-power", "celebrity", "industry"]
+  }
+]

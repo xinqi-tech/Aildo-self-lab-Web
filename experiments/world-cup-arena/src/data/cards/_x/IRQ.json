@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRQ_x001",
+    "country": "IRQ",
+    "level": "x",
+    "name": "Uday Hussein 与狮笼",
+    "nameEn": "Uday Hussein's Lion Cage",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1984-2003",
+    "description": "萨达姆长子 Uday Hussein 是 21 世纪初最病态的独裁继承人代表：1) 1988 年开车碾死父亲贴身保镖（手枪打侍卫），被判死刑 + 萨达姆赦免；2) 1990 年代当奥委会主席，输球的运动员被关进鞭刑室、灌驴尿、用电缆抽脚底板；3) 别墅地下养 7 头狮子，亲信反叛者被扔进笼；4) 巴格达婚礼上看中新娘当场抢走、新郎一周后死，至少 8 起；5) 收藏 1200 辆豪车 + 300 万美元现金堆卧室；6) 2003 年美军伊战，与弟弟 Qusay 在 Mosul 别墅被 200 名美军围攻 6 小时击毙，FOX 直播尸体辨认。",
+    "emoji": "🃏",
+    "attributes": { "historical": 50, "artistic": 5, "influence": 65, "uniqueness": 98 },
+    "tags": ["uday-hussein", "dictator-family", "lion-cage", "iraq-war"]
+  }
+]

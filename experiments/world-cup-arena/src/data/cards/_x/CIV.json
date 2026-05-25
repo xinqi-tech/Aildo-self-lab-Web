@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CIV_x001",
+    "country": "CIV",
+    "level": "x",
+    "name": "Coupé-Décalé 与 Douk Saga",
+    "nameEn": "Coupé-Décalé & Douk Saga",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2002-present",
+    "description": "2002 年科特迪瓦内战爆发，逃到巴黎的科特迪瓦人 Stéphane Doukouré（艺名 Douk Saga）创造了新音乐 coupé-décalé：'割切 + 跳舞'。规则就是穿名牌（Versace、LV），在 club 撒钱（一晚撒 1 万欧叫 'travailler'），动作要像在切肉。一种把贫困羞愧转成炫耀的非洲嘻哈。Douk Saga 2006 年 32 岁猝死，几十万人送葬。今天 coupé-décalé 全球年消费 5 亿欧元，但它的发明者临终前因为肝衰竭——撒钱时没顾得上自己。",
+    "emoji": "🃏",
+    "attributes": { "historical": 20, "artistic": 70, "influence": 75, "uniqueness": 95 },
+    "tags": ["coupe-decale", "dance-music", "douk-saga", "diaspora"]
+  }
+]

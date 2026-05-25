@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CUW_r001",
+    "country": "CUW",
+    "level": "r",
+    "name": "1795 Tula 奴隶起义",
+    "nameEn": "Tula's 1795 Slave Revolt",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1795",
+    "description": "1795 年 8 月 17 日库拉索西部 Knip 种植园 40 名非洲奴隶在 Tula 领导下罢工，要求工资 + 一周休一天。法国海地革命（1791）刚成功的消息已传到加勒比。荷兰种植园主拒绝，Tula 带 1000+ 奴隶游行到首府要求自由。荷军派 250 兵镇压，2000 奴隶反抗 1 个月直到 Tula + Karpata + Bastian Carpata + Pedro Wakao 4 名领袖被叛徒出卖。9 月 19 日 Tula 在 Rif Fort 广场公开处死：先用钩子撕开胸口、再砍头挂示众。1863 年荷兰最后才废奴。今天 8 月 17 日是库拉索国家斗争日，Tula 雕像立在 Westpunt 海岸。",
+    "emoji": "⚔",
+    "attributes": { "historical": 80, "artistic": 5, "influence": 55, "uniqueness": 78 },
+    "tags": ["tula", "slave-revolt", "dutch-colonial", "abolition"]
+  }
+]

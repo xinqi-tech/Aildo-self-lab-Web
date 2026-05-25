@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRQ_r001",
+    "country": "IRQ",
+    "level": "r",
+    "name": "Abu Ghraib 监狱酷刑",
+    "nameEn": "Abu Ghraib Torture",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "2003-2004",
+    "description": "2004 年 4 月 CBS《60 Minutes II》公布美军第 372 宪兵连在巴格达 Abu Ghraib 监狱酷刑照片：裸体被堆成金字塔的犯人、女兵 Lynndie England 牵狗绳拖犯人、犯人戴黑头套站电箱上被告知一动就电击。Charles Graner 等 11 名军士被判 1-10 年（Graner 最重 10 年）但无高层被追究。这些照片让美国 'liberator' 形象在阿拉伯世界一夜瓦解，间接造就 ISIS 招新视频常用 'remember Abu Ghraib'。萨达姆时期同样监狱关 4 万政治犯、行刑 4000 人——历史的讽刺是 Abu Ghraib 在两个政权下都是酷刑代名词。",
+    "emoji": "👹",
+    "attributes": { "historical": 80, "artistic": 5, "influence": 88, "uniqueness": 82 },
+    "tags": ["abu-ghraib", "iraq-war", "torture", "scandal"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CHE_001",
+    "country": "CHE",
+    "level": "pg",
+    "name": "瑞士钟表精度",
+    "nameEn": "Swiss Watchmaking",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "1541-present",
+    "description": "1541 年加尔文新教改革禁日内瓦人戴珠宝，原本做珠宝的工匠转向做表。1601 年成立钟表行会，到 19 世纪已占全球高端表 80% 份额。1969 年日本精工出石英电子表'石英危机'让瑞士机械表崩盘 10 年，1983 年 Swatch 用塑料壳低价复活整个行业。今天 ETA、Sellita 两家瑞士机芯厂供应全球 90% 自动表心脏，劳力士独立总部里 4 千工程师日夜调校误差到 -2/+2 秒/天。瑞士钟表业 2024 年出口 270 亿瑞郎，占 GDP 3.3%。",
+    "emoji": "🔬",
+    "attributes": { "historical": 78, "artistic": 70, "influence": 85, "uniqueness": 92 },
+    "tags": ["watchmaking", "precision", "luxury", "industry"]
+  }
+]

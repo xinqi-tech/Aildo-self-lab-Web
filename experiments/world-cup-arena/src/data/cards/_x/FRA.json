@@ -1,0 +1,16 @@
+[
+  {
+    "id": "FRA_x001",
+    "country": "FRA",
+    "level": "x",
+    "name": "马克龙与布丽吉特",
+    "nameEn": "Macron & Brigitte",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1993-present",
+    "description": "1993 年布丽吉特 39 岁、已婚有 3 子，在亚眠的耶稣会中学教戏剧；马克龙 15 岁是她学生，与她女儿同班。家长发现后把马克龙送去巴黎，他临走说 '无论你做什么我会回来娶你'。2007 年布丽吉特离婚，2007 年 10 月与 29 岁马克龙结婚（年龄差 24 岁）。2017 年马克龙以 39 岁成法国史上最年轻总统，布丽吉特同时成爱丽舍宫第一位 '继祖母级' 第一夫人——她有 7 个外孙。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 25, "influence": 82, "uniqueness": 92 },
+    "tags": ["political-couple", "scandal", "macron", "tabloid"]
+  }
+]

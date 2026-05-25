@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NLD_001",
+    "country": "NLD",
+    "level": "pg",
+    "name": "梵高的星空",
+    "nameEn": "Van Gogh's Starry Night",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1889",
+    "description": "1889 年 6 月梵高在法国南部圣雷米精神病院第 6 周，凌晨 4 点透过囚室窗户画下旋涡星空。他生前只卖出过 1 幅画《红色葡萄园》给比利时画家 Anna Boch，价格 400 法郎；其余 860 幅画都靠弟弟 Theo 资助。1890 年 7 月梵高在奥维尔的麦田自杀，37 岁。今天《星空》藏纽约 MoMA，估值 1 亿美元。他在 870 封写给 Theo 的信里说：'我看到的星不是星，是地图上还没去过的城市。'",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 98, "influence": 95, "uniqueness": 90 },
+    "tags": ["van-gogh", "post-impressionism", "painting", "asylum"]
+  }
+]

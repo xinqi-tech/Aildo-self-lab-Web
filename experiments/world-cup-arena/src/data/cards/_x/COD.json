@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COD_x001",
+    "country": "COD",
+    "level": "x",
+    "name": "金沙萨 Sapeurs 西装绅士",
+    "nameEn": "Kinshasa Sapeurs",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1920s-present",
+    "description": "金沙萨贫民窟里 1920 年代法国殖民官教仆人穿西装，殖民结束后这些黑人保留了打扮，发展成 'La Sape'（Société des Ambianceurs et des Personnes Élégantes）。今天 1 万 sapeurs 平均月收入 60 美元，但每人有 3 件 Versace 西装、2 双鳄鱼皮 Berluti 鞋、几条 Hermès 领带——总价值超 1 万美元。礼仪规则严：颜色三件不能违 'trois couleurs interdites' 法则、领带必须用左手系。每周末他们到 Kinshasa 中央火车站广场斗装，输的人脱衣回家。2014 年健力士啤酒拍他们做广告，6.5 亿次观看，是非洲史上最贵广告。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 75, "influence": 70, "uniqueness": 98 },
+    "tags": ["sapeurs", "kinshasa", "subculture", "fashion"]
+  }
+]

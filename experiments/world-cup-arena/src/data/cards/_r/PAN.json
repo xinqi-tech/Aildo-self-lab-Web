@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PAN_r001",
+    "country": "PAN",
+    "level": "r",
+    "name": "Noriega 入侵 Operation Just Cause",
+    "nameEn": "1989 US Invasion of Panama",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1989-1990",
+    "description": "1989 年 12 月 20 日美国 27000 兵入侵巴拿马抓 'CIA 资产' 转贩毒头子 Manuel Noriega（哥伦比亚毒贩 + 美军情报局 30 年付他 32 万美元/年线人费）。他逃进梵蒂冈使馆，美军围困 10 天用 100 分贝重金属（AC/DC、Guns N' Roses）24 小时轰炸建筑物逼他投降——这是史上第一次 'sonic weapon' 战术。Noriega 1990 年押送迈阿密被判 30 年（实服 17 年），2010 年引渡法国巴黎判洗钱 7 年，2011 年回巴拿马服剩刑，2017 年 83 岁死狱中。入侵中估死 300-3000 巴拿马平民，多数住在 El Chorrillo 贫民区被美军坦克烧毁。",
+    "emoji": "⚔",
+    "attributes": { "historical": 75, "artistic": 5, "influence": 75, "uniqueness": 85 },
+    "tags": ["noriega", "us-invasion", "cia-asset", "panama"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SCO_x001",
+    "country": "SCO",
+    "level": "x",
+    "name": "尼斯湖水怪 Nessie",
+    "nameEn": "Loch Ness Monster",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1933-present",
+    "description": "1933 年 7 月《Inverness Courier》刊登一对夫妇的目击：'一头长颈鲸状生物穿过 A82 公路下湖'。1934 年伦敦医生 Wilson 公布 '外科医生照片'——后被证实是小孩玩具潜艇配橡皮泥脖子拍的恶搞。但尼斯湖深 230 米、水浑、有 16 公里长，怎么扫不掉传说。2003 年 BBC 用 600 个声纳全湖扫描确认 '什么都没有'，但旅游局每年靠 Nessie 赚 4100 万英镑，谁敢否认？2023 年又组织过一次大搜索，找到 4 次 '不明回声'，本地酒吧 Nessie 主题啤酒卖断货。",
+    "emoji": "🛸",
+    "attributes": { "historical": 40, "artistic": 30, "influence": 75, "uniqueness": 92 },
+    "tags": ["cryptid", "loch-ness", "tourism", "hoax"]
+  }
+]

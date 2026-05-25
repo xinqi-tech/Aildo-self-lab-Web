@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HRV_r001",
+    "country": "HRV",
+    "level": "r",
+    "name": "雅塞诺瓦茨集中营",
+    "nameEn": "Jasenovac Concentration Camp",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1941-1945",
+    "description": "二战期间纳粹扶植的克罗地亚独立国（NDH）由乌斯塔沙运动管理，他们在雅塞诺瓦茨建立的集中营是欧洲唯一不由德国人运营的灭绝营。屠杀手段以原始残忍著称——以色列大屠杀纪念馆称 '连党卫军都看不下去'。死亡人数估算 7.7-10 万塞族人、罗姆人、犹太人。专门有种刀叫 srbosjek（'塞族切割器'）戴在右手戴像戒指。今天的纪念馆是个抽象混凝土花朵。",
+    "emoji": "👹",
+    "attributes": { "historical": 92, "artistic": 15, "influence": 60, "uniqueness": 78 },
+    "tags": ["ww2", "ustasha", "genocide", "concentration-camp"]
+  }
+]

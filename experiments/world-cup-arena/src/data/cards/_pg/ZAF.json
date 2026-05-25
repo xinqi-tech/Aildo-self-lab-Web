@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ZAF_001",
+    "country": "ZAF",
+    "level": "pg",
+    "name": "曼德拉与彩虹之国",
+    "nameEn": "Mandela & the Rainbow Nation",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1918-2013",
+    "description": "1962 年纳尔逊·曼德拉因反对种族隔离被判终身监禁，在 Robben Island 7.5 平方米牢房关 27 年敲石头。1990 年 2 月 11 日 71 岁出狱，4 年后 1994 年 5 月 10 日成南非首位黑人总统。就职典礼上他请关他 27 年的狱警 Christo Brand 坐前排。1995 年橄榄球世界杯决赛南非主场击败新西兰，曼德拉穿白人对应球衣 Springbok 7 号下场颁奖，全场 6 万白人喊 'Nelson! Nelson!'——这一瞬把 Rainbow Nation 钉进南非身份。2013 年 12 月 5 日 95 岁去世，全球降半旗。",
+    "emoji": "⭐",
+    "attributes": { "historical": 95, "artistic": 50, "influence": 95, "uniqueness": 90 },
+    "tags": ["mandela", "apartheid", "reconciliation", "rainbow-nation"]
+  }
+]

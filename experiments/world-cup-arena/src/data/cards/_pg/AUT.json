@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUT_001",
+    "country": "AUT",
+    "level": "pg",
+    "name": "维也纳新年音乐会",
+    "nameEn": "Vienna New Year Concert",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1939-present",
+    "description": "每年 1 月 1 日上午 11:15 维也纳爱乐乐团在金色大厅演奏的施特劳斯家族圆舞曲与波尔卡，全球 90 个国家 5000 万人同步直播。开场必是《拉德茨基进行曲》，听众跟着拍手——是世界上唯一允许听众参与的古典音乐会。门票要提前 1 年抽签，正面价 35-1090 欧但黄牛卖到 2 万欧。指挥棒上的金箔来自维也纳的 Schönbrunn 宫殿屋顶——奥地利人觉得新年仪式得这么贵气才像新年。",
+    "emoji": "🎨",
+    "attributes": { "historical": 65, "artistic": 92, "influence": 80, "uniqueness": 88 },
+    "tags": ["classical-music", "vienna", "tradition", "waltz"]
+  }
+]

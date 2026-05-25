@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NOR_001",
+    "country": "NOR",
+    "level": "pg",
+    "name": "盖朗厄尔峡湾",
+    "nameEn": "Geirangerfjord",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "Geological",
+    "description": "1.5 万年前末次冰期，冰川切割出深 1000 米、长 200 公里的 U 型谷，海水倒灌成峡湾。盖朗厄尔峡湾长 15 公里两侧 1700 米高直壁瀑布，'七姐妹瀑布' 与对岸 '追求者瀑布' 像隔水调情。2005 年 UNESCO 列遗。每年夏天 7 艘巨型邮轮停泊带来 30 万游客，当地 250 人冬天只能听海豹叫。挪威人 2026 年规划完成全国峡湾邮轮全电动化。",
+    "emoji": "🏛",
+    "attributes": { "historical": 70, "artistic": 88, "influence": 65, "uniqueness": 90 },
+    "tags": ["fjord", "unesco", "nature", "geology"]
+  }
+]

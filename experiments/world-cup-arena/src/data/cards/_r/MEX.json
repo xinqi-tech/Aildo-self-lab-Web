@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MEX_r001",
+    "country": "MEX",
+    "level": "r",
+    "name": "西班牙征服与天花",
+    "nameEn": "Spanish Conquest & Smallpox",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1519-1521",
+    "description": "1519 年科尔特斯带 500 西班牙兵登陆韦拉克鲁斯，2 年后阿兹特克帝国灭亡。让 25 万特诺奇蒂特兰守军崩溃的不是火枪与马匹，而是船员带来的天花病毒——印第安人从未接触过欧亚旧病，三年内中部墨西哥人口从 2500 万跌到 200 万。今天墨西哥城的大教堂就压在阿兹特克大神庙的废墟之上。",
+    "emoji": "⚔",
+    "attributes": { "historical": 95, "artistic": 40, "influence": 88, "uniqueness": 82 },
+    "tags": ["colonial", "epidemic", "conquest", "aztec"]
+  }
+]

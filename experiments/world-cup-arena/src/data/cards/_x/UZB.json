@@ -1,0 +1,16 @@
+[
+  {
+    "id": "UZB_x001",
+    "country": "UZB",
+    "level": "x",
+    "name": "活煮异见者 Karimov",
+    "nameEn": "Karimov's Boiled Dissidents",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1989-2016",
+    "description": "Islam Karimov 是乌兹别克斯坦独立后首任总统统治 27 年。2002 年英国驻塔什干大使 Craig Murray 在外交电报里描述了 Karimov 政权酷刑：异见伊斯兰教士 Muzafar Avazov 与 Khusnidin Alimov 在 Jaslyk 监狱被活活水煮——尸体送回家时手指无指甲、皮肤大片煮熟。Murray 因公开此报告被英国外交部解雇。2005 年 Andijan 大屠杀 Karimov 派军队对抗议者开机枪 700+ 死。2016 年他中风死，女儿 Gulnara 'Googoosha'（曾自封 Vogue 模特 + 流行歌星）被软禁，名下 27 亿美元 Telia 电信贿赂被瑞士冻结。继任 Mirziyoyev 稍微开放。",
+    "emoji": "👹",
+    "attributes": { "historical": 65, "artistic": 5, "influence": 60, "uniqueness": 95 },
+    "tags": ["karimov", "torture", "dictatorship", "post-soviet"]
+  }
+]

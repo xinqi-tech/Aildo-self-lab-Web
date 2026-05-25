@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NZL_x001",
+    "country": "NZL",
+    "level": "x",
+    "name": "魔戒拍摄地与 Hobbiton 入侵",
+    "nameEn": "Lord of the Rings & Hobbiton Invasion",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1999-present",
+    "description": "1999 年彼得·杰克逊为拍《魔戒》三部曲在新西兰 150 个地点搭景，光 Hobbiton（Matamata 镇 Alexander 家羊牧场）就建 44 个 hobbit 洞穴。原计划拍完拆掉，结果 2002 年开始游客一年 7 万人闯农场要看，2009 年 Jackson 派人重建为永久景点，到 2024 年 7 万人 → 70 万人/年。Aragorn 演员 Viggo Mortensen 当时被马摔断脚趾自己拔出来继续拍。Frodo 演员 Elijah Wood 拍完每次回新西兰过海关时仍被翻包检查（'是的，我就是那个霍比特人'）。新西兰 GDP 估算《魔戒》系列总贡献 60 亿美元、政府专设 'Tolkien 旅游推广司'。今天奥克兰机场 'Welcome to Middle-earth' 标志。",
+    "emoji": "🃏",
+    "attributes": { "historical": 20, "artistic": 75, "influence": 88, "uniqueness": 95 },
+    "tags": ["lord-of-rings", "hobbiton", "filming", "tourism"]
+  }
+]

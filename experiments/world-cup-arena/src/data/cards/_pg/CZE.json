@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CZE_001",
+    "country": "CZE",
+    "level": "pg",
+    "name": "卡夫卡的布拉格",
+    "nameEn": "Kafka's Prague",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1883-1924",
+    "description": "1883 年生在布拉格旧城区一栋四层楼，犹太德语作家弗朗茨·卡夫卡。一辈子白天在工伤保险局当公务员，晚上写。1912 年一夜写完《判决》、1915 年发表《变形记》开头 'Gregor Samsa 醒来发现自己变成虫'。1924 年 40 岁结核病死，临终嘱咐挚友 Max Brod 烧掉所有手稿，Brod 抗命发表了《审判》《城堡》《美国》——20 世纪文学因此存在。今天布拉格旧城广场有他的旋转金属头雕（David Černý 2014 年作品），42 层薄片错位转动表达 '我不在我自己身上'。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 95, "influence": 90, "uniqueness": 88 },
+    "tags": ["kafka", "prague", "modernism", "literature"]
+  }
+]

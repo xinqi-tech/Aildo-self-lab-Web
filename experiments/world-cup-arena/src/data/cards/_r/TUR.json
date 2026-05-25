@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUR_r001",
+    "country": "TUR",
+    "level": "r",
+    "name": "亚美尼亚大屠杀",
+    "nameEn": "Armenian Genocide",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1915-1923",
+    "description": "1915 年 4 月 24 日青年土耳其党在伊斯坦布尔逮捕 235 名亚美尼亚知识分子，是有组织灭绝的开端。8 年间约 150 万安纳托利亚亚美尼亚人死于死亡行军、屠杀、饥饿——奥斯曼帝国境内亚美尼亚人口从 200 万降到 50 万。今天 33 国正式承认这是 genocide（含美国 2021、德国 2016），土耳其拒不承认、把任何提及者起诉 '侮辱土耳其'。2007 年记者 Hrant Dink 因写文章被狙杀于伊斯坦布尔街头。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 10, "influence": 80, "uniqueness": 82 },
+    "tags": ["armenian-genocide", "denial", "ottoman", "ww1"]
+  }
+]

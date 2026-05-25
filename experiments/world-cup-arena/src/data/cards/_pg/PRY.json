@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRY_001",
+    "country": "PRY",
+    "level": "pg",
+    "name": "瓜拉尼语与双语国家",
+    "nameEn": "Guaraní Language",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "Pre-Columbian-present",
+    "description": "巴拉圭是美洲唯一以原住民语作为官方语言并被多数人口日常使用的国家：90% 巴拉圭人会说瓜拉尼语（Avañe'ẽ），70% 把它当母语。16 世纪西班牙征服时耶稣会传教士不强制改宗西语，反而用瓜拉尼语翻圣经、办学校，意外保住了这门语言。1992 年宪法把瓜拉尼语和西语并列官方语。今天议会演讲两种语言交替，连'Hola, ¿cómo estás?'都被替成'Mba'éichapa'。亚松森电台播《Ñe'ẽporã》瓜拉尼诗歌时段。这是新世界原住民语种唯一从殖民里熬过来活到 21 世纪还鲜活的例子。",
+    "emoji": "🧠",
+    "attributes": { "historical": 80, "artistic": 70, "influence": 50, "uniqueness": 98 },
+    "tags": ["guarani", "bilingual", "indigenous-language", "jesuit"]
+  }
+]

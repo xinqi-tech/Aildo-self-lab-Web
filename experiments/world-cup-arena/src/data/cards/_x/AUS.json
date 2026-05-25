@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUS_x001",
+    "country": "AUS",
+    "level": "x",
+    "name": "巨蜘蛛与一切想杀你的动物",
+    "nameEn": "Everything In Australia Wants To Kill You",
+    "category": "modern",
+    "rarity": "common",
+    "era": "Eternal",
+    "description": "澳大利亚生物列：1) 内陆鳄（咸水）8 米、咬合力 16414 N 是大白鲨 2 倍；2) 漏斗网蜘蛛毒液 15 分钟杀人；3) 蓝环章鱼一只蛋大小，毒液无解药杀 26 人；4) 箱水母触手 60 米长扫一下心跳停；5) 鸭嘴兽——雄性脚踝有毒刺；6) 食火鸡 1.8 米高蹬一脚刨开胸膛；7) 自动售货机里塞 huntsman 蜘蛛是日常。澳人对这一切的态度：'mate, she'll be right' 然后继续穿人字拖到 BBQ。每年实际死于这些生物的人不到 5，但 reddit 上澳大利亚生物贴的点赞总数全球第一。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 30, "influence": 75, "uniqueness": 95 },
+    "tags": ["dangerous-fauna", "stereotype", "outback", "internet-meme"]
+  }
+]

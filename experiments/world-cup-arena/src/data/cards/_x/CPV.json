@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CPV_x001",
+    "country": "CPV",
+    "level": "x",
+    "name": "佛得角足球神迹",
+    "nameEn": "Cape Verde Football Miracle",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "2025",
+    "description": "佛得角群岛 10 个火山岛、52 万人，比墨西哥城卡纳萨克卢茨州人口还少。2025 年 10 月 13 日他们在普拉亚国家体育场 3-0 击败斯威士兰，成为史上最小的世界杯参赛国家。庆功宴上首相宣布给国家队每人发个豪宅，足协主席解释 '其实是 12 万欧元，我们国家这就算豪宅'。教练 'Bubista' Pedro Brito 一辈子没出过国带教练课程，靠 YouTube 自学战术。他们的国脚 80% 在葡萄牙、荷兰、法国低级别联赛踢球，但回国披国家队球衣立刻变神。",
+    "emoji": "🃏",
+    "attributes": { "historical": 20, "artistic": 30, "influence": 65, "uniqueness": 98 },
+    "tags": ["underdog", "miracle", "first-time", "wc2026"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SCO_r001",
+    "country": "SCO",
+    "level": "r",
+    "name": "高地清剿",
+    "nameEn": "Highland Clearances",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1750-1860",
+    "description": "1746 年卡洛登战役后英王禁苏格兰高地穿短裙、奏风笛、说盖尔语，氏族制度被强制解散。土地落到伯爵手里后他们发现养绵羊比养佃农赚钱，于是 110 年间烧 5 万户农舍把 15 万 Gaels 赶进船仓送往加拿大新斯科舍、北卡罗来纳、新西兰。1814 年 Strathnaver 屠杀中老人在着火的房屋里被烧死。今天加拿大 50 万人姓 MacDonald，正是当年被烧出家的孙子。",
+    "emoji": "⚔",
+    "attributes": { "historical": 85, "artistic": 20, "influence": 65, "uniqueness": 75 },
+    "tags": ["clearances", "diaspora", "british-empire", "gaelic"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ESP_x001",
+    "country": "ESP",
+    "level": "x",
+    "name": "番茄大战 La Tomatina",
+    "nameEn": "La Tomatina",
+    "category": "modern",
+    "rarity": "common",
+    "era": "1945-present",
+    "description": "1945 年瓦伦西亚附近 Buñol 镇市集上几个少年打架，路边果摊番茄成了武器——从此年年办。今天每年 8 月最后一个周三上午 11 点，20000 人涌进 1 公里长的街道，6 辆卡车倾倒 150 吨成熟番茄（专门低品质品种、不是食用级），全镇变红色泥浆池 1 小时。1957 年佛朗哥政府禁过，1959 年镇民集体抬空棺材抗议 '番茄之死'，政府只好恢复。规则只有一条：扔之前必须用手把番茄捏烂，不然砸到脸上太疼。",
+    "emoji": "🍆",
+    "attributes": { "historical": 30, "artistic": 30, "influence": 70, "uniqueness": 92 },
+    "tags": ["tomatina", "festival", "absurd-tradition", "valencia"]
+  }
+]

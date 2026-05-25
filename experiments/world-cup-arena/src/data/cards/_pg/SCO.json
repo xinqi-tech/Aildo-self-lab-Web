@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SCO_001",
+    "country": "SCO",
+    "level": "pg",
+    "name": "苏格兰高地与威士忌",
+    "nameEn": "Highland Whisky",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "1494-present",
+    "description": "1494 年苏格兰国王税务记录里第一次出现 'aqua vitae'（生命之水）——僧侣 John Cor 申请 1500 磅麦芽蒸馏。今天苏格兰 140 家蒸馏厂年产 13 亿瓶威士忌，占英国出口收入 5%。地理分 5 大产区：低地、高地、斯佩塞、艾雷岛、坎贝尔镇，艾雷岛的 Laphroaig 有医用碘酒和湿地泥煤味道。法律规定必须在橡木桶里熟成至少 3 年才能叫 Scotch。日本三得利 2014 年买下 Bowmore 时整个苏格兰哭了一周。",
+    "emoji": "🍜",
+    "attributes": { "historical": 80, "artistic": 65, "influence": 85, "uniqueness": 88 },
+    "tags": ["whisky", "highland", "distillation", "tradition"]
+  }
+]

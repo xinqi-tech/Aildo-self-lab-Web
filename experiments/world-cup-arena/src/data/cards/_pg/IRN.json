@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRN_001",
+    "country": "IRN",
+    "level": "pg",
+    "name": "波斯诗人鲁米",
+    "nameEn": "Rumi the Persian Poet",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "1207-1273",
+    "description": "1207 年生于今阿富汗 Balkh，蒙古铁骑入侵时举家逃往今天土耳其 Konya。1244 年 37 岁鲁米遇 60 岁神秘苏菲长老 Shams-e Tabrizi，3 个月闭门长谈后从经学家变成诗人，Shams 后被妒忌的门徒杀害，鲁米靠诗歌哀悼写出《Divan-i Shams-i Tabrizi》43000 行 + 史诗《Mathnawi》25000 双行诗。Mevlevi 旋转苏菲（dervish whirl）就是他设计的，舞者右掌朝天接神之爱、左掌朝地分给众生。今天鲁米是 21 世纪美国 amazon 卖最多的诗人，超过莎士比亚 + 惠特曼。",
+    "emoji": "🧠",
+    "attributes": { "historical": 88, "artistic": 95, "influence": 92, "uniqueness": 90 },
+    "tags": ["rumi", "sufi", "poetry", "persian"]
+  }
+]

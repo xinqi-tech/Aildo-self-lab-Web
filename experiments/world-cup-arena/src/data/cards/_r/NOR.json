@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NOR_r001",
+    "country": "NOR",
+    "level": "r",
+    "name": "维京掠夺林迪斯法恩",
+    "nameEn": "Viking Raid on Lindisfarne",
+    "category": "war",
+    "rarity": "rare",
+    "era": "793 AD",
+    "description": "793 年 6 月 8 日，长船从挪威西海岸跨北海冲上英格兰东北角的圣岛（Lindisfarne）。修道院里念经的修士被斩首、祭坛被掀、镶宝石的福音书被抢——这是 '维京时代' 的开端。接下来 270 年挪威人沿欧洲海岸线劫掠，建立都柏林、控制诺曼底、远航到纽芬兰，比哥伦布早 500 年发现美洲。他们的死后愿望是去英灵殿继续战斗，所以死时手要握着剑。",
+    "emoji": "⚔",
+    "attributes": { "historical": 88, "artistic": 50, "influence": 80, "uniqueness": 85 },
+    "tags": ["viking", "raid", "medieval", "longship"]
+  }
+]

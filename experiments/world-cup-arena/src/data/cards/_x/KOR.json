@@ -1,0 +1,16 @@
+[
+  {
+    "id": "KOR_x001",
+    "country": "KOR",
+    "level": "x",
+    "name": "金正恩 11 杆进洞（双关朝鲜）",
+    "nameEn": "Kim Jong-il's 11 Holes-in-One",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1994",
+    "description": "1994 年朝鲜国家新闻 KCNA 报道：敬爱领袖金正日第一次打高尔夫，在平壤郊外 Pyongyang Golf Club 18 洞 7200 码标准球场打了 38 杆——比职业选手少 30 杆，且每洞至少一杆进洞，共 11 个一杆进洞（hole-in-one），打完后立即退出运动 'because no challenge remained'。陪同的 17 名保镖共同作证。这条新闻全球流传 30 年成 'Best of North Korea Propaganda' 经典。朝鲜其他官方记录：金日成发明汉堡包、金正恩 3 岁能开汽车、金家祖坟下没有大便。",
+    "emoji": "🃏",
+    "attributes": { "historical": 25, "artistic": 15, "influence": 78, "uniqueness": 95 },
+    "tags": ["north-korea", "propaganda", "kim-jong-il", "absurd-claim"]
+  }
+]

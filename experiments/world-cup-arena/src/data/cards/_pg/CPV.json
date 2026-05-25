@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CPV_001",
+    "country": "CPV",
+    "level": "pg",
+    "name": "Morna 与 Cesária Évora",
+    "nameEn": "Morna & Cesária Évora",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1850s-present",
+    "description": "佛得角岛上 19 世纪混合葡萄牙 fado + 西非 batuque 形成的悲伤民谣，叫 morna。歌手 Cesária Évora（1941-2011）出身渔民家，11 岁丧父，14 岁母亲无力抚养送孤儿院，47 岁第一次出唱片就成全球巨星。她坚持光脚上台所有演唱会，所以艺名叫 'A Diva Descalça'（光脚天后）。2003 年凭《Voz d'Amor》拿格莱美最佳世界音乐。2019 年 UNESCO 把 morna 列人类非遗。佛得角全国 50 万人，把音乐当作国家身份名片输出。",
+    "emoji": "🎨",
+    "attributes": { "historical": 60, "artistic": 92, "influence": 70, "uniqueness": 95 },
+    "tags": ["morna", "cesaria-evora", "unesco", "lusofona"]
+  }
+]

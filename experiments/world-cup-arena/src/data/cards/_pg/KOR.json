@@ -1,0 +1,16 @@
+[
+  {
+    "id": "KOR_001",
+    "country": "KOR",
+    "level": "pg",
+    "name": "K-pop 与 BTS",
+    "nameEn": "K-pop & BTS",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1992-present",
+    "description": "1992 年 Seo Taiji and Boys 用嘻哈 + 韩语首登 MBC 周末歌谣节目，被评审打全场最低分但年终拿冠军，开启第一代偶像。1995 年 SM、2009 年 JYP/BigHit 系统化练习生制度：13-16 岁签约 7 年合同，每天舞蹈 10 小时 + 语言 + 形象培训 + 整容。2013 年 7 人男团 BTS 出道，2018 年成第一组在 Billboard Hot 200 #1 的韩国乐团。2020 年单曲《Dynamite》Spotify 全球单日 760 万次播放破纪录。2022 年 7 成员去服兵役（韩国法律 28 岁前必须服 18-21 个月），整个 K-pop 行业经济损失估 50 亿美元。",
+    "emoji": "⭐",
+    "attributes": { "historical": 30, "artistic": 80, "influence": 95, "uniqueness": 92 },
+    "tags": ["kpop", "bts", "soft-power", "idol-industry"]
+  }
+]

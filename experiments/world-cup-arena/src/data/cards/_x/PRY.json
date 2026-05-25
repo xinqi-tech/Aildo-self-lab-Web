@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRY_x001",
+    "country": "PRY",
+    "level": "x",
+    "name": "Ciudad del Este 走私之都",
+    "nameEn": "Ciudad del Este the Smuggling Capital",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1957-present",
+    "description": "1957 年 Stroessner 独裁者把巴拉圭东南角无人之地命名 Puerto Presidente Stroessner（今 Ciudad del Este），与巴西、阿根廷接壤的 'Triple Frontier'。1965 年 Itaipú 水电站建成 + 1985 年免税港政策让它成全球第 3 大走私市场（仅次香港、迈阿密）：iPhone 25% 走私进巴西、可卡因从玻利维亚过境到欧洲、AK-47 流向巴西毒帮、印钞模具买卖。CIA 报告称 Hezbollah 在此年集 1000 万美元送回中东。市中心 Mercado de Aves 街 50 平方米店铺月租 5 万美元——比东京银座贵。当地人开玩笑：'你要找的任何东西这里都有，包括你自己'。",
+    "emoji": "💉",
+    "attributes": { "historical": 40, "artistic": 5, "influence": 65, "uniqueness": 95 },
+    "tags": ["ciudad-del-este", "smuggling", "triple-frontier", "black-market"]
+  }
+]

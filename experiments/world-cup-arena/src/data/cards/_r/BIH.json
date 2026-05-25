@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BIH_r001",
+    "country": "BIH",
+    "level": "r",
+    "name": "斯雷布雷尼察大屠杀",
+    "nameEn": "Srebrenica Massacre",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1995",
+    "description": "1995 年 7 月 11-22 日，波黑塞族军在 UN '安全区' 斯雷布雷尼察集中并系统屠杀 8372 名穆斯林男性与少年（最小 12 岁、最老 77 岁）。荷兰维和营 400 人放下武器看着拉走，理由是 'mandate 不允许动用武力'。是二战后欧洲最大规模种族屠杀，2007 年国际法院判定为 genocide。遗体被推土机分散埋进 70+ 个万人坑掩盖罪行，30 年后通过 DNA 比对仍在认领。今年（2025）荷兰政府正式承认维和营 '严重失职'。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 5, "influence": 80, "uniqueness": 88 },
+    "tags": ["srebrenica", "genocide", "bosnia-war", "un-failure"]
+  }
+]

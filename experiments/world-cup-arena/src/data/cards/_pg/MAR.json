@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MAR_001",
+    "country": "MAR",
+    "level": "pg",
+    "name": "马拉喀什麦地那市集",
+    "nameEn": "Marrakech Medina",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1062-present",
+    "description": "1062 年 Almoravid 王朝建城，城墙周长 19 公里、19 道大门、用红色夯土加石灰，所以马拉喀什叫 'la ville rouge'。德吉马广场（Jemaa el-Fna）每天日落变成 200+ 摊位的市集：耍蛇、说书、纹身、香料堆成小山、橙汁车队、卤蜗牛锅、骆驼皮灯笼。1985 年 UNESCO 列入'人类口头与非物质遗产'。北侧的库图比亚清真寺 70 米尖塔 1199 年建成，是西班牙塞维利亚吉拉尔达塔的姐妹塔。",
+    "emoji": "🍜",
+    "attributes": { "historical": 88, "artistic": 85, "influence": 80, "uniqueness": 95 },
+    "tags": ["medina", "marrakech", "souk", "unesco"]
+  }
+]

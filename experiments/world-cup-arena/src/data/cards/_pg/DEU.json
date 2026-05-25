@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DEU_001",
+    "country": "DEU",
+    "level": "pg",
+    "name": "包豪斯",
+    "nameEn": "Bauhaus",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1919-1933",
+    "description": "1919 年建筑师 Walter Gropius 在魏玛创办，宗旨 'form follows function'。康定斯基教绘画、克利教色彩理论、密斯·凡德罗教建筑。把工业美学带进艺术学院，让钢管椅、平顶玻璃楼、Helvetica 字体成了 20 世纪的视觉默认值。1933 年纳粹查封时学生只有 33 个，但他们流亡到芝加哥、特拉维夫、东京后改写了全世界城市的样子。今天你家的宜家书架本质上都是包豪斯的孙子。",
+    "emoji": "🎨",
+    "attributes": { "historical": 78, "artistic": 95, "influence": 98, "uniqueness": 88 },
+    "tags": ["bauhaus", "modernism", "design", "weimar"]
+  }
+]

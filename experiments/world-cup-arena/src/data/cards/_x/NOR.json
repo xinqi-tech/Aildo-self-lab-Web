@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NOR_x001",
+    "country": "NOR",
+    "level": "x",
+    "name": "黑金属教堂焚烧潮",
+    "nameEn": "Norwegian Black Metal Church Burnings",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1992-1996",
+    "description": "1992 年挪威黑金属圈子的一群少年觉得基督教毁了挪威，于是 4 年烧了 50 多座中世纪木教堂，包括 12 世纪的 Fantoft Stave Church。Mayhem 乐队主唱 Dead 自杀，吉他手 Euronymous 把脑浆碎片串成项链。后来 Euronymous 被同党 Varg Vikernes 一刀 23 处刺死，Varg 出狱后跑去法国农村做 YouTube 极右翼博主。今天 Mayhem 的 1994 年专辑《De Mysteriis Dom Sathanas》仍是黑金属圣经。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 75, "influence": 70, "uniqueness": 98 },
+    "tags": ["black-metal", "church-arson", "subculture", "scandal"]
+  }
+]

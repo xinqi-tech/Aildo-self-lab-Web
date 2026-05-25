@@ -1,0 +1,16 @@
+[
+  {
+    "id": "EGY_001",
+    "country": "EGY",
+    "level": "pg",
+    "name": "吉萨大金字塔",
+    "nameEn": "Great Pyramid of Giza",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "2580-2560 BC",
+    "description": "公元前 2580 年法老胡夫下令建造，用 230 万块石头、平均每块 2.5 吨，原高 146.6 米（顶部已剥落，今 138.8 米），世界最高人造建筑保持 3800 年纪录到 1311 年才被林肯大教堂超越。底座边长误差只有 4.4 厘米——古人没有激光找平怎么做到的至今未解。内部 100% 实心，仅 3 个房间和狭窄通道，国王墓室壁画显示已被盗墓贼搬空于公元前 1700 年。穴顶有 5 层减压舱防止上方 3 万吨石头压垮。是 7 大古迹中唯一存活的。",
+    "emoji": "🏛",
+    "attributes": { "historical": 98, "artistic": 80, "influence": 95, "uniqueness": 95 },
+    "tags": ["pyramid", "khufu", "giza", "ancient-wonder"]
+  }
+]

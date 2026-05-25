@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRT_r001",
+    "country": "PRT",
+    "level": "r",
+    "name": "跨大西洋奴隶贸易先锋",
+    "nameEn": "Pioneer of Transatlantic Slave Trade",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1444-1869",
+    "description": "1444 年葡萄牙商人在拉戈斯港首次拍卖 235 名西非俘虏，是欧洲跨大西洋奴隶贸易的开端。接下来 425 年葡萄牙船只运送 580 万非洲奴隶到巴西、安哥拉、莫桑比克——占整个跨大西洋奴隶贸易的 46%，比英、法、西、荷加起来还多。巴西 1888 年才是西半球最后一个废奴的国家。今天里斯本 Belém 区的发现纪念碑上没刻一个奴隶的名字。",
+    "emoji": "⚔",
+    "attributes": { "historical": 92, "artistic": 25, "influence": 88, "uniqueness": 70 },
+    "tags": ["slavery", "colonialism", "brazil", "atlantic"]
+  }
+]

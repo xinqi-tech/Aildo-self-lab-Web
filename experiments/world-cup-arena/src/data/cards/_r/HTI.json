@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HTI_r001",
+    "country": "HTI",
+    "level": "r",
+    "name": "1825 法国赔款诅咒",
+    "nameEn": "1825 French Indemnity Curse",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1825-1947",
+    "description": "1825 年法王 Charles X 派 14 艘军舰封锁海地港口，胁迫总统 Boyer 签 '独立赔款' 1.5 亿法郎 (约今 21 亿美元) 赔偿前法国种植园主丢失的 '财产'（含 50 万被解放的非洲奴隶）。海地为此 122 年还贷，用了 80% 国家收入还法美利银行（接管 NY 公司贷款的）。1947 年最后一笔付完时，海地仅有的基础设施已被高利贷掏空。2022 年《纽约时报》系列调查 'The Ransom' 重算：扣除赔款海地今天 GDP 估计本可高 15-21 倍。法国 2010 年地震后承诺 4 亿欧元援助至今实际拨 1.3 亿。马克龙 2022 年说 '退还赔款不在议程上'。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 5, "influence": 85, "uniqueness": 92 },
+    "tags": ["indemnity", "french-colonialism", "debt-trap", "reparations"]
+  }
+]

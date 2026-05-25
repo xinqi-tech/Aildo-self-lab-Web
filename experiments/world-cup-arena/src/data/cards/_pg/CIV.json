@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CIV_001",
+    "country": "CIV",
+    "level": "pg",
+    "name": "亚穆苏克罗和平圣母大教堂",
+    "nameEn": "Basilica of Our Lady of Peace, Yamoussoukro",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1985-1989",
+    "description": "1985 年科特迪瓦总统 Houphouët-Boigny 在自己出生小村 Yamoussoukro 建造世界最大的天主教堂，花 3 亿美元（占当年 GDP 4%）。仿照梵蒂冈圣彼得大教堂但比它大——穹顶高 158 米，可容 1.8 万信徒坐着、3 万站着；用了 4000 平方米法国进口大理石。1990 年教皇约翰·保罗二世亲自祝圣，落成时国家正陷经济危机。今天平日只有几十人来祈祷，神父说 '上帝应该住进华丽的地方，不管祂的儿女在外面饿不饿肚子'。",
+    "emoji": "🏛",
+    "attributes": { "historical": 50, "artistic": 80, "influence": 65, "uniqueness": 95 },
+    "tags": ["basilica", "yamoussoukro", "post-colonial", "vanity-project"]
+  }
+]

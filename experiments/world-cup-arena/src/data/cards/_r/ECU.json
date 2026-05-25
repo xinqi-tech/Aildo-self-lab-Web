@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ECU_r001",
+    "country": "ECU",
+    "level": "r",
+    "name": "雪佛龙 Lago Agrio 漏油案",
+    "nameEn": "Chevron Lago Agrio Spill",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1964-present",
+    "description": "1964-1992 年德士古（后被雪佛龙并购）在厄瓜多尔亚马逊地区 Lago Agrio 油田作业，把 600 亿升废水含原油直接倒进 880 个未衬里坑、雨林溪流，污染面积 4400 平方公里——史称 'Amazon Chernobyl'。本地 Cofán、Siona 原住民癌症率高 8 倍。2011 年厄瓜多尔法院判雪佛龙赔 95 亿美元。雪佛龙拒付，关美国资产逃。原住民胜诉律师 Steven Donziger 2019 年被纽约联邦法院判 'criminal contempt' 软禁家中 993 天——是美国史上最长非暴力刑期，被左翼指控是企业反诉滥用。2024 年厄瓜多尔仍未拿到一分钱。",
+    "emoji": "👹",
+    "attributes": { "historical": 60, "artistic": 5, "influence": 78, "uniqueness": 88 },
+    "tags": ["chevron", "lago-agrio", "ecocide", "indigenous"]
+  }
+]

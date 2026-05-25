@@ -1,0 +1,16 @@
+[
+  {
+    "id": "EGY_r001",
+    "country": "EGY",
+    "level": "r",
+    "name": "穆巴拉克 30 年独裁",
+    "nameEn": "Mubarak's 30-Year Rule",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1981-2011",
+    "description": "1981 年 10 月 6 日总统萨达特在国庆阅兵上被伊斯兰圣战组织狙杀，副总统胡斯尼·穆巴拉克接任。30 年间靠紧急状态法（被告无律师无审判可关 5 年）、警察国家、巨额美援（每年 13 亿美元，1979 年戴维营协议后）维持。2011 年 1 月 25 日开罗解放广场 200 万人抗议 18 天他下台，2012 年终身监禁判决，2017 年放出。儿子 Gamal 被准备接班，老百姓段子：'埃及由父子合资的家族企业经营'。穆巴拉克 2020 年 91 岁在开罗军医院自然死亡。",
+    "emoji": "⚔",
+    "attributes": { "historical": 80, "artistic": 5, "influence": 75, "uniqueness": 70 },
+    "tags": ["mubarak", "dictatorship", "arab-spring", "tahrir"]
+  }
+]

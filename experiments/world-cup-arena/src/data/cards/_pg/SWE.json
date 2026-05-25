@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SWE_001",
+    "country": "SWE",
+    "level": "pg",
+    "name": "宜家与平装家具",
+    "nameEn": "IKEA & Flat-Pack Furniture",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "1943-present",
+    "description": "1943 年 17 岁的 Ingvar Kamprad 用爸爸给的奖金创办 IKEA（Ingvar Kamprad + 农场 Elmtaryd + 教区 Agunnaryd 首字母）。1956 年员工 Gillis Lundgren 为塞进汽车后备厢锯断 Lövet 桌腿——发明了 flat-pack 平装。今天全球 460 家蓝色仓库每年卖 7000 万个 BILLY 书架（每 5 秒卖一个），瑞典文化通过六角扳手输出到每个新婚家庭。Kamprad 一辈子开 30 年的旧沃尔沃、坐经济舱、住宜家自家品牌的二手沙发，2018 年去世时身价 600 亿美元。",
+    "emoji": "🔬",
+    "attributes": { "historical": 50, "artistic": 65, "influence": 92, "uniqueness": 85 },
+    "tags": ["ikea", "design", "flat-pack", "lifestyle"]
+  }
+]

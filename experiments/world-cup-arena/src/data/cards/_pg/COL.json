@@ -1,0 +1,16 @@
+[
+  {
+    "id": "COL_001",
+    "country": "COL",
+    "level": "pg",
+    "name": "马尔克斯与魔幻现实主义",
+    "nameEn": "García Márquez & Magical Realism",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1967",
+    "description": "1965 年加西亚·马尔克斯在墨西哥城开车带家人去阿卡普尔科度假，半路掉头回家——'我突然知道怎么写《百年孤独》了'。他闭门 18 个月每天写 6 小时，老婆 Mercedes 卖车卖电视付电话费。1967 年 6 月布宜诺斯艾利斯出版社 Sudamericana 印 8000 册，3 周售罄。今天译成 49 种语言、卖了 5000 万册。'许多年以后，奥雷里亚诺·布恩迪亚上校面对行刑队，他想起了父亲带他去见识冰块的那个遥远的下午'——这一行让 Macondo 小镇成为全球读者的精神故乡。1982 年诺贝尔文学奖、2014 年他 87 岁去世，3 天哥伦比亚国丧。",
+    "emoji": "🎨",
+    "attributes": { "historical": 75, "artistic": 98, "influence": 95, "uniqueness": 92 },
+    "tags": ["garcia-marquez", "magical-realism", "literature", "macondo"]
+  }
+]

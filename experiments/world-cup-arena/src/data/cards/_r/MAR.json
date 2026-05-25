@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MAR_r001",
+    "country": "MAR",
+    "level": "r",
+    "name": "西撒哈拉绿色长征",
+    "nameEn": "Western Sahara Green March",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1975-present",
+    "description": "1975 年 11 月 6 日摩洛哥国王哈桑二世组织 35 万平民手持古兰经徒步进入西班牙殖民地西撒哈拉，是史上唯一一次 '平民征服'。西班牙弗朗哥临终病榻无力阻止，14 天后签马德里协议把西撒哈拉一分为二给摩洛哥和毛里塔尼亚。当地 Sahrawi 人成立 Polisario 阵线游击战 16 年。摩洛哥沿撒哈拉砌起 2700 公里长的沙墙（Berm），里 10 万 Sahrawi 难民在阿尔及利亚营地待了 50 年。UN 至今承认是 'non-self-governing territory'。",
+    "emoji": "⚔",
+    "attributes": { "historical": 80, "artistic": 5, "influence": 70, "uniqueness": 80 },
+    "tags": ["western-sahara", "green-march", "polisario", "disputed-territory"]
+  }
+]

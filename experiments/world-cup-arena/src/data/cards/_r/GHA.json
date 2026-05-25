@@ -1,0 +1,16 @@
+[
+  {
+    "id": "GHA_r001",
+    "country": "GHA",
+    "level": "r",
+    "name": "海岸角奴隶城堡",
+    "nameEn": "Cape Coast Slave Castle",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1653-1814",
+    "description": "1653 年瑞典人最早建，后英国接管，是大西洋奴隶贸易最大单一中转点。150 年间约 600 万非洲奴隶从这里上船去美洲，其中三分之一死在跨大西洋航程。地下牢房 4 米×11 米塞 250 人、空气稀薄、人粪堆积一年才清。'Door of No Return' 1 米宽石门通向码头，奴隶背向非洲走出去就再也回不来。2009 年奥巴马访问时把女儿带到这扇门前说 'this is your history too'。今天 UNESCO 列遗，年游客 30 万。",
+    "emoji": "👹",
+    "attributes": { "historical": 92, "artistic": 30, "influence": 88, "uniqueness": 85 },
+    "tags": ["slave-trade", "cape-coast", "unesco", "atlantic"]
+  }
+]

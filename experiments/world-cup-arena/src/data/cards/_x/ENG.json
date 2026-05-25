@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ENG_x001",
+    "country": "ENG",
+    "level": "x",
+    "name": "杰克开膛手",
+    "nameEn": "Jack the Ripper",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1888",
+    "description": "1888 年秋天伦敦白教堂区，至少 5 名妓女被以外科手术般精度肢解。凶手向警方寄信落款 'Jack the Ripper'，把一只人肾装在火柴盒里寄给值班警长。苏格兰场调查了 137 年，嫌疑人名单从波兰理发师到维多利亚女王孙子有 100 多个，至今无定论。每年 50 万游客去白教堂走 'Ripper Tour'，伦敦旅游业感谢他。",
+    "emoji": "🃏",
+    "attributes": { "historical": 60, "artistic": 30, "influence": 78, "uniqueness": 95 },
+    "tags": ["serial-killer", "victorian", "unsolved", "true-crime"]
+  }
+]

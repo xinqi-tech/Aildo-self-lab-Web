@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IRN_r001",
+    "country": "IRN",
+    "level": "r",
+    "name": "1953 政变与摩萨台",
+    "nameEn": "1953 Iranian Coup",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1953",
+    "description": "1951 年 Mohammad Mossadegh 民选首相把英伊石油公司（今 BP）国有化收回伊朗石油控制权。1953 年 8 月 CIA 局长 Allen Dulles 与 MI6 联手执行 Operation Ajax，花了 100 万美元雇暴徒在德黑兰街头制造混乱、贿赂军官，3 天搞定政变。摩萨台被推翻关进狱、死于软禁。沙赫被扶回宝座，让伊朗向美一边倒 26 年——直到 1979 年伊斯兰革命反噬。1989 年 CIA 档案公开 Ajax 细节，2013 年奥巴马首次正式承认 'US played significant role'。这是冷战美国第一次成功推翻民选政府的范本案例。",
+    "emoji": "⚔",
+    "attributes": { "historical": 92, "artistic": 5, "influence": 88, "uniqueness": 80 },
+    "tags": ["1953-coup", "cia", "mossadegh", "oil"]
+  }
+]

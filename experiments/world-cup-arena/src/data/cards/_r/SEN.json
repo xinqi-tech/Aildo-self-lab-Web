@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SEN_r001",
+    "country": "SEN",
+    "level": "r",
+    "name": "戈雷岛奴隶之门",
+    "nameEn": "Gorée Island Door of No Return",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1444-1848",
+    "description": "1444 年葡萄牙人发现达喀尔湾外的 1 平方公里小岛 Gorée，后被荷兰、英国、法国轮流占领。4 个世纪里约 2000 万非洲奴隶从这里上船到美洲——历史学者后来下调数字到 10-20 万实际通过 Gorée，但因为它是非洲最容易抵达的奴隶贸易遗址，象征意义压倒数据。Maison des Esclaves 二楼住欧洲奴隶贩，地下牢房塞奴隶。1978 年 UNESCO 首批世遗。曼德拉 1991 年访问时跪在 Door of No Return 前哭了 20 分钟，奥巴马 2013 年也来过同一扇门。",
+    "emoji": "👹",
+    "attributes": { "historical": 88, "artistic": 25, "influence": 85, "uniqueness": 80 },
+    "tags": ["slave-trade", "goree", "unesco", "diaspora"]
+  }
+]

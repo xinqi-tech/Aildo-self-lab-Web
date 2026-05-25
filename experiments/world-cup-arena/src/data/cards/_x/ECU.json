@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ECU_x001",
+    "country": "ECU",
+    "level": "x",
+    "name": "亚马逊死亡藤水 Ayahuasca",
+    "nameEn": "Ayahuasca",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Pre-Columbian-present",
+    "description": "亚马逊原住民 Shuar、Achuar、Cofán 几千年用的致幻饮料：Banisteriopsis caapi 藤 + Psychotria viridis 灌木叶煮 12 小时。化学上 caapi 含 MAOI 抑制酶让 chacruna 叶 DMT 不被胃酸分解、直入大脑。Shaman ayahuasquero 仪式中喝 200ml 进入 4 小时强幻视：祖先来访、蛇缠身、看见自己内脏、与丛林对话。2010 年代硅谷高管包机去 Iquitos 接受治疗（PTSD、抑郁、酗酒）每次 2000 美元。但 2014 年加州 19 岁青年 Kyle Nolan 在 Tarapoto 仪式后心脏停止；2024 年纽约时报记录至少 58 例死亡。秘鲁卫生部 2020 年要求 retreats 强制医师驻场。",
+    "emoji": "🛸",
+    "attributes": { "historical": 78, "artistic": 50, "influence": 70, "uniqueness": 95 },
+    "tags": ["ayahuasca", "shamanism", "psychedelic", "amazon"]
+  }
+]

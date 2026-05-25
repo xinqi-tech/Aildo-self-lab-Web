@@ -1,0 +1,16 @@
+[
+  {
+    "id": "UZB_r001",
+    "country": "UZB",
+    "level": "r",
+    "name": "咸海消失",
+    "nameEn": "Death of the Aral Sea",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1960-2014",
+    "description": "1960 年咸海是世界第 4 大湖 6.8 万平方公里。苏联为种棉花在阿姆河、锡尔河上游建 20+ 灌溉渠，每年从入湖水量 60 立方公里减到 4 立方公里。1989 年湖一分为二，2014 年东咸海完全干涸，2024 年残存西咸海只剩原面积 10%。500 万吨盐尘从干湖底每年随风扬，吹到周边 200 公里污染农田、雪山，引发哈萨克、乌兹别克癌症率高出全球平均 6 倍。曾经的 Moynaq 渔港离今天最近水线 150 公里，30 艘锈渔船立在沙漠成 '咸海船墓地' 旅游景点。是 20 世纪最大的人造环境灾难。",
+    "emoji": "👹",
+    "attributes": { "historical": 75, "artistic": 30, "influence": 70, "uniqueness": 88 },
+    "tags": ["aral-sea", "ecocide", "soviet", "cotton"]
+  }
+]

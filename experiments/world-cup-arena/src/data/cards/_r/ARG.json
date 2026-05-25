@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ARG_r001",
+    "country": "ARG",
+    "level": "r",
+    "name": "肮脏战争与失踪者",
+    "nameEn": "Dirty War & the Disappeared",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1976-1983",
+    "description": "1976 年 3 月 24 日海军 Videla 将军推翻 Isabel Perón 政府，开启 7 年军政府。理论是 'National Reorganization Process' 清除左翼颠覆者。手段：'death flights'——被拘留者注射镇定剂从军用飞机抛进南大西洋；秘密关押营 ESMA 大学等 340 处；新生儿被从被捕孕妇身上夺走转送军官家庭抚养（约 500 名婴儿，至今 137 人通过 DNA 找到生身家）。失踪者总数 3 万。1983 年文民政府重建，Plaza de Mayo 母亲们每周四下午 3:30 戴白头巾绕广场抗议，40 年未停。",
+    "emoji": "👹",
+    "attributes": { "historical": 92, "artistic": 10, "influence": 80, "uniqueness": 88 },
+    "tags": ["dirty-war", "disappeared", "junta", "plaza-de-mayo"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUT_x001",
+    "country": "AUT",
+    "level": "x",
+    "name": "Fritzl 地下室囚禁案",
+    "nameEn": "Fritzl Case",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1984-2008",
+    "description": "1984 年 8 月奥地利下奥地利州 Amstetten 镇，72 岁退休工程师 Josef Fritzl 把 18 岁的女儿 Elisabeth 骗进自家地下室的隔音密室，囚禁 24 年并强暴 3000 次，生下 7 个孩子（1 个出生即死、3 个 Fritzl 装作 '前媳妇放门口的弃婴' 带回楼上养、3 个跟妈妈一辈子没见过太阳）。2008 年长女 Kerstin 19 岁昏迷送医，医院 DNA 比对揭穿。Fritzl 判终身监禁。这案件让奥地利通过新法：地下室住人必须有逃生窗。",
+    "emoji": "🃏",
+    "attributes": { "historical": 25, "artistic": 10, "influence": 70, "uniqueness": 98 },
+    "tags": ["fritzl", "captivity", "true-crime", "incest"]
+  }
+]

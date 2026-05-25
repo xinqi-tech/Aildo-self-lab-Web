@@ -1,0 +1,16 @@
+[
+  {
+    "id": "QAT_r001",
+    "country": "QAT",
+    "level": "r",
+    "name": "2022 世界杯外劳死亡",
+    "nameEn": "2022 World Cup Migrant Worker Deaths",
+    "category": "war",
+    "rarity": "rare",
+    "era": "2010-2022",
+    "description": "2010 年卡塔尔申办 2022 世界杯成功后启动 2200 亿美元基建（7 座新球场 + 哈马德机场 + 多哈地铁）。从印度、尼泊尔、孟加拉、菲律宾招 200 万外劳，kafala 制度下他们护照被雇主扣、护工费工资迟发、夏季 45-50 度工地仍户外作业。2021 年《卫报》调查显示自申办起共 6500 名南亚外劳在卡死亡（含建筑事故 + 心脏停 + 自杀）。卡政府承认 'work-related' 仅 37 人。FIFA 主席 Infantino 2022 年决赛前开场说 'I feel like a migrant worker today'，全球围攻。直到 2025 年卡国仍未支付补偿基金。",
+    "emoji": "👹",
+    "attributes": { "historical": 60, "artistic": 5, "influence": 82, "uniqueness": 80 },
+    "tags": ["world-cup-2022", "kafala", "migrant-worker", "fifa"]
+  }
+]

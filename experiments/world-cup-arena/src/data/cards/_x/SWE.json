@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SWE_x001",
+    "country": "SWE",
+    "level": "x",
+    "name": "瑞典死亡金属与维京迷思",
+    "nameEn": "Swedish Death Metal & Viking Myth",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1985-present",
+    "description": "1985 年斯德哥尔摩郊区一群少年觉得英国金属太软，发明了 'Stockholm sound'——HM-2 失真踏板拧到底、低音吉他像电锯。Entombed《Left Hand Path》、Dismember、At the Gates、In Flames，让 Gothenburg sound 全球年销 2 亿美元。乐手们把头发染黑、画 corpse paint、唱奥丁神话，但白天在 ICA 超市当收银员。Spotify 2008 年在斯德哥尔摩成立时第一批员工很多就是死亡金属乐迷，Spotify 算法的 black-metal 推荐至今全球第一精准。",
+    "emoji": "🪐",
+    "attributes": { "historical": 30, "artistic": 80, "influence": 75, "uniqueness": 92 },
+    "tags": ["death-metal", "viking-revival", "subculture", "stockholm"]
+  }
+]

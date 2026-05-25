@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CPV_r001",
+    "country": "CPV",
+    "level": "r",
+    "name": "奴隶贸易中转岛",
+    "nameEn": "Slave Trade Hub Cidade Velha",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1462-1878",
+    "description": "1462 年葡萄牙建立 Cidade Velha 为西半球第一个欧洲殖民城市，地理位置完美：从西非塞内冈比亚抓的奴隶先海运至此 '清洗、品级、配给基督教名'，再分发到巴西、加勒比、美洲。4 个世纪通过这个 50 平方公里小岛中转的奴隶约 50 万人。1495 年建的 Pelourinho（鞭刑柱）至今矗立在广场中央，是大西洋世界仅存的奴隶贸易实物纪念物之一，2009 年 UNESCO 列遗。佛得角人 70% 有非洲奴隶血统。",
+    "emoji": "👹",
+    "attributes": { "historical": 80, "artistic": 30, "influence": 60, "uniqueness": 78 },
+    "tags": ["slave-trade", "unesco", "lusofona", "colonialism"]
+  }
+]

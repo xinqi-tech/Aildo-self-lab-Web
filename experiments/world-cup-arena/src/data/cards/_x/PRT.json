@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRT_x001",
+    "country": "PRT",
+    "level": "x",
+    "name": "C 罗的雕像与博物馆",
+    "nameEn": "Cristiano Ronaldo Museum",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2013-present",
+    "description": "C 罗在故乡马德拉岛建了 CR7 博物馆，藏品包括他全部 5 座金球奖、皇马所有冠军奖杯复制品、阿森纳球迷送的婴儿衣（他从未为阿森纳效力）。2017 年马德拉机场改名 Aeroporto Cristiano Ronaldo 时落成了一尊他的胸像，结果雕塑师把面部做得太抽象，网友吐槽 '像 60 岁的 Sloth 大叔'。胸像揭幕 24 小时后被默默换掉，旧版在二手网站标价 1 万欧元至今没人买。",
+    "emoji": "🃏",
+    "attributes": { "historical": 25, "artistic": 40, "influence": 85, "uniqueness": 80 },
+    "tags": ["ronaldo", "vanity", "internet-meme", "football"]
+  }
+]

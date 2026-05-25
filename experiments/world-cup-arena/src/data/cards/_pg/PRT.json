@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRT_001",
+    "country": "PRT",
+    "level": "pg",
+    "name": "法朵 Fado",
+    "nameEn": "Fado",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1820s-present",
+    "description": "里斯本贫民区 Alfama 与 Mouraria 在 19 世纪初诞生的悲伤民谣，歌手叫 fadista，一把 12 弦葡萄牙吉他、一把古典吉他。核心情绪叫 saudade——一个用其他语言翻译不出的词，意思是 '对再也回不来的东西的甜美悲伤'。Amália Rodrigues 1950 年代把法朵唱进巴黎沙龙，1999 年她去世时葡萄牙降半旗 3 天。2011 年 UNESCO 列入人类非遗。",
+    "emoji": "🎨",
+    "attributes": { "historical": 70, "artistic": 90, "influence": 60, "uniqueness": 92 },
+    "tags": ["music", "fado", "unesco", "saudade"]
+  }
+]

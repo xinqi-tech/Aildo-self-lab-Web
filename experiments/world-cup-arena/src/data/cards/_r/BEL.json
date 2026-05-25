@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BEL_r001",
+    "country": "BEL",
+    "level": "r",
+    "name": "利奥波德二世的刚果",
+    "nameEn": "King Leopold II's Congo",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1885-1908",
+    "description": "1885 年柏林会议上比利时国王利奥波德二世通过假装慈善基金会的方式拿到刚果作为 '私人领地'——比比利时本土大 76 倍。23 年间他靠橡胶强制配额杀死约 1000 万刚果人（人口减半）。完不成配额就砍手当证物——士兵交给上级一篮子干枯黑人左手作 '弹药使用证明'。1908 年比利时议会被迫接管，今天布鲁塞尔街头仍有利奥波德二世铜像，2020 年 BLM 期间多个被涂红漆、有两个被推倒进河。",
+    "emoji": "👹",
+    "attributes": { "historical": 95, "artistic": 10, "influence": 80, "uniqueness": 88 },
+    "tags": ["congo", "colonialism", "leopold-ii", "atrocity"]
+  }
+]

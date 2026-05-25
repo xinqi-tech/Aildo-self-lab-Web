@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ENG_001",
+    "country": "ENG",
+    "level": "pg",
+    "name": "莎士比亚的环球剧院",
+    "nameEn": "Shakespeare's Globe Theatre",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1599-1613",
+    "description": "1599 年莎士比亚的剧团在泰晤士河南岸建起圆形露天剧场，可容 3000 人，下层站票 1 便士。《哈姆雷特》《麦克白》《罗密欧与朱丽叶》首演都在这里。1613 年《亨利八世》演出时舞台特效炮火点燃茅草屋顶，整座剧院烧成灰，所幸无人伤亡。1997 年按原貌在 230 米外重建，现在仍是英国剧团的圣地。",
+    "emoji": "🎨",
+    "attributes": { "historical": 85, "artistic": 98, "influence": 92, "uniqueness": 80 },
+    "tags": ["theatre", "literature", "renaissance", "elizabethan"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CIV_r001",
+    "country": "CIV",
+    "level": "r",
+    "name": "可可农场童奴",
+    "nameEn": "Cocoa Farm Child Labor",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1990s-present",
+    "description": "科特迪瓦产全球 40% 可可豆。BBC 2000 年纪录片揭穿农场 28 万 5-14 岁儿童从马里、布基纳法索被人贩子骗来，每天砍可可 12 小时、月薪 2 美元、被锁夜间宿舍。Nestlé、Hershey、Mars 2001 年签 Harkin-Engel Protocol 承诺 2020 年消除童奴，到 2025 年第三方审计显示 156 万儿童仍在西非可可农场劳动。一块 60 美分巧克力里农民拿 4 美分、童工拿 0.5 美分。2021 年 8 名马里前童工在加州联邦法院起诉雀巢，2025 年裁定雀巢可以不负刑事责任。",
+    "emoji": "👹",
+    "attributes": { "historical": 60, "artistic": 5, "influence": 78, "uniqueness": 82 },
+    "tags": ["cocoa", "child-labor", "trafficking", "supply-chain"]
+  }
+]

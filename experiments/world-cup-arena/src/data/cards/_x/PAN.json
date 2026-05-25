@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PAN_x001",
+    "country": "PAN",
+    "level": "x",
+    "name": "巴拿马文件",
+    "nameEn": "Panama Papers",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "2016",
+    "description": "2016 年 4 月 3 日 ICIJ 国际调查记者联盟公开 1150 万份从巴拿马律所 Mossack Fonseca 1977-2015 年间泄露的文件（2.6 TB 数据），是史上最大金融泄密。涉及 214000 家离岸壳公司、140 名现任/前国家领导人客户，含：俄罗斯普京密友 Sergei Roldugin 转 20 亿美元、冰岛总理 Sigmundur Davíð Gunnlaugsson 被迫辞职、英国卡梅伦父亲基金、习近平姐夫邓家贵、阿根廷总统马克里、巴基斯坦总理 Nawaz Sharif（被最高法院罢免）、Lionel Messi 转 1 亿欧版权到 Belize 公司逃税。Mossack Fonseca 2018 年破产、合伙人被关押。泄密者 'John Doe' 至今匿名，唯一线索：他/她说 'income inequality 是这一切的根'。",
+    "emoji": "🃏",
+    "attributes": { "historical": 50, "artistic": 5, "influence": 95, "uniqueness": 92 },
+    "tags": ["panama-papers", "tax-haven", "mossack-fonseca", "icij"]
+  }
+]

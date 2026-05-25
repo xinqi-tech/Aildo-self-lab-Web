@@ -1,0 +1,16 @@
+[
+  {
+    "id": "UZB_001",
+    "country": "UZB",
+    "level": "pg",
+    "name": "撒马尔罕的蓝穹顶",
+    "nameEn": "Samarkand's Blue Domes",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "14th century",
+    "description": "公元前 7 世纪建城，公元 1370 年帖木儿定为帝国首都。他从波斯、印度、土耳其掳来最好的工匠 70 年建 Registan 三神学院广场——三座 35 米高蓝色穹顶清真寺正面用钴蓝、青绿、金色琉璃砖镶'真主之名'阿拉伯文，是丝绸之路最华丽建筑遗存。帖木儿 1405 年东征明朝半路死在哈萨克草原，孙子 Ulugh Beg 是天文学家，建过 30 米高六分仪测出一年长度误差 25 秒，误差仅每 70 年 1 秒。今天 UNESCO 列遗，每年 200 万游客。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 92, "influence": 78, "uniqueness": 95 },
+    "tags": ["samarkand", "timurid", "silk-road", "unesco"]
+  }
+]

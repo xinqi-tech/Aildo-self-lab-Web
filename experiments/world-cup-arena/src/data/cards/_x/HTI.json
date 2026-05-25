@@ -1,0 +1,16 @@
+[
+  {
+    "id": "HTI_x001",
+    "country": "HTI",
+    "level": "x",
+    "name": "Vodou 与僵尸学",
+    "nameEn": "Vodou & Zombification",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Pre-1800-present",
+    "description": "海地 Vodou（法语写 Vaudou）是西非 Fon 族信仰 + 天主教 + 原住民 Taino 融合，500 万人信奉。仪式中 oungan 大祭司用河豚毒素（tetrodotoxin）+ 曼陀罗叶混合粉给犯禁者，受害者在 6 小时内呼吸抑制看似死亡 —— 葬礼 + 下葬完成后挖出灌入解药继续中毒状态，丧失记忆与意志成 'zonbi'，到种植园当 24 小时奴隶。Wade Davis 哈佛人类学家 1985 年田野调查《The Serpent and the Rainbow》记录 4 个真实僵尸案，最有名的 Clairvius Narcisse 1962 年下葬 1980 年回家。后世《Resident Evil》《Walking Dead》全球僵尸文化的根源都是这里——西方娱乐工业从未付海地版权费。",
+    "emoji": "🛸",
+    "attributes": { "historical": 70, "artistic": 60, "influence": 88, "uniqueness": 98 },
+    "tags": ["vodou", "zombie", "tetrodotoxin", "wade-davis"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CZE_r001",
+    "country": "CZE",
+    "level": "r",
+    "name": "苏军入侵布拉格之春",
+    "nameEn": "Soviet Invasion of Prague Spring",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1968",
+    "description": "1968 年 1 月杜布切克接任捷共第一书记推行 '带人性面孔的社会主义'，废新闻审查、放政治犯。8 月 20 日晚华约 5 国 65 万军队 6300 辆坦克分 4 路入侵，杜布切克被绑去莫斯科。布拉格人在坦克前点烛、在街道路标涂 'Moscow 2000 km →'，1 周内 137 名捷克斯洛伐克人死亡。学生 Jan Palach 1969 年 1 月在瓦茨拉夫广场自焚抗议，第 17 名以同样方式自焚的学生让广场成为永久反抗符号。1989 年天鹅绒革命起点也是这里。",
+    "emoji": "⚔",
+    "attributes": { "historical": 85, "artistic": 30, "influence": 78, "uniqueness": 80 },
+    "tags": ["prague-spring", "cold-war", "soviet", "self-immolation"]
+  }
+]

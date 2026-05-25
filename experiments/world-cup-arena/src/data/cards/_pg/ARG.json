@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ARG_001",
+    "country": "ARG",
+    "level": "pg",
+    "name": "探戈与皮亚佐拉",
+    "nameEn": "Tango & Astor Piazzolla",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1880s-present",
+    "description": "1880 年代布宜诺斯艾利斯的港口贫民窟，欧洲移民 + 非洲奴隶 + 高乔牛仔的音乐合流出探戈：4/4 拍、班多内手风琴主奏、舞步紧密拥抱身体倾 45 度。早期是妓院和黑帮娱乐，1913 年传到巴黎沙龙后被上流社会接纳，1955 年作曲家 Astor Piazzolla 把它注入巴赫复调音乐 + 爵士节奏，发明 'nuevo tango'。代表作《Libertango》(1974) + 《Adiós Nonino》（为父亲去世写）。2009 年 UNESCO 列人类非遗。今天 San Telmo 的 La Catedral 探戈廊每周三晚 70 岁老人和 20 岁学生一起跳到凌晨。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 95, "influence": 90, "uniqueness": 95 },
+    "tags": ["tango", "piazzolla", "unesco", "buenos-aires"]
+  }
+]

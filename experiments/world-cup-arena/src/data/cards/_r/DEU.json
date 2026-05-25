@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DEU_r001",
+    "country": "DEU",
+    "level": "r",
+    "name": "奥斯威辛",
+    "nameEn": "Auschwitz",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1940-1945",
+    "description": "波兰南部奥斯维辛镇的纳粹灭绝营，1940 年 5 月党卫军第一批运送 728 名波兰政治犯。1942 年起作为 '最终解决方案' 核心枢纽，4 年间送进毒气室约 110 万人，其中 100 万犹太人。设计师是党卫军建筑师 Karl Bischoff，毒气室建得像浴室，焚尸炉日处理 4756 具尸体。1945 年 1 月 27 日苏军解放时找到 7000 幸存者、35 万套女鞋、7 吨头发待运到德国做地毯。今天 1.27 是国际大屠杀纪念日。",
+    "emoji": "👹",
+    "attributes": { "historical": 98, "artistic": 5, "influence": 95, "uniqueness": 95 },
+    "tags": ["holocaust", "nazi", "auschwitz", "ww2"]
+  }
+]

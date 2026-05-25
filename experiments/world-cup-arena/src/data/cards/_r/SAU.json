@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SAU_r001",
+    "country": "SAU",
+    "level": "r",
+    "name": "Jamal Khashoggi 谋杀",
+    "nameEn": "Khashoggi Assassination",
+    "category": "war",
+    "rarity": "rare",
+    "era": "2018",
+    "description": "2018 年 10 月 2 日 13:14，沙特记者 Jamal Khashoggi（《华盛顿邮报》专栏作家、原王室内圈、转批 MBS）走进伊斯坦布尔沙特领事馆办结婚手续。15 人沙特特工小组当天乘 2 架私人飞机从利雅得抵达，含法医专家 Dr. Salah al-Tubaigy（带骨锯）。Khashoggi 在 7 分钟内被注射镇定剂窒息死，遗体被分尸装行李袋分散处理至今未找到。土耳其总统 Erdoğan 公布领事馆窃听录音逼沙特承认。CIA 2018 年 11 月评估报告 'MBS personally ordered'，但川普政府拒发起制裁，因为 '沙特军购年 1 千亿美元'。MBS 至今未被起诉。",
+    "emoji": "👹",
+    "attributes": { "historical": 65, "artistic": 5, "influence": 85, "uniqueness": 88 },
+    "tags": ["khashoggi", "assassination", "mbs", "press-freedom"]
+  }
+]

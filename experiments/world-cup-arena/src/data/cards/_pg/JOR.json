@@ -1,0 +1,16 @@
+[
+  {
+    "id": "JOR_001",
+    "country": "JOR",
+    "level": "pg",
+    "name": "佩特拉玫瑰红石城",
+    "nameEn": "Petra the Rose City",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "5th century BC-7th century AD",
+    "description": "纳巴泰人公元前 5 世纪在约旦南部沙漠峡谷里凿出的石城，靠香料贸易致富。最有名的 Al-Khazneh（财宝库）高 39 米、宽 25 米直接从粉红色砂岩绝壁里雕出来，希腊化建筑风格但全无地基——一刀刀刻出来。最早只有当地贝都因人知道，1812 年瑞士探险家 Burckhardt 装作朝圣者闯入震惊世界。今天 1985 UNESCO 列遗，2007 年票选 '新七大奇迹'。《夺宝奇兵 3》最后圣杯藏匿地就是 Al-Khazneh。从入口走过 1.2 公里只有 3 米宽的 Siq 峡谷转过最后一弯，财宝库突然出现——电影院都不敢这么剪辑。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 88, "influence": 78, "uniqueness": 98 },
+    "tags": ["petra", "nabataean", "unesco", "rock-cut"]
+  }
+]

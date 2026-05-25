@@ -1,0 +1,16 @@
+[
+  {
+    "id": "JPN_x001",
+    "country": "JPN",
+    "level": "x",
+    "name": "山口组",
+    "nameEn": "Yamaguchi-gumi",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1915-present",
+    "description": "1915 年神户码头工头 Yamaguchi Harukichi 创立，今天日本最大、世界最大有组织犯罪集团，巅峰期 39000 成员控制全国 60% 黑帮地盘。他们公司化运营像跨国公司：神户总部 4 层大厦门口挂 '山口组本部' 木匾、有官方代号 wakagashira（青年主管）、月刊《Yamaguchi-gumi Shinpo》给会员看、政治献金捐自民党。新组员入会要切左手小指尖（yubitsume）寄给老大。日本警察、政府、银行都默认 '阳光黑社会' 存在——是国家治理一部分。2015 年内乱分裂后实力减半，但仍纳税登记。",
+    "emoji": "💉",
+    "attributes": { "historical": 60, "artistic": 30, "influence": 78, "uniqueness": 95 },
+    "tags": ["yakuza", "yamaguchi-gumi", "organized-crime", "corporate-mafia"]
+  }
+]

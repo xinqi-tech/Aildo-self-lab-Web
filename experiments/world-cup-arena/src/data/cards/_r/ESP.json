@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ESP_r001",
+    "country": "ESP",
+    "level": "r",
+    "name": "西班牙宗教裁判所",
+    "nameEn": "Spanish Inquisition",
+    "category": "war",
+    "rarity": "legendary",
+    "era": "1478-1834",
+    "description": "1478 年伊莎贝拉与费迪南奉教皇令在卡斯蒂利亚设立宗教法庭，目标审查 conversos（被迫改信基督教的犹太人和摩尔人）是否真信。356 年间审了 15 万案，烧死约 3 万异端。审讯发明 '水刑'（toca）：浸湿布堵嘴慢慢倒水产生窒息感、有据可查的最早水刑——被 21 世纪美国 CIA 复制使用。1492 年还驱逐了 16 万犹太人。Monty Python 1970 年代喜剧名句 'Nobody expects the Spanish Inquisition' 让它成英美默认的恐怖代词。",
+    "emoji": "👹",
+    "attributes": { "historical": 92, "artistic": 25, "influence": 85, "uniqueness": 82 },
+    "tags": ["inquisition", "torture", "catholic", "expulsion"]
+  }
+]

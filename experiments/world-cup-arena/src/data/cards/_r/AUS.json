@@ -1,0 +1,16 @@
+[
+  {
+    "id": "AUS_r001",
+    "country": "AUS",
+    "level": "r",
+    "name": "被偷走的一代",
+    "nameEn": "Stolen Generations",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1905-1970",
+    "description": "1905-1970 年澳大利亚政府授权强制带走 'mixed-race' 原住民儿童送进白人寄养家庭或寄宿学校，目的 'breed out the colour'。约 10-30% 原住民儿童（10-15 万人）被强制分离，多数终身找不回父母。1997 年 'Bringing Them Home' 报告披露细节后引发 30 年争议。2008 年 2 月 13 日总理 Kevin Rudd 在议会正式道歉，全国直播——是澳总理史上第一次为殖民期对原住民暴行道歉，但不带赔偿条款。今天澳原住民人均寿命比白人低 9 岁、儿童被强制送养比例仍是白人 11 倍。",
+    "emoji": "👹",
+    "attributes": { "historical": 85, "artistic": 15, "influence": 70, "uniqueness": 80 },
+    "tags": ["stolen-generations", "indigenous", "assimilation", "apology"]
+  }
+]

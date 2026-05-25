@@ -1,0 +1,16 @@
+[
+  {
+    "id": "DZA_x001",
+    "country": "DZA",
+    "level": "x",
+    "name": "撒哈拉沙漠核试验",
+    "nameEn": "French Nuclear Tests in Sahara",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1960-1966",
+    "description": "1960-1966 年法国在阿尔及利亚撒哈拉的 Reggane 和 In Ekker 引爆 17 颗核弹（4 颗地面、13 颗地下），首颗 'Gerboise Bleue' 当量 70 千吨——4 倍广岛弹。1962 年阿尔及利亚独立后法军继续试爆 4 年才撤。本地图阿雷格人未撤离、未告知，至今 3 代人辐射病高发，2010 年法国才承认有 300 名退伍兵和当地居民受害。原子弹爆炸点至今未清理，'Beryl' 试验地下空腔含 200 公斤钚，2025 年阿政府要求法国提供地下核废料定位图，未获回应。",
+    "emoji": "🪐",
+    "attributes": { "historical": 70, "artistic": 5, "influence": 65, "uniqueness": 92 },
+    "tags": ["nuclear-test", "sahara", "colonial-legacy", "contamination"]
+  }
+]

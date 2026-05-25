@@ -1,0 +1,16 @@
+[
+  {
+    "id": "TUN_x001",
+    "country": "TUN",
+    "level": "x",
+    "name": "塔图因星球与 Star Wars 取景",
+    "nameEn": "Tatooine Filming Site Tozeur",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1976-present",
+    "description": "1976 年 Lucasfilm 在突尼斯南部 Tataouine 镇拍摄星球大战，借这个真实柏柏尔村名命名虚构沙漠星球 'Tatooine'。Luke Skywalker 的童年家是 Matmata 真实柏柏尔人 1000 年前挖的洞穴民居 hotel，今天 Sidi Driss 旅馆仍可住一晚 50 美元睡 Luke 卧室。1999 年《前传 1》在盐湖 Chott el Djerid 搭 Mos Espa 街景，拍完没拆，留给沙漠风吹了 25 年。2010 年沙漠流沙开始吞噬 Mos Espa，影迷众筹 5 万欧元 dig out。当地导游说英语第一句话都是 'May the Force be with you'。",
+    "emoji": "🪐",
+    "attributes": { "historical": 25, "artistic": 60, "influence": 75, "uniqueness": 95 },
+    "tags": ["star-wars", "filming-location", "matmata", "pop-culture"]
+  }
+]

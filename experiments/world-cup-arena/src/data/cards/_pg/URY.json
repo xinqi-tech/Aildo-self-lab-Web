@@ -1,0 +1,16 @@
+[
+  {
+    "id": "URY_001",
+    "country": "URY",
+    "level": "pg",
+    "name": "Mate 茶与团聚仪式",
+    "nameEn": "Mate Tea & the Sharing Ritual",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "Pre-Columbian-present",
+    "description": "yerba mate 是冬青科 Ilex paraguariensis 干叶，瓜拉尼原住民几千年用葫芦杯 + 银管 bombilla 喝。乌拉圭人均每年 10 公斤 yerba（全球第 1，比阿根廷的 6.4 公斤多）。规则严：装杯的人叫 cebador，他先喝第一杯 'el zonzo'（傻子杯）测温度，之后顺序传给下一人喝完再传回；说 'gracias' 意味着 '我饱了，下次别给我'。一个 mate 团聚可以持续 4 小时一直传不停。总统办公会议、海滩、公交站、出租车司机驾驶时都端着——'Uruguay 的国旗其实是 mate 杯'。",
+    "emoji": "🍜",
+    "attributes": { "historical": 80, "artistic": 50, "influence": 65, "uniqueness": 95 },
+    "tags": ["mate", "yerba", "ritual", "guarani"]
+  }
+]

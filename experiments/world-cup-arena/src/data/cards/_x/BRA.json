@@ -1,0 +1,16 @@
+[
+  {
+    "id": "BRA_x001",
+    "country": "BRA",
+    "level": "x",
+    "name": "亚马逊粉河豚人 Encantado",
+    "nameEn": "Encantado the Pink River Dolphin Shapeshifter",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "Eternal",
+    "description": "亚马逊河里粉色淡水豚 Inia geoffrensis 是当地原住民传说核心：满月夜它们能变形为穿白西装戴白帽（遮住头顶不能消的吹气孔）的帅哥，划独木舟到岸边节庆引诱年轻女孩跳水陪它们回河底宫殿。私生子在亚马逊村庄叫 'filho de boto'，孩子出生不知父亲都归这个浪漫责任承担者。19 世纪西班牙人类学家记录这传说时河谷出生率 7% 算 boto 之子；今天 DNA 时代发现真正的爸爸往往是村里舅舅或牧师。但村民仍信，1986 年巴西《野生动物保护法》第 1 条受保护就是粉河豚——杀一只 5 年监禁。",
+    "emoji": "🛸",
+    "attributes": { "historical": 70, "artistic": 60, "influence": 50, "uniqueness": 98 },
+    "tags": ["encantado", "amazon", "shapeshifter", "indigenous-myth"]
+  }
+]

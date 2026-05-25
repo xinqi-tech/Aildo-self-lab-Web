@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SAU_x001",
+    "country": "SAU",
+    "level": "x",
+    "name": "Neom 直线城市",
+    "nameEn": "Neom The Line",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2017-2030",
+    "description": "2017 年 MBS 王储宣布在沙漠里建 5000 亿美元未来城 Neom，核心项目 'The Line'——170 公里长、500 米高、200 米宽两面玻璃墙组成的线状城市，住 900 万人、全 100% 可再生能源、5 分钟内步行到任何设施、墙内造人工气候。2024 年初 BBC 调查显示规划缩水到 2.4 公里长 + 30 万人入住，原住的 Huwaitat 族被警察清空，3 名抵抗者被判死刑、1 人 2020 年抓捕中被击毙。施工现场 21000 工人 600 人死。地产分析师 Bjarke Ingels（原 The Line 设计师）2025 年退出。沙特官方否认任何延期。",
+    "emoji": "🪐",
+    "attributes": { "historical": 15, "artistic": 60, "influence": 70, "uniqueness": 98 },
+    "tags": ["neom", "mbs", "vanity-project", "futurism"]
+  }
+]

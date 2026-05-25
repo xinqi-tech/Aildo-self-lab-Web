@@ -1,0 +1,16 @@
+[
+  {
+    "id": "KOR_r001",
+    "country": "KOR",
+    "level": "r",
+    "name": "光州事件",
+    "nameEn": "Gwangju Uprising",
+    "category": "war",
+    "rarity": "rare",
+    "era": "1980",
+    "description": "1980 年 5 月 18 日全南大学生抗议总统全斗焕戒严令，全军派 502 空降特战旅入光州。10 天内特战兵用 M16 + 刺刀 + 警棍系统镇压：街头老人被拖出公车打死、学生被脱光衣服暴露的尸体堆在公园。官方死亡数字 165 人但 1995 年文民政府重查改 600+、家属团体声称 2000+。1996 年全斗焕被判死刑（后减为终身），2021 年 90 岁释放至死。今天光州 5·18 国立墓园是民主圣地。Han Kang 2014 年小说《Human Acts》写了一个少年的死，让她拿 2024 年诺贝尔文学奖。",
+    "emoji": "⚔",
+    "attributes": { "historical": 85, "artistic": 30, "influence": 75, "uniqueness": 78 },
+    "tags": ["gwangju", "1980", "military-junta", "democratization"]
+  }
+]

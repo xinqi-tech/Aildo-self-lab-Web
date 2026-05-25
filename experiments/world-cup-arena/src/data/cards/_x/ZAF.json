@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ZAF_x001",
+    "country": "ZAF",
+    "level": "x",
+    "name": "约堡犯罪经济与防弹门铃",
+    "nameEn": "Jo'burg Carjack Economy",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1994-present",
+    "description": "约翰内斯堡每天平均 50 起持械抢车案。中产以上居民必装：1) 4 米电网围墙 2) 红外报警 3) C13 武装应答队（5 分钟到、配 AK47）4) 车上 hijack chip 卫星追踪 + 防火喷雾 + 假钱包 5) Cape Town 高速 'don't stop at red lights at night' 是官方建议。私人保安业 25 万人，超过南非国家警察 19 万。约堡北郊 Sandton 是非洲最富广场区，可贵金属店 'Diamond Walk' 街，正门口立着 7 米高 Mandela 铜像看着——曼德拉一辈子向往的非洲新黎明今天活在防弹门铃后面。",
+    "emoji": "🃏",
+    "attributes": { "historical": 30, "artistic": 15, "influence": 70, "uniqueness": 92 },
+    "tags": ["crime", "johannesburg", "private-security", "inequality"]
+  }
+]
