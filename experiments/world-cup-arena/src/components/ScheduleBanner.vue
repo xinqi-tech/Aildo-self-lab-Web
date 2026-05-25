@@ -256,25 +256,32 @@ const statusLabel = computed(() => {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  min-width: 200px;
+  min-width: 240px;
+  max-width: 360px;
   padding-left: var(--space-4);
   border-left: 1px dashed rgba(212, 160, 23, 0.4);
 }
 .meta-block {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   font-size: 11px;
   align-items: baseline;
+  min-width: 0;
 }
 .meta-label {
   color: var(--accent-gold);
   letter-spacing: 0.06em;
-  width: 50px;
   flex-shrink: 0;
+  white-space: nowrap;
   text-align: right;
+  /* width 自适应，最长用例 Asia/Shanghai 也不挤压 value */
 }
 .meta-value {
   opacity: 0.92;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .banner-actions {

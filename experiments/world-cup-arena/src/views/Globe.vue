@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, shallowRef } from 'vue';
+import { onMounted, onUnmounted, ref, shallowRef, computed } from 'vue';
 import * as d3 from 'd3';
 import { feature, mesh } from 'topojson-client';
 import { useRouter } from 'vue-router';
-import { COUNTRY_BY_ISO3, GROUP_COLORS, type Country } from '@/data/countries';
+import {
+  COUNTRY_BY_ISO3,
+  GROUP_COLORS,
+  GROUPS,
+  countriesByGroup,
+  type Country,
+  type GroupKey,
+} from '@/data/countries';
 import { NUMERIC_TO_ALPHA3 } from '@/data/isoNumericToAlpha3';
 
 const router = useRouter();
@@ -11,6 +18,18 @@ const wrap = ref<HTMLDivElement | null>(null);
 const tooltip = shallowRef<{ x: number; y: number; country: Country } | null>(null);
 const loading = ref(true);
 const loadError = ref<string | null>(null);
+
+// 右侧 legend 交互
+const expandedGroup = ref<GroupKey | null>(null);
+const focusedIso3 = ref<string | null>(null);
+const grouped = computed(() => countriesByGroup());
+
+function toggleGroup(g: GroupKey) {
+  expandedGroup.value = expandedGroup.value === g ? null : g;
+}
+
+// 由 onMounted 在地图就绪后赋值
+const rotateToCountry = shallowRef<(iso3: string) => void>(() => {});
 
 const TOPO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
 
@@ -98,6 +117,21 @@ onMounted(async () => {
     features: any[];
   };
   const borders = mesh(topology, topology.objects.countries, (a: any, b: any) => a !== b);
+
+  // 建立 iso3 → feature 索引，供"点国家旋转地球"使用
+  const featureByIso3: Record<string, any> = {};
+  for (const f of countriesGeo.features) {
+    const numStr = String(f.id ?? '').padStart(3, '0');
+    const alpha3 = NUMERIC_TO_ALPHA3[numStr];
+    if (alpha3) {
+      featureByIso3[alpha3] = f;
+      // GBR polygon 同时挂英格兰/苏格兰（110m 精度里它们共用）
+      if (alpha3 === 'GBR') {
+        featureByIso3['ENG'] = f;
+        featureByIso3['SCO'] = f;
+      }
+    }
+  }
 
   // 国家面（非参赛=羊皮纸色；参赛=组色）
   const countryPaths = svg
@@ -188,6 +222,43 @@ onMounted(async () => {
 
   svg.call(drag as any);
 
+  // 平滑旋转到某国 — 暴露给 template
+  let rotateRAF: number | null = null;
+  function shortestDelta(from: number, to: number): number {
+    let d = to - from;
+    while (d > 180) d -= 360;
+    while (d < -180) d += 360;
+    return d;
+  }
+  function rotateTo(targetLng: number, targetLat: number) {
+    if (rotateRAF != null) cancelAnimationFrame(rotateRAF);
+    const r0 = projection.rotate() as [number, number, number];
+    // 让该国正面朝向观察者：rotate = [-lng, -lat, 0]
+    const targetR: [number, number, number] = [-targetLng, -targetLat, 0];
+    const dLng = shortestDelta(r0[0], targetR[0]);
+    const dLat = shortestDelta(r0[1], targetR[1]);
+    const dGam = shortestDelta(r0[2], 0);
+    const duration = 800;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - start) / duration);
+      // easeCubicInOut
+      const e = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      projection.rotate([r0[0] + dLng * e, r0[1] + dLat * e, r0[2] + dGam * e]);
+      redraw();
+      if (t < 1) rotateRAF = requestAnimationFrame(tick);
+      else rotateRAF = null;
+    };
+    rotateRAF = requestAnimationFrame(tick);
+  }
+  rotateToCountry.value = (iso3: string) => {
+    const f = featureByIso3[iso3];
+    if (!f) return;
+    const [lng, lat] = d3.geoCentroid(f);
+    focusedIso3.value = iso3;
+    rotateTo(lng, lat);
+  };
+
   // resize 监听
   const ro = new ResizeObserver(() => {
     const r2 = container.getBoundingClientRect();
@@ -202,6 +273,7 @@ onMounted(async () => {
   ro.observe(container);
 
   removeListeners = () => {
+    if (rotateRAF != null) cancelAnimationFrame(rotateRAF);
     ro.disconnect();
     svg.remove();
   };
@@ -305,13 +377,39 @@ const versor = (() => {
 
     <aside class="globe-legend">
       <h3 class="legend-title">12 Groups</h3>
-      <div class="legend-grid">
-        <div v-for="(color, key) in GROUP_COLORS" :key="key" class="legend-item">
-          <span class="legend-swatch" :style="{ background: color }"></span>
-          <span class="legend-label mono">Group {{ key }}</span>
+      <div class="legend-list">
+        <div v-for="g in GROUPS" :key="g" class="legend-group">
+          <button
+            class="group-row"
+            :class="{ 'is-expanded': expandedGroup === g }"
+            @click="toggleGroup(g)"
+            :aria-expanded="expandedGroup === g"
+          >
+            <span class="group-swatch" :style="{ background: GROUP_COLORS[g] }"></span>
+            <span class="group-label mono">Group {{ g }}</span>
+            <span class="group-count mono">{{ grouped[g].length }}</span>
+            <span class="group-caret">{{ expandedGroup === g ? '▾' : '▸' }}</span>
+          </button>
+
+          <transition name="expand">
+            <ul v-if="expandedGroup === g" class="country-list">
+              <li
+                v-for="c in grouped[g]"
+                :key="c.iso3"
+                class="country-row"
+                :class="{ 'is-focused': focusedIso3 === c.iso3 }"
+                @click="rotateToCountry(c.iso3)"
+                :title="`旋转到 ${c.nameZh}`"
+              >
+                <span class="country-flag">{{ c.flag }}</span>
+                <span class="country-name title-cn">{{ c.nameZh }}</span>
+                <span class="country-name-en mono">{{ c.nameEn }}</span>
+              </li>
+            </ul>
+          </transition>
         </div>
       </div>
-      <p class="legend-hint">拖拽旋转地球 · 点击国家进入详情（阶段 2）</p>
+      <p class="legend-hint">点击分组 ▸ 展开 · 点击国家旋转地球 · 拖拽旋转</p>
     </aside>
   </div>
 </template>
@@ -319,7 +417,7 @@ const versor = (() => {
 <style scoped>
 .globe-page {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 240px;
   gap: var(--space-4);
   height: calc(100vh - 160px);
   padding: var(--space-4) var(--space-5);
@@ -422,6 +520,8 @@ const versor = (() => {
   border: 1px solid var(--border-thin);
   border-radius: var(--radius-md);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 .legend-title {
   font-family: var(--font-title);
@@ -431,33 +531,131 @@ const versor = (() => {
   margin-bottom: var(--space-3);
   color: var(--accent-deep);
 }
-.legend-grid {
+.legend-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  flex: 1;
+  min-height: 0;
 }
-.legend-item {
-  display: flex;
+
+/* — 一行分组按钮 — */
+.group-row {
+  display: grid;
+  grid-template-columns: 16px 1fr auto auto;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-primary);
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+  font: inherit;
 }
-.legend-swatch {
-  display: inline-block;
+.group-row:hover {
+  background: rgba(212, 160, 23, 0.12);
+  border-color: rgba(212, 160, 23, 0.35);
+}
+.group-row.is-expanded {
+  background: rgba(212, 160, 23, 0.18);
+  border-color: var(--accent-gold);
+}
+.group-swatch {
   width: 14px;
   height: 14px;
   border-radius: 2px;
   border: 1px solid var(--accent-deep);
 }
-.legend-label {
+.group-label {
   font-size: 11px;
-  color: var(--text-primary);
+  letter-spacing: 0.04em;
 }
+.group-count {
+  font-size: 10px;
+  opacity: 0.55;
+  padding: 0 4px;
+}
+.group-caret {
+  font-size: 10px;
+  color: var(--accent-deep);
+  width: 12px;
+  text-align: right;
+}
+
+/* — 展开后的国家列表 — */
+.country-list {
+  list-style: none;
+  margin: 2px 0 6px 24px;
+  padding: 0;
+  border-left: 1px dashed rgba(212, 160, 23, 0.4);
+}
+.country-row {
+  display: grid;
+  grid-template-columns: 20px 1fr auto;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.12s;
+}
+.country-row:hover {
+  background: rgba(26, 26, 46, 0.06);
+}
+.country-row.is-focused {
+  background: rgba(212, 160, 23, 0.22);
+  outline: 1px solid var(--accent-gold);
+}
+.country-flag {
+  font-size: 14px;
+  line-height: 1;
+}
+.country-name {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.country-name-en {
+  font-size: 9px;
+  opacity: 0.5;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* — 展开过渡 — */
+.expand-enter-active,
+.expand-leave-active {
+  transition: opacity 0.18s ease, max-height 0.22s ease;
+  overflow: hidden;
+}
+.expand-enter-from,
+.expand-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
+.expand-enter-to,
+.expand-leave-from {
+  opacity: 1;
+  max-height: 400px;
+}
+
 .legend-hint {
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
   font-size: 10px;
   color: var(--text-tertiary);
   font-family: var(--font-serif-cn);
   line-height: 1.5;
+  flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
