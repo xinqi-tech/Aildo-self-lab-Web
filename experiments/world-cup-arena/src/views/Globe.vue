@@ -201,16 +201,51 @@ onMounted(async () => {
     .style('pointer-events', 'none')
     .style('filter', 'drop-shadow(0 0 6px rgba(212, 160, 23, 0.75))');
 
+  // 脉冲发光环（3 环错时扩散，雷达感）
+  const pulseG = svg
+    .append('g')
+    .attr('class', 'pulse-group')
+    .style('pointer-events', 'none')
+    .style('display', 'none');
+  [0, 1, 2].forEach((i) => {
+    pulseG
+      .append('circle')
+      .attr('class', 'pulse-ring')
+      .attr('cx', 0)
+      .attr('cy', 0)
+      .attr('r', 6)
+      .style('animation-delay', `${i * 0.66}s`);
+  });
+
   // 拖拽旋转
   function redraw() {
     svg.selectAll('path.sphere').attr('d', path as any);
     svg.selectAll('path.graticule').attr('d', path as any);
     countryPaths.attr('d', path as any);
     svg.selectAll('path.borders').attr('d', path as any);
-    // 聚焦高亮跟着旋转更新
+    // 聚焦高亮 + 脉冲圆环 跟着旋转更新
     const iso3 = focusedIso3.value;
     const f = iso3 ? featureByIso3[iso3] : null;
     focusPath.attr('d', f ? ((path(f) as string) ?? '') : '');
+
+    if (f) {
+      const center = d3.geoCentroid(f) as [number, number];
+      const [rl, rp] = projection.rotate();
+      // 该国在可见半球？(投影前判断球面距离，小于 90° 即正面)
+      const visible = d3.geoDistance(center, [-rl, -rp]) < Math.PI / 2;
+      if (visible) {
+        const proj = projection(center);
+        if (proj) {
+          pulseG.style('display', null).attr('transform', `translate(${proj[0]}, ${proj[1]})`);
+        } else {
+          pulseG.style('display', 'none');
+        }
+      } else {
+        pulseG.style('display', 'none');
+      }
+    } else {
+      pulseG.style('display', 'none');
+    }
   }
 
   let v0: [number, number, number] | null = null;
@@ -429,6 +464,30 @@ const versor = (() => {
     </aside>
   </div>
 </template>
+
+<style>
+/* 脉冲发光环 — 非 scoped 以让 keyframes 名称稳定 */
+.pulse-ring {
+  fill: none;
+  stroke: #d4a017;
+  stroke-width: 2;
+  opacity: 0;
+  animation: pulse-expand 2s ease-out infinite;
+  filter: drop-shadow(0 0 4px rgba(212, 160, 23, 0.6));
+}
+@keyframes pulse-expand {
+  0% {
+    r: 6;
+    opacity: 0.9;
+    stroke-width: 2.5;
+  }
+  100% {
+    r: 36;
+    opacity: 0;
+    stroke-width: 0.4;
+  }
+}
+</style>
 
 <style scoped>
 .globe-page {
