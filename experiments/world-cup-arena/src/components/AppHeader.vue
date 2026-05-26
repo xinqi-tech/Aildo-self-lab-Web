@@ -17,6 +17,7 @@ import { RouterLink } from 'vue-router';
     <nav class="nav">
       <RouterLink to="/globe" class="nav-link" active-class="is-active">地图</RouterLink>
       <RouterLink to="/match-picker" class="nav-link" active-class="is-active">对战</RouterLink>
+      <RouterLink to="/spectator" class="nav-link" active-class="is-active">观战</RouterLink>
       <RouterLink to="/wall" class="nav-link" active-class="is-active">金句墙</RouterLink>
       <RouterLink to="/daily" class="nav-link" active-class="is-active">今日</RouterLink>
       <RouterLink to="/settings" class="nav-link nav-link-icon" active-class="is-active">

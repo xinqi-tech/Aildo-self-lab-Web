@@ -68,6 +68,17 @@ function pick(match: MatchView, side: 'a' | 'b') {
   });
 }
 
+function spectate(match: MatchView) {
+  if (!match.team1 || !match.team2) {
+    alert(`赛程国家映射缺失：${match.team1Name} vs ${match.team2Name}`);
+    return;
+  }
+  router.push({
+    path: '/spectator',
+    query: { matchId: match.id },
+  });
+}
+
 function formatVenueTime(m: MatchView): string {
   const off = m.utcOffsetMin;
   const sign = off >= 0 ? '+' : '-';
@@ -177,6 +188,14 @@ function statusBadge(m: MatchView): { label: string; cls: string } {
             <span class="time-label mono">场地</span>
             <span class="time-value">{{ m.ground }}</span>
           </div>
+          <button
+            class="spectate-btn mono"
+            :disabled="!m.team1 || !m.team2"
+            @click="spectate(m)"
+            title="AI vs AI 观战，慢节奏自动跑 5 回合"
+          >
+            👁 观战
+          </button>
         </div>
       </li>
     </ul>
@@ -390,5 +409,27 @@ function statusBadge(m: MatchView): { label: string; cls: string } {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.spectate-btn {
+  margin-top: 6px;
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid var(--accent-deep);
+  color: var(--accent-deep);
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.spectate-btn:hover:not(:disabled) {
+  background: var(--accent-deep);
+  color: var(--bg-parchment);
+}
+.spectate-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 </style>
