@@ -7,12 +7,27 @@
  * 选牌 → 高亮 → "出牌" → "裁判沉思中…" → 显示双方卡 + 评分 + 金句
  * 5 回合结束后跳 /battle/result/:id
  */
-import { computed, onMounted, ref, watch } from 'vue';
+import { computed, onMounted, ref, watch, h, defineComponent } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { loadSchedule, type MatchView } from '@/services/scheduleService';
 import { useBattleStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 import CulturalCard from '@/components/CulturalCard.vue';
+
+// 内联：维度小条形图（0-25 范围）
+const DimBar = defineComponent({
+  props: { value: { type: Number, required: true } },
+  setup(props) {
+    return () =>
+      h('div', { class: 'dim-bar' }, [
+        h('div', {
+          class: 'dim-bar-fill',
+          style: { width: Math.min(100, (props.value / 25) * 100) + '%' },
+        }),
+        h('span', { class: 'dim-bar-text' }, props.value),
+      ]);
+  },
+});
 
 const route = useRoute();
 const router = useRouter();
@@ -84,6 +99,27 @@ const aiHand = computed(() => {
 const lastRound = computed(() => {
   if (!state.value || state.value.rounds.length === 0) return null;
   return state.value.rounds[state.value.rounds.length - 1];
+});
+
+// 相克 / 主场 / 冷门 加成说明（用于"⚖️ 加总 → 叠加..."提示行）
+const matchupMultiplier = computed(() => {
+  const r = lastRound.value;
+  if (!r) return '1.0';
+  if (r.matchup === 'buff') return '1.2 A';
+  if (r.matchup === 'debuff') return '0.8 A';
+  return '1.0';
+});
+const HOST_SET = new Set(['USA', 'CAN', 'MEX']);
+const UNDERDOG_SET = new Set(['CPV', 'CUW', 'UZB', 'JOR']);
+const bonusNote = computed(() => {
+  const r = lastRound.value;
+  if (!r) return '';
+  const notes: string[] = [];
+  if (HOST_SET.has(r.aCard.country)) notes.push(`A 主场 +10%`);
+  if (HOST_SET.has(r.bCard.country)) notes.push(`B 主场 +10%`);
+  if (UNDERDOG_SET.has(r.aCard.country)) notes.push(`A 冷门 +15%`);
+  if (UNDERDOG_SET.has(r.bCard.country)) notes.push(`B 冷门 +15%`);
+  return notes.join(' · ');
 });
 
 const playerSideKey = computed(() => state.value?.playerSide || 'a');
@@ -215,6 +251,58 @@ watch(
               <p v-if="lastRound.fallback" class="fallback-note mono">
                 （裁判离线，按属性计算）
               </p>
+
+              <!-- 判定依据 + 4 维度细分 -->
+              <div v-if="lastRound.reasoning" class="reasoning-block">
+                <div class="reasoning-title mono">🔍 判定依据</div>
+                <p class="reasoning-text title-cn">{{ lastRound.reasoning }}</p>
+              </div>
+
+              <div
+                v-if="lastRound.aDims && lastRound.bDims"
+                class="dims-block"
+              >
+                <div class="dims-title mono">📊 4 维度对比（各 0-25）</div>
+                <table class="dims-table mono">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>历史</th>
+                      <th>艺术</th>
+                      <th>影响</th>
+                      <th>独特</th>
+                      <th>合计</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="dim-side dim-side-a">A</td>
+                      <td><DimBar :value="lastRound.aDims.hist" /></td>
+                      <td><DimBar :value="lastRound.aDims.art" /></td>
+                      <td><DimBar :value="lastRound.aDims.infl" /></td>
+                      <td><DimBar :value="lastRound.aDims.uniq" /></td>
+                      <td class="dim-sum">{{
+                        lastRound.aDims.hist + lastRound.aDims.art + lastRound.aDims.infl + lastRound.aDims.uniq
+                      }}</td>
+                    </tr>
+                    <tr>
+                      <td class="dim-side dim-side-b">B</td>
+                      <td><DimBar :value="lastRound.bDims.hist" /></td>
+                      <td><DimBar :value="lastRound.bDims.art" /></td>
+                      <td><DimBar :value="lastRound.bDims.infl" /></td>
+                      <td><DimBar :value="lastRound.bDims.uniq" /></td>
+                      <td class="dim-sum">{{
+                        lastRound.bDims.hist + lastRound.bDims.art + lastRound.bDims.infl + lastRound.bDims.uniq
+                      }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="dims-hint mono">
+                  ⚖️ 4 维加总 → 叠加相克 ×{{ matchupMultiplier }}
+                  <span v-if="bonusNote"> · {{ bonusNote }}</span>
+                  → 最终 A {{ lastRound.aScore }} / B {{ lastRound.bScore }}
+                </div>
+              </div>
 
               <!-- 调试日志（点击展开） -->
               <details v-if="lastRound.debug" class="debug-block">
@@ -489,6 +577,109 @@ watch(
 @keyframes pulse {
   0%, 100% { opacity: 0.5; }
   50% { opacity: 1; }
+}
+
+/* —— 判定依据 + 维度对比 —— */
+.reasoning-block {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: rgba(212, 160, 23, 0.08);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.reasoning-title {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent-deep);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.reasoning-text {
+  font-family: var(--font-serif-cn);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.dims-block {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: rgba(244, 232, 208, 0.55);
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-sm);
+}
+.dims-title {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent-deep);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.dims-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.dims-table th {
+  text-align: center;
+  font-weight: normal;
+  color: var(--text-tertiary);
+  padding: 2px 4px;
+  letter-spacing: 0.06em;
+  font-size: 10px;
+}
+.dims-table td {
+  padding: 4px;
+  vertical-align: middle;
+}
+.dim-side {
+  width: 24px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--bg-parchment);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.dim-side-a { background: var(--accent-deep); }
+.dim-side-b { background: var(--accent-gold); color: var(--accent-deep); }
+.dim-sum {
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-deep);
+  width: 36px;
+}
+.dim-bar {
+  position: relative;
+  height: 14px;
+  background: rgba(42, 36, 25, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 60px;
+}
+.dim-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-gold), #d4a017aa);
+  transition: width 0.4s ease;
+}
+.dim-bar-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+}
+.dims-hint {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(26, 26, 46, 0.15);
+  font-size: 11px;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
 }
 
 /* —— 调试日志面板 —— */

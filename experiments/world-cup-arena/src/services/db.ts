@@ -11,7 +11,7 @@
 import Dexie, { type Table } from 'dexie';
 import type { CulturalCard } from '@/data/cards/types';
 import type { Matchup } from '@/services/cardMatchup';
-import type { RefereeDebug } from '@/services/refereeService';
+import type { RefereeDebug, DimensionScores } from '@/services/refereeService';
 
 /** 单回合结果（已完成的回合才落库） */
 export interface RoundRecord {
@@ -20,8 +20,13 @@ export interface RoundRecord {
   bCard: CulturalCard;
   aScore: number;
   bScore: number;
+  /** 4 维度细分（评分前的原始分） */
+  aDims?: DimensionScores;
+  bDims?: DimensionScores;
   matchup: Matchup;
   verdict: string;
+  /** 判定依据 — 谁强在哪谁弱在哪 */
+  reasoning?: string;
   funFact: string;
   fallback?: boolean;
   /** LLM 调用调试信息（prompt / response / timing） */

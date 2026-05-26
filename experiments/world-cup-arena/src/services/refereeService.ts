@@ -41,13 +41,27 @@ export interface RefereeDebug {
   durationMs: number;
 }
 
+/** 4 维度分数（各 0-25） */
+export interface DimensionScores {
+  hist: number;
+  art: number;
+  infl: number;
+  uniq: number;
+}
+
 export interface RefereeVerdict {
   /** A 方最终得分 0-100，已应用所有乘数 */
   aScore: number;
   /** B 方最终得分 0-100，已应用所有乘数 */
   bScore: number;
+  /** A 4 维度细分（评分前的原始分） */
+  aDims?: DimensionScores;
+  /** B 4 维度细分 */
+  bDims?: DimensionScores;
   /** 一句话结论 */
   verdict: string;
+  /** 判定依据 — 60-120 字说明谁强在哪谁弱在哪 */
+  reasoning?: string;
   /** 冷知识 */
   funFact: string;
   /** 相克信息（A 视角） */
@@ -180,7 +194,16 @@ function fallbackVerdict(
   return {
     aScore,
     bScore,
+    aDims: dimsFromAttributes(cardA),
+    bDims: dimsFromAttributes(cardB),
     verdict: short ? `（裁判离线：${short}）` : '（裁判离线，按属性计算）',
+    reasoning: short
+      ? `LLM 调用失败，按 attributes 平均推导。${cardA.name} 4 维总和 ${
+          baseA.toFixed(0)
+        } vs ${cardB.name} 4 维总和 ${baseB.toFixed(0)}，再叠加相克/主场/冷门乘数。`
+      : `按 attributes 平均推导。${cardA.name} 总和 ${baseA.toFixed(
+          0
+        )} vs ${cardB.name} 总和 ${baseB.toFixed(0)}。`,
     funFact: short
       ? '⚙️ 去 /settings 检查 Provider 配置：model 名是否对、API Key 是否填、本地 Ollama 是否在跑。点 "测试连接" 会列出本地可用模型。'
       : '提示：在设置里配置 LLM Provider 可以让裁判给出真正的金句与冷知识。',
@@ -192,8 +215,38 @@ function fallbackVerdict(
 interface LlmRefereeJson {
   a_score?: number;
   b_score?: number;
+  a_dims?: { hist?: number; art?: number; infl?: number; uniq?: number };
+  b_dims?: { hist?: number; art?: number; infl?: number; uniq?: number };
   verdict?: string;
+  reasoning?: string;
   fun_fact?: string;
+}
+
+/** 把 LLM 给的 dim 对象（可能字段缺）规范化为 DimensionScores */
+function normalizeDims(raw?: {
+  hist?: number;
+  art?: number;
+  infl?: number;
+  uniq?: number;
+}): DimensionScores | undefined {
+  if (!raw) return undefined;
+  const clamp = (v?: number) => Math.max(0, Math.min(25, Math.round(Number(v) || 0)));
+  return {
+    hist: clamp(raw.hist),
+    art: clamp(raw.art),
+    infl: clamp(raw.infl),
+    uniq: clamp(raw.uniq),
+  };
+}
+
+/** 把卡牌属性 0-100 映射到 4 维 0-25 分（兜底用） */
+function dimsFromAttributes(c: CulturalCard): DimensionScores {
+  return {
+    hist: Math.round((c.attributes.historical / 100) * 25),
+    art: Math.round((c.attributes.artistic / 100) * 25),
+    infl: Math.round((c.attributes.influence / 100) * 25),
+    uniq: Math.round((c.attributes.uniqueness / 100) * 25),
+  };
 }
 
 /** 把 LLM 返回的字符串里第一个 { 开始的 JSON 拽出来 */
@@ -354,7 +407,10 @@ export async function judgeRound(
     return {
       aScore: aFinal,
       bScore: bFinal,
+      aDims: normalizeDims(parsed.a_dims) || dimsFromAttributes(cardA),
+      bDims: normalizeDims(parsed.b_dims) || dimsFromAttributes(cardB),
       verdict: (parsed.verdict || '').trim() || '裁判沉默了。',
+      reasoning: (parsed.reasoning || '').trim() || undefined,
       funFact: (parsed.fun_fact || '').trim() || '今日无冷知识。',
       matchup,
       latencyMs: durationMs,
