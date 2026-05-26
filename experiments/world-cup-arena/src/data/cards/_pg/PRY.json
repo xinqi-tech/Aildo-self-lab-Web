@@ -12,5 +12,61 @@
     "emoji": "🧠",
     "attributes": { "historical": 80, "artistic": 70, "influence": 50, "uniqueness": 98 },
     "tags": ["guarani", "bilingual", "indigenous-language", "jesuit"]
+  },
+  {
+    "id": "PRY_002",
+    "country": "PRY",
+    "level": "pg",
+    "name": "耶稣会传教区",
+    "nameEn": "Jesuit Reductions",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1609-1767",
+    "description": "1609 年西班牙耶稣会神父在巴拉圭与阿根廷边境 Paraná-Paraguay 河流域建第一座 Reducción de San Ignacio Guazú——'reducción 归化区'是聚集原住民瓜拉尼人的自治社区，目标避免西班牙殖民者把他们抓去金矿当奴隶。150 年里建成 30 座归化区共 14 万瓜拉尼人，每座有教堂 + 学校 + 印刷厂 + 工坊 + 农田 + 公社仓库，神父教瓜拉尼人作曲弹巴洛克小提琴、雕巴洛克圣像、用瓜拉尼语印刷书籍——欧洲外第一台印刷机 1700 年装在归化区。瓜拉尼武装能击退巴西 bandeirantes 奴隶猎人 + 葡萄牙边境军，西班牙王室称羡其经济。1767 年西班牙国王 Carlos 三世因耶稣会威胁王权下令把全球耶稣士驱逐，归化区一夜间瓦解，瓜拉尼人散入森林。今天 Trinidad + Jesús 等 6 处遗址 1993 年 UNESCO 列遗，1986 年电影《教会 The Mission》（Robert De Niro 主演）让世界知道这段史。",
+    "emoji": "🏛",
+    "attributes": { "historical": 88, "artistic": 80, "influence": 65, "uniqueness": 92 },
+    "tags": ["jesuit", "reductions", "unesco", "guarani"]
+  },
+  {
+    "id": "PRY_003",
+    "country": "PRY",
+    "level": "pg",
+    "name": "ñandutí 蛛网刺绣",
+    "nameEn": "Ñandutí Lace",
+    "category": "art",
+    "rarity": "rare",
+    "era": "17th c.-present",
+    "description": "Ñandutí 瓜拉尼语 'ñandu（蜘蛛）+ tí（白）' 字面 '白蜘蛛网'，是巴拉圭最有名的手工艺。技法源自 16 世纪西班牙加那利群岛传入的 sol（太阳）刺绣，与瓜拉尼妇女观察热带 Itauguá 镇蛛网图案融合：先在木框上撑布，按预设几何放射状织出 nudo（结），再用极细棉线一圈圈编织花瓣 + 太阳 + 蝴蝶 + 圣餐杯图案，一块 60 厘米桌布需 200-300 小时。Itauguá 镇（亚松森东 30 公里）家家户户女性从 6 岁学起，每年 7 月 Festival del Ñandutí 节日满街晒。题材融合天主教（圣杯、十字、玫瑰花窗）+ 瓜拉尼神话（jaguar 美洲豹、tapir 貘、ceibo 红花）。一块工坊订制大桌布卖 500 美元，是巴拉圭主要文化出口。1995 年起注册地理标识保护，2018 年申报 UNESCO 非遗。",
+    "emoji": "🎨",
+    "attributes": { "historical": 75, "artistic": 90, "influence": 50, "uniqueness": 96 },
+    "tags": ["nanduti", "lace", "itaugua", "handicraft"]
+  },
+  {
+    "id": "PRY_004",
+    "country": "PRY",
+    "level": "pg",
+    "name": "马黛茶 + Tereré 冰饮",
+    "nameEn": "Tereré (Cold Mate)",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Pre-Columbian / 1860s-present",
+    "description": "Mate 仪式是南锥三国（阿根廷、乌拉圭、巴拉圭）共有，但巴拉圭独有的 tereré 版本是把热水换成冰水 + 大量薄荷 + 柠檬草 + 草药——亚热带高温下午挡 40 度暑气的全国仪式。起源 1864-1870 年三国同盟战争（Triple Alliance War）时巴拉圭士兵在战壕里没法生火加热水，把冷河水倒进葫芦发现也能喝。1932-1935 年 Chaco 战争对阵玻利维亚时再次救命：在 Gran Chaco 半沙漠 45 度气温下，tereré 是士兵唯一不会中暑的饮料。今天巴拉圭人下班路上人手一只 termo 保温壶（装冰水 + 草药 'yuyos'）+ guampa 牛角杯 + bombilla 滤吸管，公园长椅一坐就是 4 小时一壶。yuyos 草药 30 多种可加：menta 薄荷醒脑、cocú 助消化、burrito 抗炎症、cedrón 安神——'tereré' 体验是亚松森街头草药贩 5 分钟现配粉碎的。2020 年 UNESCO 把 'Practices and traditional knowledge of Terere in the culture of Pohã Ñana, ancestral drink of Paraguay' 列入人类非遗。",
+    "emoji": "🍜",
+    "attributes": { "historical": 78, "artistic": 50, "influence": 55, "uniqueness": 92 },
+    "tags": ["terere", "mate", "unesco", "ritual"]
+  },
+  {
+    "id": "PRY_005",
+    "country": "PRY",
+    "level": "pg",
+    "name": "伊瓜苏与伊泰普水电",
+    "nameEn": "Iguazú & Itaipu Dam",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "1973-1991",
+    "description": "1973 年巴拉圭与巴西签条约共建 Itaipu 大坝跨 Paraná 河，1984 年完工时是世界最大水电站（被 2003 年中国三峡超越但单机发电量仍居全球第一）。20 台机组装机 14000 兆瓦，年发电 1030 亿度——巴西 10% + 巴拉圭 88% 的电来自这一座坝。坝高 196 米（=70 层楼）、长 7.7 公里、用混凝土量是英法海底隧道 15 倍 + 钢筋够建 380 座 Eiffel 塔。代价：淹没了上游 Sete Quedas 大瀑布（曾比伊瓜苏更壮观）+ 4 万人迁徙 + 灭绝 30 多种特有鱼类。1991 年完工后伊瓜苏瀑布（Cataratas del Iguazú）成为唯一保留的世界级瀑布奇观——275 股瀑布跨巴西 + 阿根廷 + 巴拉圭三国边境峡谷 2.7 公里宽 + 82 米高，'Devil's Throat' 主瀑流量是尼亚加拉 2 倍。1984 UNESCO 列遗。Eleanor Roosevelt 1944 年来访后名言 'Poor Niagara'，到今天还在博物馆当解说词。",
+    "emoji": "🔬",
+    "attributes": { "historical": 65, "artistic": 70, "influence": 80, "uniqueness": 90 },
+    "tags": ["itaipu", "iguazu", "hydropower", "unesco"]
   }
 ]

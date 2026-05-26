@@ -12,5 +12,61 @@
     "emoji": "⭐",
     "attributes": { "historical": 50, "artistic": 85, "influence": 98, "uniqueness": 75 },
     "tags": ["cinema", "soft-power", "celebrity", "industry"]
+  },
+  {
+    "id": "USA_002",
+    "country": "USA",
+    "level": "pg",
+    "name": "自由女神像",
+    "nameEn": "Statue of Liberty",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1886",
+    "description": "1886 年 10 月 28 日，法国为庆祝美国独立 100 周年送的礼物。雕刻家 Frédéric Bartholdi 设计、Gustave Eiffel（建埃菲尔铁塔那位）做内部铁骨支撑，铜皮厚仅 2.4 毫米但靠工程奇迹挺立 138 年。高 93 米（含基座），右手举火炬象征启蒙，左手握 1776 年 7 月 4 日《独立宣言》铜板，脚下踩断锁链象征反抗暴政。最初是黄铜色，1906 年起被海风氧化成今天的青绿色。脚下基座刻着诗人 Emma Lazarus 的《新巨像》：'把你那疲惫的、贫穷的、蜷缩着渴望自由呼吸的人们交给我'——这成了 1892-1954 年间通过埃利斯岛的 1200 万移民看到的第一句话。",
+    "emoji": "🏛",
+    "attributes": { "historical": 82, "artistic": 80, "influence": 95, "uniqueness": 88 },
+    "tags": ["liberty", "immigration", "monument", "unesco"]
+  },
+  {
+    "id": "USA_003",
+    "country": "USA",
+    "level": "pg",
+    "name": "嘻哈起源·南布朗克斯",
+    "nameEn": "Birth of Hip-Hop",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1973-present",
+    "description": "1973 年 8 月 11 日，南布朗克斯 1520 Sedgwick Avenue 公寓楼底层娱乐室，DJ Kool Herc（牙买加裔，本名 Clive Campbell）为妹妹生日办派对，第一次把两台同款唱机并排放，反复切换两张相同 funk 唱片的 break 鼓点段落，让舞者可以无限跳——'breakbeat' 由此诞生。MC（主持人）开始即兴喊话填充间隔成为 rap，街角斗舞演化成 breaking，地铁车厢喷涂成 graffiti，DJ 切碟成 turntablism——嘻哈四元素就这么从一栋租金管制公寓飞出去。1979 年 Sugarhill Gang 《Rapper's Delight》冲上全美 36 名，证明这不只是黑人街头玩闹。到 2017 年嘻哈正式超越摇滚成美国流媒体第一大流派，全球年产值 100 亿美元。",
+    "emoji": "🎨",
+    "attributes": { "historical": 65, "artistic": 90, "influence": 96, "uniqueness": 90 },
+    "tags": ["hip-hop", "bronx", "dj-kool-herc", "music"]
+  },
+  {
+    "id": "USA_004",
+    "country": "USA",
+    "level": "pg",
+    "name": "硅谷与晶体管革命",
+    "nameEn": "Silicon Valley & Transistor",
+    "category": "tech",
+    "rarity": "legendary",
+    "era": "1956-present",
+    "description": "1956 年诺贝尔物理学奖得主 William Shockley 在帕罗奥图开 Shockley Semiconductor 公司，雇了一群年轻天才——但他偏执到把员工照片挂墙上当嫌疑人。1957 年 8 个核心员工集体辞职（被 Shockley 骂 'traitorous eight'），创立 Fairchild Semiconductor 发明集成电路。其中 Robert Noyce 和 Gordon Moore 1968 年又出走创立 Intel——'Silicon Valley' 一词 1971 年首次见诸报端。Steve Jobs 1976 年在 Los Altos 父亲车库里组装第一台 Apple I；1998 年 Larry Page 和 Sergey Brin 在 Menlo Park 一个朋友的车库里启动 Google；2004 年扎克伯格在哈佛宿舍上线 Facebook 后立刻搬来 Palo Alto。Sand Hill Road 6 公里长一条路上盘踞着全球 70% 的风险资本。",
+    "emoji": "🔬",
+    "attributes": { "historical": 60, "artistic": 50, "influence": 100, "uniqueness": 90 },
+    "tags": ["silicon-valley", "transistor", "innovation", "startup"]
+  },
+  {
+    "id": "USA_005",
+    "country": "USA",
+    "level": "pg",
+    "name": "感恩节火鸡晚宴",
+    "nameEn": "Thanksgiving Turkey Dinner",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1621-present",
+    "description": "1621 年秋，普利茅斯殖民地的清教徒移民熬过第一个冬天活下来一半，与帮过他们的 Wampanoag 原住民一起办了 3 天感恩宴——吃的其实是鹿肉和野禽，不是火鸡。1863 年林肯总统在内战最惨的时刻把 11 月最后一个星期四定为全国感恩节，希望团结分裂的国家。今天感恩节晚宴铁打四样：烤火鸡（全美年消耗 4600 万只，平均每只 7 公斤）+ 红莓酱 + 玉米面包填料 + 南瓜派。当天 18 点全家围坐每人讲一件感恩的事，然后看 NFL 比赛，第二天凌晨 4 点冲进商场抢 Black Friday——这是地球上一年最强消费时刻，2024 年单日线上 109 亿美元。总统每年还会赦免两只火鸡送去农场养老，叫 'Pardoning the Turkey'。",
+    "emoji": "🍜",
+    "attributes": { "historical": 72, "artistic": 50, "influence": 80, "uniqueness": 78 },
+    "tags": ["thanksgiving", "turkey", "tradition", "family"]
   }
 ]

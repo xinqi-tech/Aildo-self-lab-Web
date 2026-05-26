@@ -12,5 +12,61 @@
     "emoji": "🍜",
     "attributes": { "historical": 80, "artistic": 65, "influence": 85, "uniqueness": 88 },
     "tags": ["whisky", "highland", "distillation", "tradition"]
+  },
+  {
+    "id": "SCO_002",
+    "country": "SCO",
+    "level": "pg",
+    "name": "爱丁堡城堡与高地清剿",
+    "nameEn": "Edinburgh Castle & Highland Clearances",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "12th c. / 1750-1860",
+    "description": "爱丁堡城堡建在 3.4 亿年前死火山玄武岩 Castle Rock 上海拔 130 米，从公元前 850 年铁器时代部落堡垒就有人居住，12 世纪 David 一世建第一座石头王宫，是欧洲被围攻次数最多的城堡（26 次记录在案）。今天藏苏格兰王冠 + Stone of Destiny（命运石，所有苏格兰国王加冕都坐此石上，1296 年被英王 Edward 一世抢走 700 年，1996 年才归还）。1707 年苏格兰与英格兰合并签 Acts of Union 时议会就在城堡下 Parliament Hall。1745-1746 年 Bonnie Prince Charlie 起义失败后英政府 1750-1860 年发动 Highland Clearances 高地清剿：北部贵族为养绵羊把祖辈佃农强制赶走，30 万苏格兰人被迫迁加拿大、澳大利亚、北卡罗来纳——今天全球苏格兰裔 5000 万人 / 苏格兰本土 540 万人。Outlander《古战场传奇》小说与电视剧讲的就是这段史。每年 8 月爱丁堡国际艺术节 + Military Tattoo 鼓乐军操是城堡前广场最壮观仪式。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 75, "influence": 75, "uniqueness": 88 },
+    "tags": ["edinburgh", "clearances", "outlander", "unesco"]
+  },
+  {
+    "id": "SCO_003",
+    "country": "SCO",
+    "level": "pg",
+    "name": "亚当·斯密与苏格兰启蒙",
+    "nameEn": "Adam Smith & Scottish Enlightenment",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "1707-1776",
+    "description": "1707-1815 年苏格兰只有 130 万人但出了影响人类历史的一批人：哲学家 David Hume（《人性论》怀疑论奠基）、经济学家 Adam Smith（《国富论》自由市场之父）、地质学家 James Hutton（地球 46 亿年说）、化学家 Joseph Black（发现二氧化碳 + 比热容）、工程师 James Watt（改良蒸汽机点燃工业革命）、医生 William Cullen（开现代化学药理学）。Adam Smith 1723 年生 Kirkcaldy 渔村，1759 年《道德情操论》先讲人类同情心，1776 年《国富论》提 'invisible hand 看不见的手'——市场无意识自调节比官员规划更高效。他终身未婚住母亲家，把书稿手写副本 6 个版本反复修订，1790 年死前焚毁 16 卷未完手稿。爱丁堡 Old Town 与 New Town 的格栅街道 + 乔治王朝建筑被誉为 'Athens of the North 北方雅典'，1995 UNESCO 列遗。今天苏格兰首相办公地 Bute House 仍在 New Town。",
+    "emoji": "🧠",
+    "attributes": { "historical": 88, "artistic": 65, "influence": 95, "uniqueness": 92 },
+    "tags": ["adam-smith", "enlightenment", "hume", "edinburgh"]
+  },
+  {
+    "id": "SCO_004",
+    "country": "SCO",
+    "level": "pg",
+    "name": "蒸汽机与工业革命",
+    "nameEn": "Watt's Steam Engine",
+    "category": "tech",
+    "rarity": "legendary",
+    "era": "1765-1830",
+    "description": "1765 年格拉斯哥大学修理工 James Watt（1736-1819）被叫去修一台 Newcomen 蒸汽机模型——他发现 Newcomen 每个周期都把汽缸冷却再加热极浪费燃料，'灵光乍现' 想到加个独立 'separate condenser' 凝汽器。他与商人 Matthew Boulton 1775 年合伙开公司，1776 年生产首批商用蒸汽机比 Newcomen 节能 75%。他还发明双向活塞（增加力量）+ 飞轮（旋转动力）+ 离心调速器（自动控速）+ 'horsepower 马力' 度量单位。1781-1800 年专利保护期 19 年里全英部署 500 台 Watt 引擎，从抽矿井水扩展到驱动纺织厂、铁路、轮船。James Watt 1819 年死时英国蒸汽工业年增长 15%——人类首次摆脱风、水、肌肉力，进入化石能源时代。Glasgow 1830 年代成 'Second City of the Empire'，世界一半铁船 + 1/3 钢轨在 Clyde 河两岸造出来。'Watt' 后被定为国际单位制功率单位。",
+    "emoji": "🔬",
+    "attributes": { "historical": 92, "artistic": 50, "influence": 98, "uniqueness": 90 },
+    "tags": ["watt", "steam-engine", "industrial-revolution", "glasgow"]
+  },
+  {
+    "id": "SCO_005",
+    "country": "SCO",
+    "level": "pg",
+    "name": "风笛与高地百人格子裙",
+    "nameEn": "Bagpipes & Tartan Kilts",
+    "category": "art",
+    "rarity": "rare",
+    "era": "Medieval-present",
+    "description": "苏格兰大风笛（Great Highland Bagpipe）2 千年前从地中海传入，13 世纪在高地氏族战争中成军号——刺耳哀鸣声 8 公里外能听见。一只风笛 4 根管：吹气管 + 旋律管（9 个音 mixolydian 调式）+ 3 根低音 drone 持续单音。1746 年 Culloden 战役 Bonnie Prince Charlie 失败后英政府《Act of Proscription》禁高地服饰 + 风笛 + 盖尔语 36 年（违者发配西印度群岛）。1782 年禁令解除后风笛随英军远征传遍帝国，今天加拿大、新西兰、印度旁遮普、巴基斯坦军队仍用苏格兰风笛。Tartan 格子布是各氏族（clan）身份证：每个家族有专属色号配比注册在 Scottish Register of Tartans。Kilt 男裙 6 米布料折成 25 道褶绕腰一圈，重 3 公斤——传统下面不穿内裤叫 'going regimental'。每年 8 月 Royal Edinburgh Military Tattoo 3 万观众看 1200 名各国军乐队在城堡广场齐奏《Amazing Grace》（这首歌曲调本身就源自苏格兰盖尔人 'New Britain' 旋律），是地球最壮观的风笛集会。",
+    "emoji": "🎨",
+    "attributes": { "historical": 85, "artistic": 88, "influence": 78, "uniqueness": 95 },
+    "tags": ["bagpipes", "tartan", "kilt", "highland"]
   }
 ]

@@ -12,5 +12,61 @@
     "emoji": "⚔",
     "attributes": { "historical": 95, "artistic": 60, "influence": 85, "uniqueness": 88 },
     "tags": ["carthage", "hannibal", "punic-war", "unesco"]
+  },
+  {
+    "id": "TUN_002",
+    "country": "TUN",
+    "level": "pg",
+    "name": "El Djem 罗马斗兽场",
+    "nameEn": "El Djem Amphitheatre",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "238 AD",
+    "description": "公元 238 年罗马总督 Gordian 一世（后成皇帝）在突尼斯中部小镇 Thysdrus（今 El Djem）建北非最大斗兽场——长 148 米、宽 122 米、高 36 米三层券拱，容纳 35000 观众，是罗马帝国第三大斗兽场（仅次于罗马 Colosseum + 卡普阿）。当时 Thysdrus 是地中海橄榄油生产中心，富商捐资建此夸示财富。1300 年后仍 70% 完好（罗马本城 Colosseum 只剩 30%），因突尼斯沙漠干燥 + 1695 年奥斯曼炮击只损一角。1979 UNESCO 列遗。雷利·斯科特 2000 年《角斗士》大部分外景在此拍——内景 Russell Crowe 走出地下囚室进入光线那段就是 El Djem 真实地下层。每年夏天 Festival International de Symphonie 在此办古典音乐节，国际乐团坐石阶 1800 年回响如新。",
+    "emoji": "🏛",
+    "attributes": { "historical": 88, "artistic": 78, "influence": 65, "uniqueness": 88 },
+    "tags": ["el-djem", "roman", "amphitheatre", "unesco"]
+  },
+  {
+    "id": "TUN_003",
+    "country": "TUN",
+    "level": "pg",
+    "name": "Sidi Bou Said 蓝白小镇",
+    "nameEn": "Sidi Bou Said Blue & White Village",
+    "category": "art",
+    "rarity": "rare",
+    "era": "13th c. / 1915",
+    "description": "Sidi Bou Said 是突尼斯首都郊区悬崖小镇，14 世纪以苏菲圣人 Sidi Bou Said al-Béji 命名。1915 年法国男爵 Rodolphe d'Erlanger（音乐学家 + 画家）搬来定居，颁布全镇统一规定：墙刷石灰白、门窗刷地中海蓝（钴蓝 + 白色铸铁雕花格栅）、屋顶平台收齐高度——影响后来希腊圣托里尼蓝白小镇审美。20 世纪初这里成欧洲艺术家朝圣地：1914 Paul Klee + August Macke + Louis Moilliet 共度 2 周后 Klee 说 'I am a painter'（之前他是版画家）开启他的色彩绘画时代，2000 多幅作品里 Tunisia 系列是关键转折。法国剧作家 Michel Foucault 1968 年在此完成《知识考古学》部分手稿。Café des Nattes 1900 年开张，铺满 nattes 草席的露台俯瞰迦太基海湾，是非洲最古老咖啡馆之一。今天 6000 人口的小镇年接待 50 万游客，2019 年突尼斯抗 IS 后重启文旅就是从这里开始。",
+    "emoji": "🎨",
+    "attributes": { "historical": 70, "artistic": 90, "influence": 70, "uniqueness": 90 },
+    "tags": ["sidi-bou-said", "art-colony", "paul-klee", "mediterranean"]
+  },
+  {
+    "id": "TUN_004",
+    "country": "TUN",
+    "level": "pg",
+    "name": "茉莉花革命与阿拉伯之春起点",
+    "nameEn": "Jasmine Revolution",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2010-2011",
+    "description": "2010 年 12 月 17 日突尼斯中部小城 Sidi Bouzid，26 岁失业大学生 Mohamed Bouazizi 在街头卖菜被警察 Faida Hamdy 没收手推车 + 扇耳光 + 抢走 100 第纳尔。他到市政厅投诉被拒，回来在政府大门前浇汽油自焚——18 天后伤重不治。葬礼当天 5000 人游行，激发突尼斯全国抗议。2011 年 1 月 14 日总统 Ben Ali（执政 23 年）逃往沙特，结束突尼斯 56 年独裁。这一火种顺序点燃 8 国：埃及（穆巴拉克 30 年下台）、利比亚（卡扎菲 42 年被杀）、也门（萨利赫 33 年下台）、叙利亚（持续内战至今）、巴林、约旦、阿曼、摩洛哥。阿拉伯之春 14 国变天唯一过渡成稳定民主国家的只有突尼斯——2014 年新宪法把伊斯兰国身份 + 公民权利平衡处理，2015 年宪法对话四方组合（工会 + 律协 + 雇主 + 人权联盟）拿诺贝尔和平奖。Bouazizi 街头那个水果摊位置今天竖起纪念碑，被《时代》评为 2011 年度人物。",
+    "emoji": "⭐",
+    "attributes": { "historical": 60, "artistic": 50, "influence": 90, "uniqueness": 92 },
+    "tags": ["jasmine-revolution", "arab-spring", "bouazizi", "nobel"]
+  },
+  {
+    "id": "TUN_005",
+    "country": "TUN",
+    "level": "pg",
+    "name": "Couscous 与突尼斯辣酱",
+    "nameEn": "Couscous & Harissa",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "11th c.-present",
+    "description": "Couscous 北非粗麦粉 1100 年柏柏尔（Amazigh）女厨发明，做法：硬粒小麦磨粉 + 撒水搓粒过筛三次成 1-3 毫米小球，蒸笼三蒸（每蒸完抹油散开），蒸好的 couscous 上面盖羊肉 + 蔬菜 + 鹰嘴豆 + 番红花酱汁。突尼斯版必加 harissa 辣酱（红辣椒 + 大蒜 + cumin 孜然 + caraway 葛缕子 + 橄榄油搅泥），是世界辣酱排行常年前 10。Harissa 2022 UNESCO 列入人类非遗。每周五全国 'le vendredi du couscous'（鱼饭周五）家家炖 couscous au poisson 鱼版 couscous——海岸用石斑鱼 / 鲷鱼 / 沙丁鱼，内陆用风干牛肉 + 羊肝。Souk d'El Attarine 香料市场每磅 harissa 5 第纳尔（1.5 美元）。突尼斯人 + 阿尔及利亚人 + 摩洛哥人 + 利比亚人为 'couscous 真正起源国' 争 50 年，2020 年 4 国联合申报 UNESCO 才停火——'le couscous, savoirs, savoir-faire et pratiques' 共同非遗。今天 couscous 是法国 + 意大利 + 西班牙超市冷冻区常驻品。",
+    "emoji": "🍜",
+    "attributes": { "historical": 78, "artistic": 50, "influence": 75, "uniqueness": 88 },
+    "tags": ["couscous", "harissa", "berber", "unesco"]
   }
 ]

@@ -12,5 +12,61 @@
     "emoji": "🍜",
     "attributes": { "historical": 80, "artistic": 50, "influence": 65, "uniqueness": 95 },
     "tags": ["mate", "yerba", "ritual", "guarani"]
+  },
+  {
+    "id": "URY_002",
+    "country": "URY",
+    "level": "pg",
+    "name": "1930 世界杯首届冠军",
+    "nameEn": "1930 First World Cup Champions",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1930",
+    "description": "1930 年 FIFA 首届世界杯定在乌拉圭——选址因 1) 1924 + 1928 奥运会乌拉圭连拿两届足球金牌 2) 1930 年是乌拉圭独立 100 周年 3) 乌拉圭承担所有 13 队差旅 + 新建 Estadio Centenario（百年体育场）容纳 9 万人。13 国参加（欧洲只来 4 国因坐船 2 周太远），7 月 30 日决赛乌拉圭 4-2 击败阿根廷夺冠。当年射手王 Guillermo Stábile（阿根廷）+ 乌拉圭头号巨星 José Andrade 是史上首位非洲裔世界级足球明星。乌拉圭抗议欧洲缺席，1934 + 1938 拒绝参加意大利 + 法国世界杯（成史上唯一两届缺席的卫冕冠军）。1950 巴西世界杯决赛 'Maracanazo'——乌拉圭客场 2-1 翻盘东道主巴西 20 万人马拉卡纳球场，是史上最大爆冷之一，巴西全国哀悼 3 天。340 万人口的乌拉圭至今拿 2 次世界杯冠军 + 2 次美洲杯 15 次（最多）+ 1924 + 1928 奥运金牌——人均足球荣誉地球第一。",
+    "emoji": "⭐",
+    "attributes": { "historical": 92, "artistic": 60, "influence": 88, "uniqueness": 95 },
+    "tags": ["world-cup-1930", "fifa", "centenario", "football"]
+  },
+  {
+    "id": "URY_003",
+    "country": "URY",
+    "level": "pg",
+    "name": "蒙得维的亚老城与殖民街道",
+    "nameEn": "Montevideo Ciudad Vieja",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1726-present",
+    "description": "Montevideo 1726 年西班牙总督 Bruno Mauricio de Zabala 为防葡萄牙人沿 Río de la Plata 河南下而建。'Monte vide eu'（葡语 '我看见一座山'）—— 16 世纪麦哲伦船队首航过这里时领航员喊出此句，地名固定下来。Ciudad Vieja 老城在半岛尖端用 Muralla 海墙围 6 公顷，今天保留 1804 年大教堂 + 1815 年 Cabildo（独立议会原址）+ 1908 年 Mercado del Puerto（铁拱屋顶港口市场，地下烧烤炉烤 parrillada 牛排）。1828 巴西与阿根廷争抢未果后乌拉圭 'Banda Oriental'（东岸）成独立缓冲国，1830 颁宪。1939 年二战首场海战 Battle of the River Plate 英国 3 艘巡洋舰围困德舰 Admiral Graf Spee 于 Montevideo 港，舰长 Hans Langsdorff 不愿被俘自沉舰艇后举枪自尽——这是大西洋战役开局。今天 Plaza Independencia 广场 José Artigas 国父铜马像 + 18 de Julio 大道仿巴黎 Champs-Élysées 建。Andes 街角 Bar Fun Fun 1895 开张是乌拉圭唯一仍唱 tango 的现场酒馆。",
+    "emoji": "🏛",
+    "attributes": { "historical": 80, "artistic": 70, "influence": 60, "uniqueness": 78 },
+    "tags": ["montevideo", "ciudad-vieja", "graf-spee", "colonial"]
+  },
+  {
+    "id": "URY_004",
+    "country": "URY",
+    "level": "pg",
+    "name": "José Mujica 与最贫穷总统",
+    "nameEn": "José Mujica - The World's Poorest President",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "2010-2015",
+    "description": "José 'Pepe' Mujica（1935 生）年轻时是 Tupamaros 城市游击队员，1972 年被军政府关进监狱里独房 13 年（其中 7 年关在井底 + 无窗，只能听蚂蚁与青蛙叫），1985 民主化才放出。2010 年 75 岁当选总统，被誉为 'el presidente más pobre del mundo 世界最贫穷总统'：1) 拒搬进总统府坚持住夫人 30 公里外农场种菊花 2) 开 1987 年款 Volkswagen Beetle 上下班（被中东富豪开价 100 万美元买他没卖）3) 把每月 12000 美元总统工资 90% 捐慈善 + 自留 1500 美元（与乌拉圭平均工资持平）4) 没有银行账户 5) 一只腿的三脚狗 'Manuela' 是他唯一伙伴。任内动作：2012 年合法化大麻（全球首个国家级合法化）+ 2013 同性婚姻 + 2014 堕胎合法化 + 经济增长率 5.4%/年。2015 年宪法限不能连任他自愿下台，全球媒体追访他农场。名言 'Soy sobrio, no soy pobre. Pobre es el que necesita mucho.（我是节俭不是贫穷。贫穷的是那些总需要更多的人。）' 2014 联合国气候大会演讲 14 分钟被誉为本世纪最佳政治演说之一。2025 年 89 岁因食道癌去世，全球降半旗。",
+    "emoji": "🧠",
+    "attributes": { "historical": 60, "artistic": 50, "influence": 88, "uniqueness": 95 },
+    "tags": ["mujica", "tupamaros", "frugal", "philosophy"]
+  },
+  {
+    "id": "URY_005",
+    "country": "URY",
+    "level": "pg",
+    "name": "Punta del Este 与狂欢节",
+    "nameEn": "Punta del Este & Carnival",
+    "category": "art",
+    "rarity": "common",
+    "era": "1907 / 1950s-present",
+    "description": "Punta del Este 半岛 1907 年开发为度假胜地，今天是南美最高级海滨——人均 GDP 6 万美元（=瑞士），1-2 月夏季阿根廷 + 巴西 + 美国富豪集体南飞。地标 La Mano（手雕塑）：智利艺术家 Mario Irarrázabal 1982 年用钢筋水泥造 5 米巨手从沙滩伸出代表淹死者警示——今天是 Instagram 全球前 10 最被拍雕塑之一。东郊 Casapueblo（Carlos Páez Vilaró 设计的白色泥灰别墅雕塑酒店）每天傍晚游客集会鼓掌送日落沉入大西洋。乌拉圭狂欢节（Carnaval del Uruguay）持续 40 天是全球最长狂欢节（比巴西 5 天 + 威尼斯 12 天都长），从 1 月底持续到 3 月初。核心是 Murga 街角讽刺合唱团：15-17 人化老式戏剧花脸 + 唱戏仿政治新闻歌曲，每年 Concurso Oficial 比赛在 Teatro de Verano 露天剧场办 40 场决赛。Llamadas 黑人鼓队周末游行起源 Afro-Uruguayan 黑奴文化，Candombe 鼓节奏 2009 UNESCO 列遗——是南美少数仍鲜活的非洲遗产。",
+    "emoji": "🎨",
+    "attributes": { "historical": 60, "artistic": 80, "influence": 70, "uniqueness": 85 },
+    "tags": ["punta-del-este", "carnival", "candombe", "unesco"]
   }
 ]

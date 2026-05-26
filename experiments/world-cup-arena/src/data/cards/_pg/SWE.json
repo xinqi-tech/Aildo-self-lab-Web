@@ -12,5 +12,61 @@
     "emoji": "🔬",
     "attributes": { "historical": 50, "artistic": 65, "influence": 92, "uniqueness": 85 },
     "tags": ["ikea", "design", "flat-pack", "lifestyle"]
+  },
+  {
+    "id": "SWE_002",
+    "country": "SWE",
+    "level": "pg",
+    "name": "维京 Gotland 商人",
+    "nameEn": "Viking Gotland Traders",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "800-1100",
+    "description": "瑞典维京人（Varangians 瓦兰吉人）与挪威同时代海盗不同——他们主要走东欧河道做贸易而非掠夺。9 世纪起从波罗的海驾长船入芬兰湾，沿 Neva-Volkhov-Dnepr 河系拖船过陆，最终抵达君士坦丁堡 + 巴格达，把波罗的海琥珀 + 海狸皮 + 北欧奴隶换阿拉伯白银 dirham。瑞典 Gotland 岛今天仍挖出 16 万枚阿拉伯银币 + 7000 件中东波斯首饰，是欧洲银币埋藏密度最高的地方。他们沿途建商站：Staraya Ladoga（最早的俄罗斯城）、Novgorod（罗斯起源）、Kiev（基辅罗斯），860 年攻打过君士坦丁堡。988 年 Volodymyr 大公受洗东正教后娶拜占庭公主——东斯拉夫文明 = 维京建国 + 拜占庭信仰。988-1066 拜占庭皇帝 Varangian Guard 御林军全是瑞典 + 挪威雇佣兵。'Rus 罗斯'一词源自芬兰语 'Ruotsi'（瑞典人）。Stockholm 1252 年由 Birger Jarl 建于 Mälaren 湖入海口岩岛上，名字字面 'stock + holm'（木桩岛）。",
+    "emoji": "🏛",
+    "attributes": { "historical": 90, "artistic": 65, "influence": 80, "uniqueness": 88 },
+    "tags": ["viking", "varangian", "gotland", "trade"]
+  },
+  {
+    "id": "SWE_003",
+    "country": "SWE",
+    "level": "pg",
+    "name": "诺贝尔奖与瑞典皇家科学院",
+    "nameEn": "Nobel Prize",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1901-present",
+    "description": "Alfred Nobel（1833-1896）瑞典化学家发明炸药 dynamite + 雷管 + 弹道炸药共 355 项专利。1888 年他哥哥 Ludvig 在法国去世，巴黎报纸误以为 Alfred 死了发讣闻 'Le marchand de la mort est mort'（死神商人死了），把他描述成战争元凶——这刺激他改写遗嘱：1895 年遗嘱把 94% 财富 3100 万瑞典克朗（相当今天 4 亿美元）放进基金会，每年利息颁 5 大奖：物理 + 化学 + 医学 + 文学 + 和平。1968 年瑞典中央银行 300 周年捐款增设经济学奖（严格说是 'Nobel Memorial Prize'，不是 Nobel 本人遗嘱里的）。每年 12 月 10 日（Nobel 忌日）在斯德哥尔摩音乐厅颁奖（和平奖在 Oslo），晚宴 Stadshuset 市政厅蓝厅 1300 人，菜单保密到当晚。诺贝尔奖金额 2024 年是 1100 万瑞典克朗（约 100 万美元）。最有名拒奖：1958 帕斯捷尔纳克（被苏联逼）、1964 萨特（不喜欢成为机构）、1973 黎德寿（认为越战未真和平）。最小得主 17 岁 Malala，最老 97 岁 John Goodenough（锂电池）。",
+    "emoji": "⭐",
+    "attributes": { "historical": 88, "artistic": 75, "influence": 100, "uniqueness": 95 },
+    "tags": ["nobel-prize", "alfred-nobel", "stockholm", "science"]
+  },
+  {
+    "id": "SWE_004",
+    "country": "SWE",
+    "level": "pg",
+    "name": "ABBA 与瑞典流行乐工厂",
+    "nameEn": "ABBA & Swedish Pop Factory",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1972-present",
+    "description": "ABBA（Agnetha + Björn + Benny + Anni-Frid 首字母）1972 年成立两对夫妇组合，1974 年用《Waterloo》拿欧洲歌唱大赛 Eurovision 冠军——这是 ABBA 全球爆红起点，也是瑞典文化输出第 1 站。1976-1981 年高峰期专辑全球总销 4 亿张（披头士之后第 2 名），《Dancing Queen》《Mamma Mia》《The Winner Takes It All》是 disco 时代国民曲。1982 年两对夫妇全离婚后解散，从此 40 年坚持不复合（被认为是西方 80% 解散乐团里最坚决）—— 直到 2021 年用 'ABBAtars' 数字孪生技术开 London 全息演唱会 Voyage，至今票房已超 2 亿英镑。ABBA 给瑞典留下完整流行音乐工业：作曲家 Max Martin（1968 生）从 1999 年起为 Britney + Backstreet Boys + Taylor Swift + The Weeknd 写 27 首美国 Billboard 第 1，是除 John Lennon + Paul McCartney 之外史上写过最多第 1 名歌的作者；Avicii（Tim Bergling 1989-2018）EDM 电子舞曲教父；瑞典流媒 Spotify 2008 年成立后改变全球音乐版税分发模型。瑞典 1000 万人口贡献全球流行音乐 4% 出口。",
+    "emoji": "🎨",
+    "attributes": { "historical": 60, "artistic": 92, "influence": 90, "uniqueness": 85 },
+    "tags": ["abba", "max-martin", "pop-music", "spotify"]
+  },
+  {
+    "id": "SWE_005",
+    "country": "SWE",
+    "level": "pg",
+    "name": "Fika 咖啡仪式与肉桂卷",
+    "nameEn": "Fika & Cinnamon Buns",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "18th c.-present",
+    "description": "Fika 是瑞典国民仪式，字面意思 '喝咖啡 + 吃甜点 + 跟人聊天'，但实质是工作日强制暂停制度。源于 18 世纪上层社会沙龙，1920 年代起工厂主自愿引入每天上午 10 点 + 下午 3 点带薪 fika 休息（每次 15-30 分钟）——他们发现工人 fika 后 1 小时生产率比连续工作高 20%。今天瑞典所有公司劳动合同写明 fika 时间是工作时间不扣薪，连医院手术室也按 fika 排班。标配三件套：1) 黑咖啡（瑞典人均年消耗 8 公斤豆，全球第 6 高）2) kanelbulle 肉桂卷（10 月 4 日是国家肉桂卷日 Kanelbullens dag，年消耗 2 亿个）3) prinsesstårta 公主蛋糕（绿色杏仁膏外皮覆盖海绵蛋糕 + 奶油 + 树莓酱）。Fika 文化输出：Google + Spotify 总部都在办公室设 fika 角学瑞典模式。Volvo 工厂员工自杀率比邻国丹麦低 35%，被劳动学者归因 fika 的强制社交时间。瑞典 Lapland 萨米原住民 Saami 反过来诟病 fika：'你们南方人喝咖啡都需要专门时间，我们驯鹿群营地一天 8 次咖啡。'",
+    "emoji": "🍜",
+    "attributes": { "historical": 68, "artistic": 55, "influence": 75, "uniqueness": 85 },
+    "tags": ["fika", "kanelbulle", "coffee-culture", "work-balance"]
   }
 ]

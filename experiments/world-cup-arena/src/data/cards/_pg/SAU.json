@@ -12,5 +12,61 @@
     "emoji": "🧠",
     "attributes": { "historical": 95, "artistic": 50, "influence": 95, "uniqueness": 92 },
     "tags": ["hajj", "islam", "mecca", "pilgrimage"]
+  },
+  {
+    "id": "SAU_002",
+    "country": "SAU",
+    "level": "pg",
+    "name": "马达因·萨利赫与纳巴泰文明",
+    "nameEn": "Hegra (Madain Saleh) & Nabataeans",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1st c. BC - 2nd c. AD",
+    "description": "约旦佩特拉名扬天下，但纳巴泰帝国的第二大城 Hegra（阿拉伯语 Madain Saleh）藏在沙特西北部 AlUla 沙漠红砂岩里，2008 年成为沙特首个 UNESCO 世遗。公元前 1 世纪到公元 2 世纪纳巴泰商人控制乳香 + 没药 + 香料从阿拉伯半岛南端到地中海的骆驼商道，在 Hegra 凿岩壁建 131 座王陵——每座 5-20 米高，仿希腊柱式 + 埃及 obelisk + 美索不达米亚台阶混搭。Qasr al-Farid '孤独城堡' 单块巨岩凿成完整四面建筑高 22 米，但内部空无一物——工匠还没刻完业主就死了。纳巴泰人发明了用陶罐 + 地下水道 'qanat' 在沙漠存活的全套技术，5 万人口的城市能种葡萄 + 椰枣 + 小麦。2017 年沙特王储 MBS 改革开放后 AlUla 成 'Saudi 2030' 旅游核心，2019 年首次发签证给非穆斯林游客来 Hegra，每天限 400 人。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 88, "influence": 65, "uniqueness": 96 },
+    "tags": ["hegra", "nabataean", "alula", "unesco"]
+  },
+  {
+    "id": "SAU_003",
+    "country": "SAU",
+    "level": "pg",
+    "name": "伊本·赫勒敦与社会循环论",
+    "nameEn": "Ibn Khaldun & Cyclical History",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "1332-1406",
+    "description": "Ibn Khaldun 1332 年生于突尼斯，但他祖籍是阿拉伯半岛 Hadhramaut 部族，思想深植阿拉伯半岛贝都因游牧 vs 城市定居二元对立。1377 年他在阿尔及利亚乡间躲战乱 4 年写下《Muqaddimah》（《历史绪论》）—— 是社会学、经济学、人口学、历史哲学的开山之作（比欧洲社会学之父 Auguste Comte 早 450 年）。核心理论 'asabiyyah 部族凝聚力'：1) 沙漠贝都因因艰苦生活有强凝聚力 + 战斗力 2) 征服城市后享乐 3 代后凝聚力衰退 3) 被下一波沙漠新民征服。这是历史循环模型最早完整表达。他还首次提出：劳动是价值之源（早于亚当·斯密 400 年）、税收过高反损经济（拉弗曲线雏形）、人口密度决定文明高度。1382 年他迁开罗任 Maliki 学派大法官，1400 年帖木儿打到大马士革城下他出城谈判 35 天保住城市不被屠杀。20 世纪汤因比《历史研究》、Toynbee 全套理论体系直接借鉴他。",
+    "emoji": "🧠",
+    "attributes": { "historical": 90, "artistic": 60, "influence": 88, "uniqueness": 95 },
+    "tags": ["ibn-khaldun", "muqaddimah", "asabiyyah", "philosophy"]
+  },
+  {
+    "id": "SAU_004",
+    "country": "SAU",
+    "level": "pg",
+    "name": "阿拉伯椰枣与贝都因待客之道",
+    "nameEn": "Dates & Bedouin Hospitality",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Pre-Islamic-present",
+    "description": "沙特是全球第二大椰枣生产国（年 160 万吨，仅次于埃及），全国种 3000 万棵椰枣树。Al-Qassim 省 Buraydah 镇每年 8-10 月椰枣节是世界最大椰枣交易会，单日成交 40 万吨。品种 400 种：Ajwa（伊斯兰先知最爱的麦地那紫枣，一盒 1 公斤 200 美元）、Sukkari（金色蜜糖味）、Khlas（最常见日常款）、Medjool（巨大软甜外销欧美）。贝都因待客铁三件：1) gahwa 阿拉伯咖啡（生豆轻焙 + cardamom 小豆蔻，淡黄色，用 dallah 长嘴铜壶倒小杯 finjan，喝完晃杯表示够了不晃就一直续）2) 椰枣（指头大三颗摆瓷碟）3) bakhoor 沉香烟（铜炉烧 oud agarwood，访客把烟扇向头发衣服带回家）。贝都因谚语 'al-dar dar al-mudif'（家是为客人开的），陌生人敲门按 Quran 规定享 3 天 + 8 小时无条件食宿，第 4 天才能问来意。今天 Sheikh 接待外宾仍按此礼，王储 MBS 接见拜登 2022 年仍是 dallah + dates + bakhoor 仪式。",
+    "emoji": "🍜",
+    "attributes": { "historical": 85, "artistic": 50, "influence": 60, "uniqueness": 85 },
+    "tags": ["dates", "gahwa", "bedouin", "hospitality"]
+  },
+  {
+    "id": "SAU_005",
+    "country": "SAU",
+    "level": "pg",
+    "name": "沙特 2030 与 NEOM 未来城",
+    "nameEn": "Vision 2030 & NEOM",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "2016-present",
+    "description": "2016 年王储 Mohammed bin Salman（MBS）发布 'Saudi Vision 2030' 国家战略：摆脱石油依赖、女性松绑、文旅开放、AI 投资。具体动作：2017 年允许电影院开张（被禁 35 年），2018 年女性可开车、可独自申请签证，2019 年开 e-visa 给 49 国非穆斯林游客（之前只朝圣可入境）。2017 年宣布 NEOM 未来城——投资 5000 亿美元在西北 Tabuk 省 26500 平方公里红海岸边沙漠建零碳新城：核心 'The Line' 是 170 公里长 + 500 米高 + 200 米宽的线性镜面城市，住 900 万人但没有汽车 + 没有街道 + 自给清洁能源；Trojena 是中东首座滑雪场（2029 亚冬会主办地）；Sindalah 是红海超豪华游艇岛 2024 已开。批评：'The Line' 工程难度被工程师质疑可行性，2024 年 Bloomberg 爆料计划 9 年内只能建 2.4 公里而非 170 公里，预算超支 1 万亿美元。同期 LIV Golf 联赛 2022 年挖走老虎伍兹老对手 Phil Mickelson + 与 PGA 合并、2023 年签 Cristiano Ronaldo 加盟 Al-Nassr 球队 2 亿美元/年——'sportswashing 体育洗白' 成 MBS 软实力主战场。",
+    "emoji": "⭐",
+    "attributes": { "historical": 30, "artistic": 70, "influence": 92, "uniqueness": 88 },
+    "tags": ["vision-2030", "neom", "mbs", "modernization"]
   }
 ]

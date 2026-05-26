@@ -12,5 +12,61 @@
     "emoji": "⭐",
     "attributes": { "historical": 40, "artistic": 30, "influence": 88, "uniqueness": 80 },
     "tags": ["al-jazeera", "media", "arab-spring", "soft-power"]
+  },
+  {
+    "id": "QAT_002",
+    "country": "QAT",
+    "level": "pg",
+    "name": "珍珠采集与海湾古文化",
+    "nameEn": "Pearl Diving Heritage",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "Pre-1930s",
+    "description": "1930 年代日本人工养殖珍珠技术摧毁波斯湾天然珍珠业之前，卡塔尔 90% 经济靠采珍珠。每年 4-9 月 'al-ghaws al-kabir 大潜季' 三个月，几百艘 dhow 帆船带 30-40 名潜水员（gheis）出海驻扎珊瑚礁。潜水员只穿腰布 + 木夹鼻、绳上栓 6 公斤石头潜 18 米深、屏息 2 分钟在海底挖蚌、一天潜 50 次，结束季时一半人耳膜穿孔 + 视网膜出血 + 营养不良。船长（nakhuda）出钱出船，潜水员分成最低 1/20 利润——这是阿拉伯封建剥削最典型场景。卡塔尔历史学家 Ali Khalifa al-Kuwari 记 1925 年顶峰 1.3 万人采珠占总人口 60%。1928 年日本珠王 Mikimoto Kokichi 把人工珠涌入伦敦市场把波斯湾珠价砸到 1/10，1930-1933 大萧条加速崩溃。Doha 海滨 Souq Waqif 老市场仍有 4 家珠商，最贵 'Pearl of Allah'（27 公斤）2019 年估价 9000 万美元。多哈 Pearl-Qatar 人工岛 2004 年填海 4 平方公里建成奢侈住宅区，纪念这段历史。",
+    "emoji": "🏛",
+    "attributes": { "historical": 88, "artistic": 60, "influence": 50, "uniqueness": 88 },
+    "tags": ["pearl-diving", "dhow", "gulf-history", "souq"]
+  },
+  {
+    "id": "QAT_003",
+    "country": "QAT",
+    "level": "pg",
+    "name": "阿拉伯书法",
+    "nameEn": "Arabic Calligraphy",
+    "category": "art",
+    "rarity": "rare",
+    "era": "7th c.-present",
+    "description": "阿拉伯书法 (al-khatt al-Arabi) 7 世纪起为抄写《古兰经》而生——伊斯兰禁绘人像，文字成为唯一可装饰宗教场所的艺术。8 大经典字体：Kufi（最古老方形 8 世纪 Iraq 库法城）、Naskh（最常用清抄体）、Thuluth（清真寺穹顶题字粗大体）、Diwani（奥斯曼宫廷曲线密码体）、Ruq'ah（现代手写体）、Maghrebi（北非 + 安达卢西亚环线体）、Nasta'liq（波斯垂坠体）、Sini（中国回族体）。Doha 卡塔尔伊斯兰艺术博物馆（Museum of Islamic Art，I.M. 贝聿铭 2008 年遗作设计，模仿 9 世纪开罗 Ibn Tulun 清真寺立方体）藏 1400 年阿拉伯书法精品 1.5 万件，包括 8 世纪羊皮纸 Kufi 《古兰经》册页。每年 11 月 Sheikh Faisal 国王基金会办全球书法双年展，奖金 10 万美元。今天 Doha 街头店铺招牌都是手写书法体，机场 logo 是书法家 Wissam Shawkat 设计——他用 Diwani 风格把 'QATAR' 写成飞翔的猎鹰。2021 年 UNESCO 把阿拉伯书法列入人类非遗，提案国 16 个阿拉伯国家联署。",
+    "emoji": "🎨",
+    "attributes": { "historical": 85, "artistic": 95, "influence": 80, "uniqueness": 90 },
+    "tags": ["calligraphy", "khatt", "islamic-art", "unesco"]
+  },
+  {
+    "id": "QAT_004",
+    "country": "QAT",
+    "level": "pg",
+    "name": "贝都因游牧 + Falconry",
+    "nameEn": "Bedouin Falconry",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "Pre-Islamic-present",
+    "description": "Falconry（驯鹰打猎）3000 年前波斯帝国就有，是阿拉伯贝都因游牧民冬季猎食 + 部落地位象征。卡塔尔人最爱 saker falcon（猎隼）+ peregrine falcon（游隼），野生抓回训练 40 天就能放飞抓鸨鸟。训鹰师（saqar）赤臂戴皮护套，鹰戴皮帽（burqa）保持冷静，主人左拳举鹰右手抛肉做条件反射训练。每年 11 月卡塔尔西部沙漠办 Marmi Falcon Festival 比赛，2024 年冠军 saker falcon 飞 408 米抓鸽时速 320 公里——是地球上俯冲最快动物。一只血统好猎隼可拍卖 50 万美元，多哈 Souq Waqif 市场有专门鹰医生看病、鹰宠物店卖鹰用 GPS 追踪器。海湾航空允许带活鹰登机（自带客舱座位）。2010 年 UNESCO 把 falconry 列人类非遗，18 国联合申报包括卡塔尔。同期贝都因仍保留传统：黑山羊毛织 bayt sha'r 帐篷、用 dallah 长嘴铜壶煮 gahwa（加 cardamom 豆蔻的小杯咖啡）+ 椰枣待客、用骆驼奶（一只母驼一天产 4 升）补充维 C。",
+    "emoji": "🍜",
+    "attributes": { "historical": 85, "artistic": 70, "influence": 55, "uniqueness": 95 },
+    "tags": ["falconry", "bedouin", "gahwa", "unesco"]
+  },
+  {
+    "id": "QAT_005",
+    "country": "QAT",
+    "level": "pg",
+    "name": "天然气帝国与 2022 世界杯",
+    "nameEn": "LNG Empire & 2022 World Cup",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1971-present",
+    "description": "1971 年壳牌在卡塔尔东北 80 公里海上发现 North Field——世界最大天然气田（占全球已探明气量 18%），与伊朗 South Pars 共享。1990 年代起卡塔尔投入 1500 亿美元建液化天然气（LNG）出口体系，1996 年 Ras Laffan 港首船开走，到 2006 年超越印尼成为全球第一 LNG 出口国。2022 年俄乌战争后欧洲转向卡塔尔抢气，2024 年单一国 GDP 排名第 6 高（人均 11.7 万美元），人口 290 万但 88% 是外籍劳工（印度、尼泊尔、孟加拉、菲律宾）。2010 年 FIFA 把 2022 世界杯主办权给卡塔尔——36 度高温被迫挪到 11-12 月开赛、8 座球场全新建（Stadium 974 用 974 个集装箱拼搭，赛后拆运去乌拉圭）、阿根廷 vs 法国决赛 5-7 加时点球被誉为史上最佳决赛、梅西终于拿到大力神杯。世界杯总投入 2200 亿美元（是巴西 2014 的 14 倍），同期被欧美媒体批评 6500 名南亚劳工死亡。Sheikh Tamim 国王赛后地中海游艇 Le Grand Bleu 庆祝照流出，是卡塔尔从沙漠帝国到全球软实力的高光时刻。",
+    "emoji": "⭐",
+    "attributes": { "historical": 50, "artistic": 60, "influence": 90, "uniqueness": 80 },
+    "tags": ["lng", "world-cup-2022", "north-field", "soft-power"]
   }
 ]

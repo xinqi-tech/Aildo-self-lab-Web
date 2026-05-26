@@ -12,5 +12,61 @@
     "emoji": "🔬",
     "attributes": { "historical": 90, "artistic": 50, "influence": 95, "uniqueness": 92 },
     "tags": ["panama-canal", "us-empire", "engineering", "global-trade"]
+  },
+  {
+    "id": "PAN_002",
+    "country": "PAN",
+    "level": "pg",
+    "name": "卡斯科古城",
+    "nameEn": "Casco Viejo",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1673-present",
+    "description": "1519 年西班牙总督 Pedrarias Dávila 在太平洋岸边建 Panamá Viejo（旧巴拿马），是美洲第一个西班牙太平洋殖民城。1671 年英国海盗 Henry Morgan 带 1400 人长途奔袭把它劫掠烧成灰烬（今天遗址仍立成 UNESCO 1997 列遗）。1673 年西班牙人放弃旧址往西南 8 公里岩岛上建 Casco Viejo 新城——三面环海一面挖护城河、城墙厚 3 米抗海盗。窄街都铺 1670 年代加迪斯港运来的鹅卵石、走廊 balcony 木雕受加勒比海盗 + 安达卢西亚 + 法国新奥尔良三方影响。1903 年巴拿马在 Plaza de la Independencia 广场宣布脱离哥伦比亚独立。20 世纪运河区建成后老城没落 80 年成贫民窟，1997 年 UNESCO 列遗后修复成今天的文艺街区——Café Coca-Cola 1875 年开张是中美洲最老咖啡店，海明威 1956 年来过留照片。Casco 顶楼酒吧夕阳看跨洋集装箱船排队进运河是巴拿马城最佳明信片。",
+    "emoji": "🏛",
+    "attributes": { "historical": 78, "artistic": 75, "influence": 60, "uniqueness": 82 },
+    "tags": ["casco-viejo", "unesco", "colonial", "pirates"]
+  },
+  {
+    "id": "PAN_003",
+    "country": "PAN",
+    "level": "pg",
+    "name": "Kuna 原住民与 mola 拼布",
+    "nameEn": "Guna Yala & Mola Textiles",
+    "category": "art",
+    "rarity": "rare",
+    "era": "Pre-Columbian-present",
+    "description": "巴拿马加勒比海岸 365 座珊瑚小岛组成 Guna Yala 自治区（旧称 San Blas），8 万 Guna 原住民按古老 sahila（酋长）会议制治理，巴拿马政府不能插手。Guna 妇女从小学 mola 反向贴布刺绣：先把 4-7 层彩布叠起来，再用剪刀切开露出下层颜色形成几何图案，最后用极细针线把切边卷边手缝固定，一块 30×40 厘米需 100 小时。题材分两类：传统几何（神话怪兽、星空、海龟）+ 现代讽刺（飞机、CD 播放器、美军入侵）。mola 1925 年起成女性日常服胸前装饰，今天是文化身份象征。1925 年 Guna 起义反抗巴拿马政府禁穿 mola + 鼻环的政策，9 天战争后获得宪法承认的自治权——是拉美原住民史唯一通过武装获得制度自治的案例。Guna 还坚持母系继承制 + 一夫一妻 + 全岛禁酒，2010 年起气候变化海平面上升淹岛，他们正集体迁往陆地新村。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 92, "influence": 50, "uniqueness": 98 },
+    "tags": ["guna-yala", "mola", "indigenous", "textile"]
+  },
+  {
+    "id": "PAN_004",
+    "country": "PAN",
+    "level": "pg",
+    "name": "Sancocho 与中美洲料理",
+    "nameEn": "Sancocho & Crossroads Cuisine",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Colonial-present",
+    "description": "巴拿马国菜 Sancocho 是浓郁鸡汤炖白薯（ñame）+ 玉米 + culantro（巴拿马欧芹）+ 红椒，传统宿醉早餐 + 周日午餐 + 葬礼后家宴必备。配 ojaldra（炸面饼）+ patacones（炸绿香蕉片）。巴拿马地理位置让饮食是 5 文化大熔炉：1) 西班牙殖民带来米饭、橄榄油、闷锅菜 2) 非洲奴隶带来 ackee 果、秋葵、椰浆 3) 加勒比印第安人原住民给玉米、可可、红薯 4) 1850-1914 修运河时 5 万中国劳工带广东炒粉、酱油炒饭，今天巴拿马城 'arroz con pollo' 实际是粤式酱油鸡饭变种 5) 1903 年起 12 万印度西帕拉米尔人来运河区做苦力留下 curry 香料。Mercado de Mariscos 海鲜市场 ceviche 用太平洋黄鳍金枪鱼 + 加勒比海石斑鱼并卖。咖啡：Boquete 高原海拔 1700 米的 Geisha 品种 2017 年起在拍卖会一磅卖到 1029 美元，是全球最贵咖啡。",
+    "emoji": "🍜",
+    "attributes": { "historical": 65, "artistic": 60, "influence": 55, "uniqueness": 80 },
+    "tags": ["sancocho", "geisha-coffee", "crossroads", "creole"]
+  },
+  {
+    "id": "PAN_005",
+    "country": "PAN",
+    "level": "pg",
+    "name": "Darién 雨林与生物走廊",
+    "nameEn": "Darién Gap & Biodiversity",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "Geological / 1960s-present",
+    "description": "巴拿马与哥伦比亚边境 160 公里宽 Darién 雨林是泛美公路（Pan-American Highway，阿拉斯加到火地岛 3 万公里）唯一中断段——没有公路可通过。1971 年起多次提议修路全部被环保团体 + 原住民反对：这里是地球北南美洲生物迁徙桥，3 万种昆虫 + 1500 种植物 + 533 种鸟（占全球 5%）+ 美洲豹 / 食蚁兽 / 巴拿马金蛙等特有物种。UNESCO 1981 年列遗 Darién 国家公园 5750 平方公里。雨季年降雨 3000 毫米成沼泽，干季沦为毒蛇 + 美洲虎 + 哥伦比亚反政府游击队 FARC 残部 + 走私贩据点。2010 年代起每年 1-5 万南美洲非法移民徒步穿越 Darién 北上美国，2023 年单年 52 万人创纪录，沿途死亡数千。生物学家说 Darién 像 350 万年前中美洲地峡形成时的'生物大交换'活化石——美洲豹是从北美迁来的，犰狳是从南美迁来的，这里仍是它们的混血基因池。",
+    "emoji": "🔬",
+    "attributes": { "historical": 70, "artistic": 50, "influence": 65, "uniqueness": 95 },
+    "tags": ["darien-gap", "biodiversity", "unesco", "migration"]
   }
 ]

@@ -12,5 +12,61 @@
     "emoji": "🎨",
     "attributes": { "historical": 78, "artistic": 80, "influence": 72, "uniqueness": 88 },
     "tags": ["senghor", "negritude", "francophone", "post-colonial"]
+  },
+  {
+    "id": "SEN_002",
+    "country": "SEN",
+    "level": "pg",
+    "name": "戈雷岛奴隶贸易遗址",
+    "nameEn": "Gorée Island Slave Trade",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1444-1848",
+    "description": "Gorée 戈雷岛在达喀尔港外 3 公里，1444 年葡萄牙人首登陆，1588 年荷兰人占领并以荷兰泽兰省 Goeree 岛命名，1677 年法国攻占后成西非最重要奴隶贸易枢纽长达 170 年。Maison des Esclaves 奴隶之家是 1776 年建的两层石屋：楼上是奴隶贩子宽敞客厅 + 餐厅 + 舞厅；楼下 1.5 米高夹层关 200 名非洲俘虏挤 60 平方米，分 'mâles'（男）/ 'femelles'（女）/ 'enfants'（儿童）三屋。地面中央 'Porte du voyage sans retour 不归之门' 通向大西洋——船只就在门外锚地接人运去加勒比海蔗糖种植园 + 巴西金矿 + 北美棉田。学界争论实际经此中转的奴隶数（部分历史学家说 Gorée 本身只过 33000 人，主要象征意义大于数量），但 1978 年 UNESCO 首批世遗就列入是因这是大西洋三角贸易最有视觉冲击的现存遗址。1985 教皇若望保禄二世访问跪在不归之门前道歉，1998 克林顿、2003 老布什、2013 奥巴马、2024 拜登都来过。岛上不准开车 + 不准建电线，1500 居民仍住殖民老屋。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 60, "influence": 85, "uniqueness": 95 },
+    "tags": ["goree", "slave-trade", "unesco", "atlantic"]
+  },
+  {
+    "id": "SEN_003",
+    "country": "SEN",
+    "level": "pg",
+    "name": "Mbalax 节奏与 Youssou N'Dour",
+    "nameEn": "Mbalax & Youssou N'Dour",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1970s-present",
+    "description": "Mbalax 是 1970 年代达喀尔诞生的电子化非洲流行乐：底层是 Wolof 原住民 sabar 鼓节奏（6/8 拍多层切分 + 手击 + 棍击交替），上面叠 funk 贝斯 + 古巴吉他 + 爵士铜管。Youssou N'Dour（1959 生）是 mbalax 教父——他妈妈是 griot（西非世袭吟唱诗人）家族，12 岁在达喀尔街头唱传统 tassu（口头史诗），1984 年签 Peter Gabriel 厂牌后把 mbalax 带向全球。1994 年与 Neneh Cherry 合唱《7 Seconds》全球卖 4000 万张，刚果 + 巴黎 + 东京同步排行榜第 1。1986 年他与 Peter Gabriel + Sting + Tracy Chapman 全球大赦国际巡演把人权 + 非洲音乐绑定。1999 年他在 Place de la République 巴黎广场义演反国债，欧盟当晚答应免塞内加尔 20 亿欧元债。2012 年塞内加尔总统大选他参选过（被宪法委员会以财务问题驳回），2012-2013 任文化与旅游部长，2017 年第二张《Africa Rekk》仍卖到全球电台。Dakar Music Expo + Festival du Sahel 都是他撑起来。",
+    "emoji": "⭐",
+    "attributes": { "historical": 50, "artistic": 92, "influence": 85, "uniqueness": 90 },
+    "tags": ["mbalax", "youssou-ndour", "griot", "world-music"]
+  },
+  {
+    "id": "SEN_004",
+    "country": "SEN",
+    "level": "pg",
+    "name": "Thieboudienne 国民鱼饭",
+    "nameEn": "Thieboudienne",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "19th c.-present",
+    "description": "Thieboudienne（沃洛夫语 'ceeb u jën' 鱼饭）是塞内加尔国菜，2021 年 UNESCO 列入人类非物质文化遗产。起源 19 世纪中叶圣路易市（Saint-Louis）女厨 Penda Mbaye 给法国殖民地总督做饭时，用本地 carp grouper 石斑鱼 + 西非 jollof 米改良成今天版本。做法：1) 大铁锅热花生油炒洋葱 + 西红柿 + 辣椒 + 大蒜成 sauce 2) 鱼肚塞 'rof' 香料（欧芹 + 辣椒 + 大蒜捣泥）煎黄后捞出 3) 锅里下木薯、胡萝卜、卷心菜、秋葵、茄子炖 1 小时 4) 米饭直接倒进锅里吸尽鱼汤汁炒到锅底结焦 'xoon'（最珍贵的部分） 5) 鱼 + 蔬菜摆米饭上一起端上桌，全家围一只大盘用右手抓食。配 bissap（红洛神花茶）+ ataya（绿茶 3 次倒杯仪式，每次糖越来越多越苦越甜）。Dakar 街头 Restaurant Chez Loutcha 一份 thieb 3000 西非法郎（5 美元），周五 'jour du thiéboudienne' 全民鱼饭日。",
+    "emoji": "🍜",
+    "attributes": { "historical": 70, "artistic": 60, "influence": 60, "uniqueness": 88 },
+    "tags": ["thieboudienne", "wolof", "unesco", "food"]
+  },
+  {
+    "id": "SEN_005",
+    "country": "SEN",
+    "level": "pg",
+    "name": "Sufi 兄弟会与 Touba 圣城",
+    "nameEn": "Sufi Brotherhoods & Touba",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "1883-present",
+    "description": "塞内加尔 95% 是穆斯林，但与北非阿拉伯主流逊尼派不同——他们信仰苏菲（Sufi）神秘主义，分 4 大兄弟会（tariqa）：1) Tijaniyya（最大 50% 信众）2) Muridiyya（最具特色 35%）3) Qadiriyya 4) Layene。Muridiyya 创始人 Cheikh Ahmadou Bamba 1853-1927 生于 Mbacké 镇，1883 年法国殖民军把他流放到加蓬 + 毛里塔尼亚共 33 年，他在流放中写 7000 万字诗篇祈祷不抵抗也不合作——成为非洲非暴力反殖民先驱。1887 年他在 Touba 圣城建大清真寺，今天是塞内加尔最高建筑（86 米尖塔）+ 非洲第 2 大清真寺。Muridiyya 信徒以勤劳 + 节俭 + 商业头脑出名，控制塞内加尔花生贸易 + 进出口业 + 海外侨民经济。每年 Magal 朝圣节 350 万人聚 Touba 纪念 Bamba 流放——是非洲第 2 大年度宗教集会（仅次于麦加）。一个流派 Baye Fall 子派穿彩布袍 + 留 dreadlocks 雷鬼脏辫 + 不留胡子，被称 '非洲嬉皮士苏菲'。塞内加尔总统 Macky Sall + Bassirou Diomaye Faye 都公开属于 Muridiyya 兄弟会成员。",
+    "emoji": "🧠",
+    "attributes": { "historical": 88, "artistic": 70, "influence": 75, "uniqueness": 95 },
+    "tags": ["sufi", "muridiyya", "touba", "bamba"]
   }
 ]

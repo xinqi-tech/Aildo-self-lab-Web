@@ -12,5 +12,61 @@
     "emoji": "⭐",
     "attributes": { "historical": 95, "artistic": 50, "influence": 95, "uniqueness": 90 },
     "tags": ["mandela", "apartheid", "reconciliation", "rainbow-nation"]
+  },
+  {
+    "id": "ZAF_002",
+    "country": "ZAF",
+    "level": "pg",
+    "name": "罗本岛与种族隔离",
+    "nameEn": "Robben Island & Apartheid",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1961-1991",
+    "description": "Robben Island 罗本岛在开普敦 Table Bay 海面 6.9 公里外，名字源自荷兰语 'robben'（海豹）。从 17 世纪荷兰东印度公司起就是政治犯流放地，1961-1991 南非种族隔离政权专关黑人政治犯：纳尔逊·曼德拉关 18 年（1964-1982）+ Walter Sisulu 25 年 + Govan Mbeki（后任总统 Thabo Mbeki 父亲）24 年 + Robert Sobukwe 6 年独囚（连其他犯人都不许跟他说话）。B-Section 7 号牢房是曼德拉囚室：7.5 平方米水泥地 + 一卷草席当床 + 一只马桶 + 一只小窗看不到外面。白天采石灰岩 Lime Quarry 12 小时，毫无防护石粉永久损坏曼德拉的眼睛（出狱后他不能在阳光强光下读书）。但岛上同时也成了 '黑人觉醒大学'：政治犯在采石场休息时互相教课，曼德拉学英语 + 阿非利卡语 + 拉丁语，许多人在牢里写完博士论文。1997 年罗本岛博物馆开放，许多前犯人现成解说员。1999 UNESCO 列遗。今天每天 4 班渡轮 6 小时往返，名额限 1200 人/天。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 50, "influence": 88, "uniqueness": 92 },
+    "tags": ["robben-island", "apartheid", "mandela", "unesco"]
+  },
+  {
+    "id": "ZAF_003",
+    "country": "ZAF",
+    "level": "pg",
+    "name": "Sterkfontein 与人类摇篮",
+    "nameEn": "Sterkfontein & Cradle of Humankind",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "350 万年-至今",
+    "description": "约翰内斯堡西北 50 公里的 Cradle of Humankind 人类摇篮遗址 47 平方公里有 13 个石灰岩洞穴，1999 UNESCO 列遗。1924 年 Raymond Dart 在 Taung 镇白云岩里发现 3 岁小孩头骨化石，命名 Australopithecus africanus '南方古猿非洲种'（260 万年前），首次证明人类起源在非洲（之前欧洲科学界以为亚洲）。1936 年 Robert Broom 在 Sterkfontein 洞穴找到 'Mrs. Ples' 成年女性头骨（210 万年）。1947-1995 同洞穴又挖出 700 多块化石。1994 年 'Little Foot' 几乎完整 360 万年前骨架被发现，1997-2018 用 20 年小心剔石。1924-2024 共 1200 多块原始人类化石从这片洞穴出土，是全球密度最高的化石遗址。Maropeng 游客中心 2005 建在洞穴外，从 2.7 亿年前生命起源走到今天人类基因图谱——是非洲最完整人类演化博物馆。2015 年 Rising Star 洞穴新发现 1500 块 Homo naledi 化石（27.5-23.5 万年前），是迄今发现最完整新人种，重写人类树。",
+    "emoji": "🔬",
+    "attributes": { "historical": 95, "artistic": 50, "influence": 85, "uniqueness": 95 },
+    "tags": ["sterkfontein", "australopithecus", "evolution", "unesco"]
+  },
+  {
+    "id": "ZAF_004",
+    "country": "ZAF",
+    "level": "pg",
+    "name": "Braai 国民烧烤与彩虹饮食",
+    "nameEn": "Braai - Rainbow Cuisine",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Colonial-present",
+    "description": "Braai（阿非利卡语 'braaivleis 烤肉'）是南非国民活动 + 跨种族统一仪式——每周末家家户户院子里架铁炉烧木炭烤肉。法律规定 9 月 24 日是 National Braai Day（国家烧烤日 + 也是文化遗产日），2007 年开普敦大主教 Desmond Tutu 公开认可这一节日时说 'Braai brings all South Africans together regardless of race（烧烤让所有南非人不分种族走到一起）'——成为后种族隔离时代国族认同符号。Braai 4 大配菜：1) boerewors 农夫香肠（粗辣牛肉香肠盘绕成蜗牛形）2) sosaties 串烧（Cape Malay 风味羊肉 + 杏干 + 咖喱腌渍）3) mealie 烤玉米 4) pap（白玉米粥）+ chakalaka（番茄洋葱辣椒酱）。饮品：Castle Lager / Windhoek 啤酒 + 后来吃的 koeksisters（编绳油炸糖浆面包）。南非烹饪融合 5 文化：Khoisan 原住民烤野味 + 班图族玉米粥 + 荷兰殖民腌制肉 + 法国 Huguenot 红酒文化 + 马来奴隶香料 + 印度南亚咖喱。Bunny chow 在德班 1940 年代印度劳工发明：掏空面包灌咖喱羊肉——今天是德班国菜。",
+    "emoji": "🍜",
+    "attributes": { "historical": 65, "artistic": 55, "influence": 70, "uniqueness": 88 },
+    "tags": ["braai", "boerewors", "cape-malay", "rainbow"]
+  },
+  {
+    "id": "ZAF_005",
+    "country": "ZAF",
+    "level": "pg",
+    "name": "Kente 布与 Ndebele 几何壁画",
+    "nameEn": "Ndebele Geometric Murals",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1940s-present",
+    "description": "Ndebele（恩德贝勒）是南非 + 津巴布韦 100 万原住民部族，1940 年代起 Ndebele 女性发展独有外墙几何绘画 'Ndzundza style'：白底 + 钴蓝 + 番茄红 + 金黄 + 翠绿 + 黑色描边，绘对称三角形 + 锯齿 + 阶梯 + 棱形 + 现代符号（飞机、灯泡、电话），象征家族财富 + 婚姻状态 + 部族认同。每年雨季前妇女徒手不打草稿直接在土墙上画 + 男人不许碰画笔（被视为不育诅咒）。Esther Mahlangu（1935 生）是最有名 Ndebele 艺术家——1989 年法国蓬皮杜艺术中心 'Magiciens de la Terre' 大展把她作品带向全球，1991 年 BMW 邀她绘 art car 第 12 号（之前是 Andy Warhol + Robert Rauschenberg + David Hockney），2016 Belvedere 伏特加 + 2020 Dior 季度合作 + 2022 大英博物馆个展。她说 '我画时心里没有图案，是祖先的灵让我手动'。Ndebele 服装：女性日常穿 isigolwani（彩色珠串脚环颈环 + 显示婚姻状态）+ jocolo（皮革围裙绣彩珠）+ blanket cloak 红色裹毯。这一视觉语言 1994 年起被新南非政府选作国家文化符号——彩虹之国的几何注脚。",
+    "emoji": "🎨",
+    "attributes": { "historical": 70, "artistic": 92, "influence": 75, "uniqueness": 95 },
+    "tags": ["ndebele", "mahlangu", "mural", "geometric"]
   }
 ]

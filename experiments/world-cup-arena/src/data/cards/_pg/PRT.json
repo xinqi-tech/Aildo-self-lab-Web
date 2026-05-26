@@ -12,5 +12,61 @@
     "emoji": "🎨",
     "attributes": { "historical": 70, "artistic": 90, "influence": 60, "uniqueness": 92 },
     "tags": ["music", "fado", "unesco", "saudade"]
+  },
+  {
+    "id": "PRT_002",
+    "country": "PRT",
+    "level": "pg",
+    "name": "大航海时代",
+    "nameEn": "Age of Discovery",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "1415-1543",
+    "description": "1415 年葡萄牙国王 João 一世攻陷北非 Ceuta 港，少子 Henrique '航海者' 王子在 Sagres 海角创办航海学校：教数学、天文、制图、造 caravela 三角帆船。1488 年 Bartolomeu Dias 绕过非洲最南端 '好望角'，1498 年 Vasco da Gama 抵达印度 Calicut 打通香料航线，1500 年 Pedro Cabral 偶然漂到巴西，1519-1522 年 Fernão de Magalhães（葡萄牙人替西班牙效力）船队首次环球航行（本人死于菲律宾）。1494 年《Tordesillas 条约》葡西两国把地球切两半瓜分——葡萄牙拿走巴西 + 非洲西岸 + 印度 + 澳门（1557）+ 长崎（1543），建起人类第一个全球帝国。香料、糖、奴隶贸易让里斯本一度是欧洲最富的城市，1755 年 11 月 1 日大地震 + 海啸 + 火灾连烧 6 天毁掉 85% 的城市，葡萄牙从此跌出列强行列。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 75, "influence": 95, "uniqueness": 88 },
+    "tags": ["age-of-discovery", "caravela", "vasco-da-gama", "henrique"]
+  },
+  {
+    "id": "PRT_003",
+    "country": "PRT",
+    "level": "pg",
+    "name": "波尔图与葡萄酒",
+    "nameEn": "Porto & Port Wine",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "17th c.-present",
+    "description": "波尔图（Porto）杜罗河（Douro）上游 100 公里峡谷的梯田从罗马时代就种葡萄，1756 年葡萄牙首相 Marquês de Pombal 划定全球第一个原产地保护区（比法国波尔多还早 100 年）。波特酒（Port）特点：发酵到一半时加入烈性白兰地终止发酵，保留糖分变成 19-22 度甜葡萄酒。秋天采摘后船工把橡木桶顺杜罗河漂 200 公里到河口对岸 Vila Nova de Gaia 镇陈酿，2-50 年不等。经典产品：Ruby（年轻果香）、Tawny（10/20/30/40 年木桶氧化）、Vintage（顶级年份装瓶陈酿）、白波特（开胃酒）。波尔图历史中心 + 河岸 + Gaia 酒窖区 1996 年 UNESCO 列遗。当地人说 'Lisboa 假装是首都，Porto 真的在工作'——葡萄牙第一所大学 + 第一家书店 + 第一个民族英雄都来自波尔图。J.K. Rowling 1991 年在 Porto Café Majestic 写《哈利波特》开篇，霍格沃茨制服灵感来自附近 Universidade do Porto 学生袍。",
+    "emoji": "🍜",
+    "attributes": { "historical": 82, "artistic": 78, "influence": 75, "uniqueness": 88 },
+    "tags": ["porto", "port-wine", "douro", "unesco"]
+  },
+  {
+    "id": "PRT_004",
+    "country": "PRT",
+    "level": "pg",
+    "name": "Jerónimos 修道院与曼努埃尔风格",
+    "nameEn": "Jerónimos Monastery & Manueline",
+    "category": "art",
+    "rarity": "rare",
+    "era": "1501-1601",
+    "description": "1501 年葡王 Manuel 一世为庆祝 Vasco da Gama 抵达印度归来 + 感谢圣母庇佑航海家，下令在里斯本 Belém 区 Tagus 河口建 Jerónimos 修道院——资金来自东方香料贸易 5% 税。耗时 100 年建成（用了 1.5 万吨石灰岩），定义了葡萄牙独有的 'Manueline 曼努埃尔风格'：哥特骨架 + 文艺复兴比例 + 大航海时代海洋意象（缆绳柱、珊瑚雕、星盘窗框、浑天仪、armillary sphere 浑仪盾徽）。回廊每根柱子雕刻全不重复，南门口被誉为欧洲最华丽。Vasco da Gama 棺椁 + 诗人 Camões《Os Lusíadas》葬于此。1755 大地震整个里斯本垮塌时此修道院结构完好，被葡萄牙人视为神迹。1983 UNESCO 列遗。门口 Pastéis de Belém 蛋挞铺 1837 年从修道院修女的秘方传出来，今天每天卖 2 万个，配方保险柜在地下 200 米。",
+    "emoji": "🎨",
+    "attributes": { "historical": 85, "artistic": 92, "influence": 72, "uniqueness": 92 },
+    "tags": ["jeronimos", "manueline", "belem", "unesco"]
+  },
+  {
+    "id": "PRT_005",
+    "country": "PRT",
+    "level": "pg",
+    "name": "Azulejo 蓝白瓷砖",
+    "nameEn": "Azulejo Tiles",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "15th c.-present",
+    "description": "Azulejo 一词源自阿拉伯语 az-zulayj（小光滑石头），15 世纪摩尔人留下的釉面陶砖技术经西班牙 Sevilla 传入葡萄牙。1503 年葡王 Manuel 一世访塞维利亚把工匠带回 Sintra 王宫开始批量生产，17 世纪因荷兰青花瓷流行专攻钴蓝单色——白底蓝绘成了葡萄牙国民色。从教堂、宫殿、火车站（Porto 的 São Bento 站候车室 2 万块手绘瓷砖讲述葡萄牙历史）到普通民居外墙都贴。题材：圣经故事、航海冒险、几何花纹、葡萄藤、狩猎场面。1755 大地震后里斯本重建时瓷砖外墙被发现可隔热抗火抗潮，成为标配。今天里斯本 Museu Nacional do Azulejo（国立瓷砖博物馆）藏 5 万块瓷砖按 5 世纪排序，最长一面墙是 1738 年 23 米全景画《大地震前的里斯本》——这是 1755 地震前里斯本天际线唯一完整视觉记录。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 90, "influence": 70, "uniqueness": 94 },
+    "tags": ["azulejo", "tiles", "moorish", "ceramics"]
   }
 ]

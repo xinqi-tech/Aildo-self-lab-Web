@@ -12,5 +12,61 @@
     "emoji": "🏛",
     "attributes": { "historical": 95, "artistic": 92, "influence": 90, "uniqueness": 95 },
     "tags": ["byzantine", "ottoman", "istanbul", "religion"]
+  },
+  {
+    "id": "TUR_002",
+    "country": "TUR",
+    "level": "pg",
+    "name": "卡帕多奇亚火山岩与早期基督教",
+    "nameEn": "Cappadocia Cave Churches",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "4th-13th c.",
+    "description": "卡帕多奇亚（Cappadocia）位于土耳其中部安纳托利亚高原，600 万年前 Mt. Erciyes + Mt. Hasan 两座火山喷发铺下 100 米厚火山灰凝灰岩。水蚀风蚀雕出 'fairy chimney 仙人烟囱' 蘑菇柱地貌。4 世纪起基督徒躲罗马迫害 + 7-13 世纪躲阿拉伯 + 塞尔柱袭击，在软火山岩里凿出 200 座地下城（最深 Derinkuyu 8 层 + 容纳 2 万人 + 通风井 60 米深 + 滚石门）+ 600 座岩窟教堂。Göreme 露天博物馆 Dark Church 11 世纪壁画《最后的晚餐》《钉十字架》保存完整，颜色仍鲜艳——因藏在地下不见阳光。圣 Basil 大帝、圣 Gregory of Nazianzus、圣 Gregory of Nyssa 三位早期基督教神学家都在此修行，定义了三位一体教义。今天清晨 100 只热气球从 Üçhisar 起飞俯瞰仙人烟囱是 Instagram 网红打卡 No.1，1985 UNESCO 列遗。",
+    "emoji": "🏛",
+    "attributes": { "historical": 90, "artistic": 88, "influence": 75, "uniqueness": 98 },
+    "tags": ["cappadocia", "underground-city", "byzantine", "unesco"]
+  },
+  {
+    "id": "TUR_003",
+    "country": "TUR",
+    "level": "pg",
+    "name": "苏菲旋转舞与梅夫拉那",
+    "nameEn": "Whirling Dervishes & Rumi",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "13th c.-present",
+    "description": "苏菲诗人 Jalal ad-Din Rumi（鲁米，1207-1273）出生今阿富汗 Balkh，蒙古入侵后逃来今土耳其 Konya 定居。他爱上流浪苦行僧 Shams Tabrizi（沙姆斯）成为精神知己。1248 年 Shams 神秘失踪（学界推测被鲁米嫉妒儿子杀害），鲁米陷入悲痛中开始旋转舞蹈 + 即兴吟诗——一手举天接神圣 + 一手垂地连大地 + 头偏右肩 + 身体逆时针自转——'sama' 仪式诞生。他口述了 50000 行诗 Masnavi（《精神之诗》）+ 35000 行 Divan-e Shams（《沙姆斯诗集》）—— 是伊斯兰世界仅次于《古兰经》最多被读的书。鲁米死后儿子 Sultan Walad 创建 Mevlevi 教团（苏菲分支），把 sama 旋转规范化：头戴 sikke 棕色高帽（代表墓碑）+ 身穿 tennure 白长袍（代表裹尸布）+ 黑外袍（代表坟墓土，旋转前脱掉象征灵魂出窍）。1925 年凯末尔禁苏菲教团 25 年，1953 起恢复但只限 Konya 表演不准修行。鲁米诗 1990 年代被 Coleman Barks 译英语后火遍美国，连续 10 年是美国卖最多的诗集——21 世纪西方人最爱的伊斯兰诗人。",
+    "emoji": "🧠",
+    "attributes": { "historical": 85, "artistic": 90, "influence": 88, "uniqueness": 95 },
+    "tags": ["rumi", "sufi", "whirling-dervish", "konya"]
+  },
+  {
+    "id": "TUR_004",
+    "country": "TUR",
+    "level": "pg",
+    "name": "大巴扎与香料市集",
+    "nameEn": "Grand Bazaar & Spice Market",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "1461-present",
+    "description": "Kapalıçarşı（Grand Bazaar 大巴扎）1461 年穆罕默德二世征服君士坦丁堡 8 年后开始建，是地球上最古老 + 最大覆顶市场。今天 61 条街 + 4000 间店铺 + 2.6 万员工 + 日均 25 万人 + 11 座清真寺 + 2 座 hamam 浴室 + 12 座货栈 'han'，2014 年 TripAdvisor 全球第一旅游景点。商品分区：金器街 + 地毯街 + 皮具街 + 灯笼街（铜镂空 + 彩玻璃灯叫 'mosaic lamp'）+ 翻砂铜器街。Mısır Çarşısı 香料市场 1664 年建在 Yeni Cami 新清真寺旁，今天 88 家店卖：番红花（saffron，伊朗产 1 公斤 5000 美元，土耳其 Safranbolu 产 3000 美元）+ sumac 漆树果（柠檬味 + 紫色酸粉）+ 玫瑰花瓣茶 + Turkish Delight（lokum 软糖，1777 年苏丹甜点师 Bekir Effendi 发明 + 牛轧糖味）+ 干无花果 + 干枣 + 7 种土耳其茶（apple + pomegranate + linden）。Çay 红茶用 çaydanlık 双层壶 + 郁金香杯每天人均 10 杯——土耳其是全球红茶人均消费第一。",
+    "emoji": "🍜",
+    "attributes": { "historical": 88, "artistic": 80, "influence": 75, "uniqueness": 92 },
+    "tags": ["grand-bazaar", "spice", "istanbul", "ottoman"]
+  },
+  {
+    "id": "TUR_005",
+    "country": "TUR",
+    "level": "pg",
+    "name": "Iznik 瓷砖与奥斯曼工艺",
+    "nameEn": "Iznik Tiles & Ottoman Crafts",
+    "category": "art",
+    "rarity": "rare",
+    "era": "15th-17th c.",
+    "description": "Iznik（古希腊名 Nicaea 尼西亚——325 年第一次基督教大公会议在此召开）位于伊斯坦布尔东南 130 公里，15 世纪起成为奥斯曼帝国官窑：用本地高岭土 + 石英 + 玻璃料烧成低温 fritware 砖，先涂白色 slip 化妆土 + 蓝色 + 绿松石 + 翠绿 + tomato red（番茄红，独门氧化铁工艺至今未破解配方）+ 黑色描边，最后透明釉烧 950℃。题材 4 大主题：1) 郁金香（lale，奥斯曼国花）2) 康乃馨 + 风信子 3) 棕榈叶 + 阿拉伯藤蔓 4) 中国云纹 + 龙凤（受元青花影响）。Sultan Süleyman 大帝时期（1520-1566）Iznik 瓷砖装饰伊斯坦布尔蓝色清真寺 21000 块 + Topkapı 王宫 + Hagia Sophia 修复区——奥斯曼建筑师 Mimar Sinan 的 470 座工程几乎全用 Iznik。1683 维也纳之战奥斯曼败退后 Iznik 工坊衰落，配方丢失 300 年。1995 年 Iznik Foundation 重建窑炉用 16 世纪原料复原工艺，今天王室订单依然出自这里。Iznik 红是世界陶瓷史最难复制的颜色之一，连景德镇都试过 50 年没成。",
+    "emoji": "🎨",
+    "attributes": { "historical": 85, "artistic": 95, "influence": 78, "uniqueness": 92 },
+    "tags": ["iznik", "ottoman", "ceramic", "tiles"]
   }
 ]

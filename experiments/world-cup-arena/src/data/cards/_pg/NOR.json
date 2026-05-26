@@ -12,5 +12,61 @@
     "emoji": "🏛",
     "attributes": { "historical": 70, "artistic": 88, "influence": 65, "uniqueness": 90 },
     "tags": ["fjord", "unesco", "nature", "geology"]
+  },
+  {
+    "id": "NOR_002",
+    "country": "NOR",
+    "level": "pg",
+    "name": "维京龙船与北海远征",
+    "nameEn": "Viking Longships & Raids",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "793-1066",
+    "description": "公元 793 年 6 月 8 日维京人突袭英格兰东北海岸 Lindisfarne 修道院，杀僧侣抢走金器，史称 '维京时代' 起点。挪威人擅长造 'langskip'（长船）：橡木叠合外壳、龙首船头、单桅方帆 + 60 把桨，吃水仅 1 米可逆河而上深入内陆 1000 公里。1893 年挪威人 Magnus Andersen 用复制品 28 天横渡大西洋抵达芝加哥世博会，证明哥伦布之前 500 年维京人已能跨洋。Leif Erikson 公元 1000 年抵达加拿大纽芬兰 L'Anse aux Meadows 殖民，是欧洲人最早到达美洲的实证（联合国 1978 年 UNESCO 列遗）。维京遗产今天还在英语里：星期三 Wednesday = Odin's day（奥丁之日），星期四 Thursday = Thor's day（雷神托尔之日）。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 75, "influence": 88, "uniqueness": 90 },
+    "tags": ["viking", "longship", "exploration", "norse"]
+  },
+  {
+    "id": "NOR_003",
+    "country": "NOR",
+    "level": "pg",
+    "name": "诺贝尔和平奖",
+    "nameEn": "Nobel Peace Prize",
+    "category": "modern",
+    "rarity": "rare",
+    "era": "1901-present",
+    "description": "Alfred Nobel 1895 年遗嘱指定 5 个奖项中只有和平奖由挪威议会任命的委员会评选（其他 4 个在瑞典），原因学界仍有争议——一说他敬重当时挪威议会的和平主义传统，一说他想缓解瑞典-挪威联合王国的紧张。1901 年首届颁给红十字会创始人 Henri Dunant。颁奖典礼每年 12 月 10 日（Nobel 忌日）在奥斯陆市政厅举行，挪威国王亲手颁奖、获奖者发表 Nobel Lecture。历史争议时刻：1973 年颁给基辛格 + 黎德寿（黎拒绝领奖），1994 年颁给阿拉法特 + 拉宾 + 佩雷斯（一年后拉宾被刺），2009 年颁给上任仅 9 个月的奥巴马（连他本人都困惑）。2014 年最年轻得主 Malala 17 岁获奖。颁奖前一晚 Oslo Grand Hotel 阳台向广场举烛悼念的火炬游行已成传统。",
+    "emoji": "⭐",
+    "attributes": { "historical": 78, "artistic": 60, "influence": 95, "uniqueness": 90 },
+    "tags": ["nobel", "peace", "oslo", "diplomacy"]
+  },
+  {
+    "id": "NOR_004",
+    "country": "NOR",
+    "level": "pg",
+    "name": "蒙克《呐喊》",
+    "nameEn": "Munch's The Scream",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1893",
+    "description": "Edvard Munch（1863-1944）一生画过 4 个《呐喊》版本（2 油画 2 蜡笔），灵感来自 1892 年 1 月一个傍晚他在奥斯陆 Ekeberg 山坡散步，'天空突然变血红，我感到自然中传来无尽的呐喊'。画面里中央人物双手捂耳、嘴张成 O 形、面无五官，桥栏两个剪影背景无视——评论家说这是 19 世纪末工业化 + 神死后人类存在主义焦虑的最早视觉表达。1994 年 Lillehammer 冬奥会开幕当天奥斯陆国家美术馆版被盗，小偷留纸条 '感谢您贫弱的安保'，3 个月后追回。2004 年蒙克博物馆版又被武装抢劫，2006 年追回时画作右下角已霉变。2012 年蜡笔版在苏富比拍出 1.199 亿美元，刷新当时艺术品拍卖纪录。蒙克遗嘱把 28000 件作品全捐给奥斯陆市，2021 年新建 13 层蒙克博物馆开幕。",
+    "emoji": "🎨",
+    "attributes": { "historical": 75, "artistic": 96, "influence": 92, "uniqueness": 94 },
+    "tags": ["munch", "scream", "expressionism", "oslo"]
+  },
+  {
+    "id": "NOR_005",
+    "country": "NOR",
+    "level": "pg",
+    "name": "雷神托尔与北欧诸神",
+    "nameEn": "Thor & Norse Mythology",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "Pre-Christian / 9th-13th c.",
+    "description": "北欧神话主神 Odin（奥丁）独眼挂在世界树 Yggdrasil 上 9 天 9 夜，用一只眼睛换取智慧符文。他儿子 Thor（托尔）红胡子壮汉，挥锤 Mjölnir 召唤雷电，护佑农夫和水手。Loki 是火与诡计之神，本质亦正亦邪，最终引发诸神黄昏 Ragnarök——世界毁灭后从海中重生的循环宇宙观。这些故事 9-11 世纪由口传吟游诗人 skald 在维京宴会上传唱，13 世纪冰岛史学家 Snorri Sturluson 写下《散文埃达》《诗体埃达》才成文字。基督教 1000 年传入斯堪的纳维亚后神话被压制 800 年，19 世纪浪漫主义复兴让 Wagner 写《尼伯龙根的指环》、Tolkien 借鉴创造中土世界（甘道夫名字直接来自《埃达》矮人名）。漫威 2011 年起《雷神》三部曲全球票房 23 亿美元，让千年北欧神话变成 21 世纪流行文化主角。",
+    "emoji": "🧠",
+    "attributes": { "historical": 88, "artistic": 80, "influence": 88, "uniqueness": 92 },
+    "tags": ["norse-mythology", "thor", "odin", "ragnarok"]
   }
 ]

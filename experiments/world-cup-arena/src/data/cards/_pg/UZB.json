@@ -12,5 +12,61 @@
     "emoji": "🏛",
     "attributes": { "historical": 95, "artistic": 92, "influence": 78, "uniqueness": 95 },
     "tags": ["samarkand", "timurid", "silk-road", "unesco"]
+  },
+  {
+    "id": "UZB_002",
+    "country": "UZB",
+    "level": "pg",
+    "name": "Bukhara 古城与丝绸之路驿站",
+    "nameEn": "Bukhara Old Town & Silk Road Caravanserai",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "6th c. BC-present",
+    "description": "Bukhara（布哈拉）2500 年历史，9-10 世纪 Samanid 王朝时是中亚最大贸易枢纽 + 伊斯兰世界文化中心 'Dome of Islam'。卡车走丝路从西安 + 喀什 + 巴格达 + 大马士革到此换骆驼或停留：城里 250 座清真寺 + 100 座经学院 + 60 座 caravanserai 驿站 + 4 座 'tim' 圆顶有顶市场（钱币市场 + 帽子市场 + 珠宝市场 + 香料市场至今仍按 16 世纪原貌运作）。Po-i-Kalyan 建筑群 12 世纪 Kalyan 宣礼塔 47 米高 + 直径 9 米全砖砌 35 层花纹——成吉思汗 1220 年攻打布哈拉时下令烧光全城但保留此塔（传说他抬头看塔头掉下头盔，他弯腰捡时说 'It bowed to me, I will bow to it'）。Ismail Samani 陵墓 905 年建，是中亚最早砖砌 + 几何花纹建筑代表。Lyab-i Hauz 广场 1620 年建蓄水池周围至今老人下午下棋喝绿茶——'布哈拉时间' 比首都 Tashkent 慢 30 年。1993 UNESCO 列遗。",
+    "emoji": "🏛",
+    "attributes": { "historical": 92, "artistic": 88, "influence": 72, "uniqueness": 95 },
+    "tags": ["bukhara", "silk-road", "samanid", "unesco"]
+  },
+  {
+    "id": "UZB_003",
+    "country": "UZB",
+    "level": "pg",
+    "name": "Avicenna 与中亚医学百科",
+    "nameEn": "Avicenna - The Canon of Medicine",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "980-1037",
+    "description": "Ibn Sina（伊本·西那，西方称 Avicenna 阿维森纳）980 年生于今乌兹别克斯坦 Afshana 村（布哈拉郊外）。10 岁背熟《古兰经》+ 14 岁通晓亚里士多德逻辑 + 16 岁开始行医 + 18 岁治好布哈拉 Samanid 国王疑难症被赐入皇家图书馆——他后来回忆 '我每个夜里读到天亮，每读懂一个难题去清真寺感恩'。22 岁父亲死后游历波斯各地，先后侍奉 10 位苏丹做御医兼宰相。一生著作 450 部 + 流传 240 部：1) 《Kitab al-Shifa 治愈之书》18 卷哲学百科 2) 《Al-Qanun fi al-Tibb 医典》5 卷 100 万字囊括古希腊 + 波斯 + 印度 + 阿拉伯所有医学知识，分类 760 种药物 + 详细解剖 + 病理学 + 传染病学。1180 年代被译拉丁文，从此 500 年是欧洲所有大学医学院唯一教材，到 1650 年牛顿出生时巴黎大学还在用。法语 'avicenna 阿维森纳' 是医生的代名词。他还提出：意识自我证明、灵魂独立于身体、物种从简单到复杂演化（早达尔文 800 年）。1037 年 58 岁死于胃病在 Hamadan，墓地今天是伊朗 + 乌兹别克斯坦共同朝圣地。",
+    "emoji": "🧠",
+    "attributes": { "historical": 92, "artistic": 60, "influence": 95, "uniqueness": 92 },
+    "tags": ["avicenna", "ibn-sina", "medicine", "islamic-golden-age"]
+  },
+  {
+    "id": "UZB_004",
+    "country": "UZB",
+    "level": "pg",
+    "name": "Plov 抓饭与中亚宴席",
+    "nameEn": "Plov - Uzbek Pilaf",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Ancient-present",
+    "description": "Plov（俄语 'плов'，乌兹别克语 'osh'）是乌兹别克国菜。Tashkent 版做法：大铁锅 kazan 烧羊尾油 + 黄油 + 棉籽油三油融化 → 牛肉/羊肉 + 切丝胡萝卜 + 洋葱 + 鹰嘴豆 + 葡萄干一层层铺平 → 倒水盖 30 厘米 → 撒孜然 + 黑色 zira 葛缕子 + barberry 小檗果 → 大米泡 4 小时滤干铺最上层 → 大火盖锅 30 分钟焖到米吸尽肉汁。一锅 50 公斤 plov 够 200 人吃，传统男人在户外大锅做（女人主厨家常版）。婚礼必备 'Nahor Plov'：5 点上桌、新郎家做、亲戚 + 邻居 + 同事 + 全村男人 + 8 公里外远房客都来吃，9 点散场新人才能在自家拜堂——'吃了 Nahor Plov 就承认这是合法婚姻'。Bukhara 版加 Bukhara 特产黄萝卜，Khwarezm 版加榅桲果，Samarkand 版加苹果，Fergana 谷地版用红米。每年 9 月 1 日独立日 Tashkent Central Plov Center 中央抓饭中心一锅 1 吨米 + 1 吨肉煮供 3000 人，是全国最壮观仪式。2016 UNESCO 把 'Palov' 列入人类非遗。",
+    "emoji": "🍜",
+    "attributes": { "historical": 85, "artistic": 50, "influence": 70, "uniqueness": 90 },
+    "tags": ["plov", "pilaf", "unesco", "central-asia"]
+  },
+  {
+    "id": "UZB_005",
+    "country": "UZB",
+    "level": "pg",
+    "name": "Suzani 刺绣与游牧女红",
+    "nameEn": "Suzani Embroidery",
+    "category": "art",
+    "rarity": "rare",
+    "era": "17th c.-present",
+    "description": "Suzani 波斯语 'suzan（针）+ i（属于）' 字面 '针绣' 是中亚游牧母系传统：女孩出生那刻外婆开始为她绣嫁妆，整套 5-12 块（床单 + 桌布 + 婴儿摇篮罩 + 墙挂 + 祈祷毡），到 16-20 岁出嫁带去新家。一块 2×3 米墙挂需 3-5 年完工 + 母女两代联手。技法：手织棉布或丝绸 + 真丝线 chain stitch 链针 / basma 平针 / yurma 锁针 4 种针法 + 天然染料（茜草红 + 槐花黄 + 木蓝靛 + 黑核桃褐 + 石榴皮粉）。题材有严格象征：1) 太阳 + 月亮（圆形大图案）保佑生育 2) 石榴 = 多子 3) 鱼 = 财富 4) 辣椒 = 驱邪 5) jug 水罐 = 圣水祝福 6) tulip 郁金香 = 春天复苏。区域差异：Bukhara 版细密对称 + 紫红主色，Samarkand 版大胆放射 + 多色，Nurata 山区版几何抽象 + 中间留白。一块 19 世纪 antique suzani 在 Sotheby's 拍卖 1.2 万-5 万美元。今天 Margilan 镇 + Bukhara 工坊有 6000 名女绣师按家传图谱手工复原，欧美设计师如 Etro + Anthropologie 每季新品都借鉴 suzani 纹样。",
+    "emoji": "🎨",
+    "attributes": { "historical": 80, "artistic": 92, "influence": 60, "uniqueness": 95 },
+    "tags": ["suzani", "embroidery", "bukhara", "textile"]
   }
 ]
