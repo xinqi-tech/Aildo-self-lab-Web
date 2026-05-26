@@ -13,5 +13,14 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true,
+    proxy: {
+      // 把 /api/ollama 代理到本地 Ollama，避开浏览器 CORS preflight
+      // （Ollama 默认 OLLAMA_ORIGINS 不允许跨 origin POST，GET ping 不受影响）
+      '/api/ollama': {
+        target: 'http://localhost:11434',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/ollama/, ''),
+      },
+    },
   },
 });

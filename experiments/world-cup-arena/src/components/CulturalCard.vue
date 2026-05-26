@@ -12,7 +12,7 @@
  * emits:
  *   click       - 选中 / 点击事件
  */
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import {
   CATEGORY_LABELS,
   CATEGORY_EMOJI,
@@ -52,6 +52,35 @@ function onClick() {
   if (!props.selectable) return;
   emit('click', props.card);
 }
+
+// ─── Hover tooltip ──────────────────────────────────
+// 卡牌用了 mask 邮票齿孔，会裁掉所有越界子元素，所以 tooltip
+// 必须 Teleport 到 body。位置基于鼠标进入时的卡牌矩形计算。
+const hovered = ref(false);
+const tipPos = ref<{ left: number; top: number }>({ left: 0, top: 0 });
+const TIP_WIDTH = 320;
+const TIP_MARGIN = 12;
+
+function onEnter(e: MouseEvent) {
+  if (!props.faceUp || props.compact) return;
+  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+  // 默认弹右侧；右侧不够弹左侧
+  let left = rect.right + TIP_MARGIN;
+  if (left + TIP_WIDTH > window.innerWidth - 8) {
+    left = rect.left - TIP_WIDTH - TIP_MARGIN;
+  }
+  // 顶部对齐卡牌；如果会超出底部，向上挪
+  let top = rect.top;
+  const estimatedHeight = 360;
+  if (top + estimatedHeight > window.innerHeight - 8) {
+    top = Math.max(8, window.innerHeight - estimatedHeight - 8);
+  }
+  tipPos.value = { left, top };
+  hovered.value = true;
+}
+function onLeave() {
+  hovered.value = false;
+}
 </script>
 
 <template>
@@ -66,6 +95,8 @@ function onClick() {
     }"
     :style="{ '--cat-color': categoryColor, '--rar-color': rarityColor }"
     @click="onClick"
+    @mouseenter="onEnter"
+    @mouseleave="onLeave"
     role="button"
     :tabindex="selectable ? 0 : -1"
   >
@@ -123,6 +154,40 @@ function onClick() {
       <div class="level-corner mono">{{ levelLabel }}</div>
     </template>
   </div>
+
+  <!-- Hover tooltip — Teleport 到 body 避开卡牌 mask 裁剪 -->
+  <Teleport to="body">
+    <Transition name="tip-fade">
+      <div
+        v-if="hovered && faceUp && !compact"
+        class="cul-card-tooltip"
+        :style="{ left: tipPos.left + 'px', top: tipPos.top + 'px' }"
+        role="tooltip"
+      >
+        <header class="tip-header">
+          <span class="tip-emoji">{{ card.emoji }}</span>
+          <div class="tip-titles">
+            <div class="tip-name">{{ card.name }}</div>
+            <div class="tip-name-en">{{ card.nameEn }}</div>
+          </div>
+          <span class="tip-cat-badge" :style="{ background: categoryColor }">
+            {{ categoryEmoji }} {{ categoryLabel }}
+          </span>
+        </header>
+        <div class="tip-meta">
+          <span>{{ card.era }}</span>
+          <span class="tip-sep">·</span>
+          <span :style="{ color: rarityColor }">{{ card.rarity }}</span>
+          <span class="tip-sep">·</span>
+          <span>{{ levelLabel }}</span>
+        </div>
+        <p class="tip-desc">{{ card.description }}</p>
+        <div v-if="card.tags?.length" class="tip-tags">
+          <span v-for="t in card.tags" :key="t" class="tip-tag">#{{ t }}</span>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
 </template>
 
 <style scoped>
@@ -387,5 +452,113 @@ function onClick() {
   border-radius: 1px;
   letter-spacing: 0.05em;
   transform: rotate(8deg);
+}
+
+</style>
+
+<style>
+/* ─── Hover 全文浮窗（Teleport 到 body，非 scoped） ───────────
+   位置由 JS 计算 left/top 提供；只在 faceUp + !compact 时显示。
+   ─────────────────────────────────────────────────────────────── */
+.cul-card-tooltip {
+  position: fixed;
+  width: 320px;
+  padding: 14px 16px 12px;
+  background: rgba(26, 26, 46, 0.97);
+  color: #f4e8d0;
+  border: 1px solid #d4a017;
+  border-radius: 4px;
+  box-shadow:
+    0 6px 24px rgba(26, 26, 46, 0.45),
+    0 0 0 1px rgba(212, 160, 23, 0.25);
+  pointer-events: none;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.cul-card-tooltip .tip-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(212, 160, 23, 0.35);
+  margin-bottom: 8px;
+}
+.cul-card-tooltip .tip-emoji {
+  font-size: 30px;
+  line-height: 1;
+}
+.cul-card-tooltip .tip-titles {
+  min-width: 0;
+}
+.cul-card-tooltip .tip-name {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f4e8d0;
+  letter-spacing: 0.04em;
+}
+.cul-card-tooltip .tip-name-en {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(244, 232, 208, 0.55);
+  letter-spacing: 0.06em;
+  margin-top: 1px;
+}
+.cul-card-tooltip .tip-cat-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  color: #f4e8d0;
+  white-space: nowrap;
+}
+.cul-card-tooltip .tip-meta {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #d4a017;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.cul-card-tooltip .tip-sep {
+  opacity: 0.5;
+}
+.cul-card-tooltip .tip-desc {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #f4e8d0;
+  margin: 0;
+  /* 完整显示，不裁断 */
+}
+.cul-card-tooltip .tip-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(212, 160, 23, 0.25);
+}
+.cul-card-tooltip .tip-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  padding: 1px 6px;
+  background: rgba(212, 160, 23, 0.18);
+  color: #d4a017;
+  border-radius: 1px;
+}
+
+/* 进出场动画 */
+.tip-fade-enter-active,
+.tip-fade-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.tip-fade-enter-from,
+.tip-fade-leave-to {
+  opacity: 0;
+  transform: translateX(-6px);
 }
 </style>

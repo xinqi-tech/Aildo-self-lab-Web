@@ -1,6 +1,22 @@
 import type { ChatOptions, ChatResponse, LLMProvider, Message, PingResult, ProviderConfig } from './types';
 
 /**
+ * 把用户配的 baseUrl 转成实际请求 URL：
+ * 开发模式 + 默认 localhost:11434 → 走 Vite proxy `/api/ollama`，避开浏览器 CORS preflight。
+ * （Ollama 默认 OLLAMA_ORIGINS 拒绝跨 origin POST，所以 GET ping 通但 POST chat 不通。）
+ */
+function effectiveBaseUrl(rawUrl: string): string {
+  const url = rawUrl.replace(/\/$/, '');
+  if (
+    import.meta.env.DEV &&
+    /^https?:\/\/(localhost|127\.0\.0\.1):11434$/.test(url)
+  ) {
+    return '/api/ollama';
+  }
+  return url;
+}
+
+/**
  * Ollama 本地 provider — 默认 http://localhost:11434
  * 文档：https://github.com/ollama/ollama/blob/main/docs/api.md
  */
@@ -13,7 +29,7 @@ export const OllamaProvider: LLMProvider = {
   suggestedModels: ['llama3.2', 'llama3.1', 'qwen2.5', 'mistral', 'gemma2'] as const,
 
   async chat(messages: Message[], config: ProviderConfig, options: ChatOptions = {}): Promise<ChatResponse> {
-    const baseUrl = (config.baseUrl || this.defaultBaseUrl).replace(/\/$/, '');
+    const baseUrl = effectiveBaseUrl(config.baseUrl || this.defaultBaseUrl);
     const model = config.model || this.defaultModel;
     const t0 = performance.now();
 
@@ -44,7 +60,7 @@ export const OllamaProvider: LLMProvider = {
   },
 
   async ping(config: ProviderConfig): Promise<PingResult> {
-    const baseUrl = (config.baseUrl || this.defaultBaseUrl).replace(/\/$/, '');
+    const baseUrl = effectiveBaseUrl(config.baseUrl || this.defaultBaseUrl);
     const t0 = performance.now();
     try {
       const res = await fetch(`${baseUrl}/api/tags`, { method: 'GET' });
