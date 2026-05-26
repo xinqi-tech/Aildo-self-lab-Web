@@ -1,0 +1,16 @@
+[
+  {
+    "id": "FRA_legend_001",
+    "country": "FRA",
+    "level": "pg",
+    "name": "姆巴佩 Kylian Mbappé",
+    "nameEn": "Kylian Mbappé",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1998-present",
+    "description": "1998 年 12 月 20 日生于巴黎北郊 Bondy 贫民街区——父亲是喀麦隆裔足球教练 Wilfried + 母亲是阿尔及利亚裔手球运动员 Fayza + 弟弟 Ethan 也踢球。6 岁加入家乡 AS Bondy 俱乐部，11 岁拒巴黎圣日耳曼 + 切尔西转去诺曼底 Clairefontaine 国家青训。2015 摩纳哥一线队首秀（16 岁），2016/17 赛季摩纳哥联赛冠军 + 闯欧冠 4 强 + 巴黎圣日耳曼 1.8 亿欧元买他（创青训史上最贵转会）。2018 俄罗斯世界杯决赛对克罗地亚个人独中两元 4-2 夺冠—— 19 岁拿世界杯冠军 + 史上第二年轻世界杯进球者（仅次于贝利）。2022 卡塔尔世界杯决赛对阿根廷帽子戏法（含点球）3-3 但加时不敌——8 球拿金靴 + 30 分钟 3 球的疯狂表演被誉为决赛史最强个人秀。2024 加盟皇马接班 C 罗 7 号。短跑 100 米 10.6 秒 + 加速 0-30 米 3.7 秒（与博尔特同水平），左脚射门 138 公里时速。被誉为 '第一个 21 世纪球员'：力量 + 速度 + 技术 + 智商全部峰值。",
+    "emoji": "⚽",
+    "attributes": { "historical": 60, "artistic": 85, "influence": 95, "uniqueness": 92 },
+    "tags": ["legend", "football", "mbappe", "world-cup-2018", "real-madrid"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "PRT_legend_001",
+    "country": "PRT",
+    "level": "pg",
+    "name": "C 罗 Cristiano Ronaldo",
+    "nameEn": "Cristiano Ronaldo",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1985-present",
+    "description": "1985 年 2 月 5 日生于葡萄牙马德拉岛 Funchal 贫民区，父亲是花匠 + 母亲是清洁工。8 岁加入 Andorinha 业余队踢边锋，11 岁离家加盟里斯本葡萄牙体育青训。16 岁手术修复心脏快速心率后变身怪物。2003 年 18 岁 1300 万英镑加盟曼联（创当年青训记录）+ 弗格森把 7 号给他（贝克汉姆刚走）。3 次曼联 + 4 次皇马 + 1 次尤文 + 2 次曼联 + 利雅得胜利共拿 5 次欧冠 + 5 次金球奖 + 7 次欧足联欧冠射手 + 国际 A 级赛 130+ 进球（史上最多）。2016 欧洲杯 + 2019 国家联赛冠军——是首位帮葡萄牙拿大赛冠军的 10 号。身高 1.87 + 跳起 2.6 米 + 时速 33.6 公里 + 6 项 SIX-PACK 腹肌——38 岁仍维持 7% 体脂率。每场赛后留 1 小时单独练 100 次任意球——这是 '天才努力得让 别人觉得没天赋' 的最强注脚。",
+    "emoji": "⚽",
+    "attributes": { "historical": 65, "artistic": 80, "influence": 100, "uniqueness": 92 },
+    "tags": ["legend", "football", "ronaldo", "siu", "champions-league"]
+  }
+]

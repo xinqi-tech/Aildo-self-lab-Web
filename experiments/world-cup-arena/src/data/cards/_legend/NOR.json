@@ -1,0 +1,16 @@
+[
+  {
+    "id": "NOR_legend_001",
+    "country": "NOR",
+    "level": "pg",
+    "name": "哈兰德 Erling Haaland",
+    "nameEn": "Erling Haaland",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "2000-present",
+    "description": "2000 年 7 月 21 日生于英国利兹（父亲 Alf-Inge 当时效力利兹联），3 岁全家搬回挪威 Bryne 小镇——1 岁立定跳远破吉尼斯儿童纪录 1.63 米（成年挪威平均水平）。16 岁 Molde 一线队首秀，2019 萨尔茨堡红牛欧冠小组赛 5 场 8 球（含对热刺帽子戏法）+ 2020 多特蒙德首秀 23 分钟独中 3 元。2022 曼城 6000 万欧元转会，首赛季 35 场轰 36 球 + 进 17 球破英超单赛季记录 + 三冠王（联赛 + FA 杯 + 欧冠）。身高 1.94 + 体重 88 公斤 + 时速 34 公里 + 弹跳 1 米 + 左右脚均衡——是足球史上 '罗纳尔多 + 因扎吉 + Drogba' 三合一升级版。挪威队 28 场 32 球（人均最高），但 2022 + 2026 世界杯预选连续出局——这是挪威 28 年来重返大赛巅峰的核心希望。父亲 Alf-Inge 是前曼城队员 + 球场被 Roy Keane 报复重伤致退役——21 年后儿子在曼城同一片草坪报复式破 17 项纪录。",
+    "emoji": "⚽",
+    "attributes": { "historical": 55, "artistic": 78, "influence": 90, "uniqueness": 92 },
+    "tags": ["legend", "football", "haaland", "manchester-city", "norway"]
+  }
+]

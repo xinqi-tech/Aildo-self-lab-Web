@@ -1,0 +1,16 @@
+[
+  {
+    "id": "MAR_legend_001",
+    "country": "MAR",
+    "level": "pg",
+    "name": "阿什拉夫·哈基米 Achraf Hakimi",
+    "nameEn": "Achraf Hakimi",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1998-present",
+    "description": "1998 年 11 月 4 日生于西班牙马德里——父母都是摩洛哥移民（父亲卖街头小贩 + 母亲打扫公寓维持家用）。8 岁加入皇马青训 Cantera，14 岁踢 U16 + 19 岁皇马一线队替补出场。2018 借多特蒙德两赛季成长为德甲顶级右边锋，2020 国际米兰 4000 万欧 + 2021 巴黎圣日耳曼 6000 万欧成史上最贵右后卫。右边锋出身的他被改造成 '右翼卫'：90 分钟跑动 12 公里 + 短跑时速 36 公里 + 进攻像爆破 + 防守像清道夫。代表摩洛哥队拒了西班牙国籍邀请——2022 卡塔尔世界杯小组赛 vs 比利时绝杀 + 1/8 决赛 vs 西班牙点球绝杀（恰好把球罚进自己出生城市马德里 + 罚的还是自己童年偶像 Iker Casillas 同教练 Luis Enrique 球队）+ 1/4 决赛淘汰葡萄牙——摩洛哥史上首次世界杯 4 强 + 非洲国家首次进世界杯半决赛。父母在马德里街头一辈子卖货供他踢球，他赛后第一时间冲看台亲吻母亲——是 2022 世界杯最催泪画面之一。这一刻把非洲足球地图永久改写。",
+    "emoji": "⚽",
+    "attributes": { "historical": 55, "artistic": 80, "influence": 88, "uniqueness": 95 },
+    "tags": ["legend", "football", "hakimi", "morocco", "world-cup-2022"]
+  }
+]

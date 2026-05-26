@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ENG_legend_001",
+    "country": "ENG",
+    "level": "pg",
+    "name": "凯恩 Harry Kane",
+    "nameEn": "Harry Kane",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1993-present",
+    "description": "1993 年 7 月 28 日生于伦敦东北部 Walthamstow——父亲爱尔兰移民 Patrick + 母亲 Kim。8 岁短暂加入阿森纳青训被淘汰 '太胖跑不动'，11 岁加入热刺青训 + 早期不被看好被外租 4 支低级别俱乐部（Leyton Orient + Millwall + Norwich + Leicester）。2014/15 赛季 22 岁热刺一线队完全爆发：英超 21 球 + 总 31 球 + 当选英超最佳新人。2015-2023 热刺 9 年 280 场 213 球（队史第一射手，超 Jimmy Greaves 266 球纪录）。3 次英超金靴（2015/16 + 2016/17 + 2020/21）+ 1 次世界杯金靴（2018 俄罗斯 6 球）。2023 拜仁慕尼黑 1 亿欧元转会，首赛季德甲 32 球 + 助攻 8 次破历史新人记录。英格兰队 100+ 场 70+ 球——超 Wayne Rooney 53 球成队史第一。2020 + 2024 欧洲杯连续亚军——是英格兰 60 年大赛荒最有希望的破局人。球风：背身拿球极佳 + 长传精准（很多人误认他是 10 号而非 9 号）+ 大赛抗压能力顶级 + 极少受伤（10 年缺阵不到 20 场）。性格低调到无聊 + 不上社交媒体——是 '英国版 Harry Potter'。",
+    "emoji": "⚽",
+    "attributes": { "historical": 60, "artistic": 78, "influence": 88, "uniqueness": 85 },
+    "tags": ["legend", "football", "kane", "tottenham", "england"]
+  }
+]

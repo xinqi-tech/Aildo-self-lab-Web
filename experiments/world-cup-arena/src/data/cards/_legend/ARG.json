@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ARG_legend_001",
+    "country": "ARG",
+    "level": "pg",
+    "name": "梅西 Lionel Messi",
+    "nameEn": "Lionel Messi",
+    "category": "modern",
+    "rarity": "legendary",
+    "era": "1987-present",
+    "description": "1987 年 6 月 24 日生于阿根廷罗萨里奥工人区，11 岁查出生长激素缺乏症（身高永久止步 1.6 米），家族每月 900 美元注射费用拖垮——巴塞罗那俱乐部体育总监 Carles Rexach 用一张餐巾纸签下他全额承担治疗。13 岁登陆 La Masia 青训营，17 岁一线队首秀，2009-2022 巴萨 17 年踢 778 场轰 672 球——是俱乐部历史第一射手。2008 北京奥运会金牌 + 2014 巴西世界杯亚军 + 2021 美洲杯（结束阿根廷 28 年大赛荒）+ 2022 卡塔尔世界杯决赛 3-3 法国加时点球 4-2 夺冠完成 GOAT 最后拼图。8 次金球奖（史上最多）。左脚是上帝赐的，重心低、步频快、看球的眼神像在解微积分。穿 10 号是马拉多纳留下的诅咒——他用 19 年把诅咒变成新神话。",
+    "emoji": "⚽",
+    "attributes": { "historical": 68, "artistic": 88, "influence": 100, "uniqueness": 95 },
+    "tags": ["legend", "football", "messi", "goat", "world-cup-2022"]
+  }
+]
