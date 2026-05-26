@@ -11,6 +11,7 @@
 import Dexie, { type Table } from 'dexie';
 import type { CulturalCard } from '@/data/cards/types';
 import type { Matchup } from '@/services/cardMatchup';
+import type { RefereeDebug } from '@/services/refereeService';
 
 /** 单回合结果（已完成的回合才落库） */
 export interface RoundRecord {
@@ -23,6 +24,8 @@ export interface RoundRecord {
   verdict: string;
   funFact: string;
   fallback?: boolean;
+  /** LLM 调用调试信息（prompt / response / timing） */
+  debug?: RefereeDebug;
 }
 
 /** 完整对局 */

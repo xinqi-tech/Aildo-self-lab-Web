@@ -181,6 +181,7 @@ export async function playRound(
     verdict: verdict.verdict,
     funFact: verdict.funFact,
     fallback: verdict.fallback,
+    debug: verdict.debug,
   };
 
   // 移除已出的牌

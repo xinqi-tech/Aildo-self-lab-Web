@@ -215,6 +215,57 @@ watch(
               <p v-if="lastRound.fallback" class="fallback-note mono">
                 （裁判离线，按属性计算）
               </p>
+
+              <!-- 调试日志（点击展开） -->
+              <details v-if="lastRound.debug" class="debug-block">
+                <summary class="debug-summary mono">
+                  🔍 调试日志 · {{ lastRound.debug.providerId }}/{{ lastRound.debug.model }} ·
+                  {{ lastRound.debug.durationMs }}ms
+                  <span v-if="lastRound.debug.error" class="debug-err">
+                    · {{ lastRound.debug.error.slice(0, 60) }}
+                  </span>
+                </summary>
+                <div class="debug-body mono">
+                  <div class="debug-row">
+                    <span class="debug-key">Provider</span>
+                    <span class="debug-val">{{ lastRound.debug.providerId }} · {{ lastRound.debug.model }}</span>
+                  </div>
+                  <div class="debug-row">
+                    <span class="debug-key">BaseURL</span>
+                    <span class="debug-val">{{ lastRound.debug.baseUrl }}</span>
+                  </div>
+                  <div class="debug-row">
+                    <span class="debug-key">Timeout / 耗时</span>
+                    <span class="debug-val">
+                      {{ lastRound.debug.timeoutMs }}ms / 实际 {{ lastRound.debug.durationMs }}ms
+                    </span>
+                  </div>
+                  <div class="debug-row">
+                    <span class="debug-key">Prompt 长度</span>
+                    <span class="debug-val">{{ lastRound.debug.promptLength }} 字符</span>
+                  </div>
+                  <div v-if="lastRound.debug.error" class="debug-row debug-row-err">
+                    <span class="debug-key">错误</span>
+                    <span class="debug-val">{{ lastRound.debug.error }}</span>
+                  </div>
+                  <details class="debug-nested">
+                    <summary>System Prompt</summary>
+                    <pre class="debug-pre">{{ lastRound.debug.systemPrompt }}</pre>
+                  </details>
+                  <details class="debug-nested">
+                    <summary>User Prompt（完整）</summary>
+                    <pre class="debug-pre">{{ lastRound.debug.userPrompt }}</pre>
+                  </details>
+                  <details v-if="lastRound.debug.rawResponse" class="debug-nested">
+                    <summary>LLM 原始返回</summary>
+                    <pre class="debug-pre">{{ lastRound.debug.rawResponse }}</pre>
+                  </details>
+                  <details v-if="lastRound.debug.parsedJson" class="debug-nested">
+                    <summary>解析后的 JSON</summary>
+                    <pre class="debug-pre">{{ JSON.stringify(lastRound.debug.parsedJson, null, 2) }}</pre>
+                  </details>
+                </div>
+              </details>
             </div>
             <div class="round-card-wrap">
               <CulturalCard :card="lastRound.bCard" />
@@ -438,6 +489,78 @@ watch(
 @keyframes pulse {
   0%, 100% { opacity: 0.5; }
   50% { opacity: 1; }
+}
+
+/* —— 调试日志面板 —— */
+.debug-block {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: rgba(26, 26, 46, 0.04);
+  border: 1px dashed rgba(26, 26, 46, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+}
+.debug-summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  user-select: none;
+}
+.debug-summary:hover {
+  color: var(--accent-deep);
+}
+.debug-err {
+  color: var(--text-error);
+}
+.debug-body {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(26, 26, 46, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.debug-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 8px;
+  font-size: 11px;
+  align-items: baseline;
+}
+.debug-row-err {
+  color: var(--text-error);
+}
+.debug-key {
+  color: var(--accent-gold);
+  letter-spacing: 0.04em;
+}
+.debug-val {
+  color: var(--text-secondary);
+  word-break: break-all;
+}
+.debug-nested {
+  margin-top: 6px;
+}
+.debug-nested > summary {
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--accent-gold);
+  letter-spacing: 0.04em;
+  padding: 2px 0;
+}
+.debug-pre {
+  margin: 4px 0 0;
+  padding: 8px 10px;
+  background: rgba(26, 26, 46, 0.85);
+  color: #f4e8d0;
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 360px;
+  overflow: auto;
 }
 .play-zone-empty {
   color: var(--text-tertiary);

@@ -25,6 +25,22 @@ import { getProvider } from '@/services/llmProviders';
 
 export type AnyContentLevel = CardLevel | 'PG' | 'R' | 'X';
 
+export interface RefereeDebug {
+  providerId: string;
+  model: string;
+  baseUrl: string;
+  effectiveUrl?: string; // proxy 后的实际请求 URL（仅 Ollama dev 模式）
+  systemPrompt: string;
+  userPrompt: string;
+  promptLength: number;
+  rawResponse?: string;
+  parsedJson?: any;
+  error?: string;
+  timeoutMs: number;
+  startedAt: number;
+  durationMs: number;
+}
+
 export interface RefereeVerdict {
   /** A 方最终得分 0-100，已应用所有乘数 */
   aScore: number;
@@ -40,6 +56,8 @@ export interface RefereeVerdict {
   fallback?: boolean;
   /** Provider 自报延迟（ms），调试用 */
   latencyMs?: number;
+  /** 完整调试信息（prompt / response / timing） */
+  debug?: RefereeDebug;
 }
 
 const HOST_ISO3 = new Set(['USA', 'CAN', 'MEX']);
@@ -262,18 +280,42 @@ export async function judgeRound(
 
   const prompt = fillTemplate(cardA, countryA, cardB, countryB, level, matchup);
   const temperature = settings.state.refereeTemperature ?? 0.3;
-  const timeoutMs = settings.state.refereeTimeoutMs ?? 120_000;
+  // 用 || 而非 ??：兜底覆盖 0/NaN/undefined/null/旧 localStorage 缺字段等所有异常情况
+  const rawTimeout = settings.state.refereeTimeoutMs;
+  const timeoutMs = Math.max(10_000, Number(rawTimeout) || 120_000);
 
+  const systemPrompt = '你是文化裁判，输出必须是单个合法 JSON 对象，不要 markdown 包装，不要解释。';
+
+  // 构造 debug 基础信息
+  const debugBase: RefereeDebug = {
+    providerId,
+    model: providerCfg?.model || provider.defaultModel,
+    baseUrl: providerCfg?.baseUrl || provider.defaultBaseUrl,
+    systemPrompt,
+    userPrompt: prompt,
+    promptLength: prompt.length,
+    timeoutMs,
+    startedAt: Date.now(),
+    durationMs: 0,
+  };
+
+  console.group(
+    `🧑‍⚖️ [referee] ${cardA.name}(${countryA.iso3}) vs ${cardB.name}(${countryB.iso3})`
+  );
+  console.log('Provider:', providerId, '· Model:', debugBase.model);
+  console.log('BaseURL:', debugBase.baseUrl);
+  console.log('Timeout(ms):', timeoutMs, '· Temperature:', temperature);
+  console.log('Matchup:', matchup, '(A 视角)');
+  console.log('Prompt length:', prompt.length, '字符');
+  console.log('System prompt:', systemPrompt);
+  console.log('User prompt:\n' + prompt);
+
+  const start = performance.now();
   try {
-    const start = performance.now();
     const res = await withTimeout(
       provider.chat(
         [
-          {
-            role: 'system',
-            content:
-              '你是文化裁判，输出必须是单个合法 JSON 对象，不要 markdown 包装，不要解释。',
-          },
+          { role: 'system', content: systemPrompt },
           { role: 'user', content: prompt },
         ],
         providerCfg,
@@ -282,24 +324,30 @@ export async function judgeRound(
       timeoutMs,
       'Referee LLM'
     );
-    const latencyMs = Math.round(performance.now() - start);
+    const durationMs = Math.round(performance.now() - start);
+    debugBase.durationMs = durationMs;
+    debugBase.rawResponse = res.content;
+
+    console.log(`✅ LLM 响应（${durationMs}ms，provider 自报 ${res.latencyMs?.toFixed(0)}ms）`);
+    console.log('Raw response:\n' + res.content);
 
     const parsed = safeParseJson(res.content);
+    debugBase.parsedJson = parsed;
+
     if (!parsed || typeof parsed.a_score !== 'number' || typeof parsed.b_score !== 'number') {
-      console.warn('[referee] JSON 解析失败，降级', { raw: res.content });
       const preview = (res.content || '').replace(/\s+/g, ' ').slice(0, 60);
-      return fallbackVerdict(
-        cardA,
-        countryA,
-        cardB,
-        countryB,
-        `LLM 返回非 JSON: "${preview}…"`
-      );
+      const errMsg = `LLM 返回非 JSON: "${preview}…"`;
+      debugBase.error = errMsg;
+      console.warn('❌ JSON 解析失败', { parsed });
+      console.groupEnd();
+      const v = fallbackVerdict(cardA, countryA, cardB, countryB, errMsg);
+      v.debug = debugBase;
+      return v;
     }
 
-    // LLM 给出的是 0-100 基础分（含相克），但我们要保证乘数确定生效——
-    // 这里采用更保守做法：把 LLM 评分当 "未加成基础"，再叠加我们的乘数。
-    // 这样无论 LLM 是否理解相克，最终分都正确。
+    console.log('Parsed:', parsed);
+    console.groupEnd();
+
     const aFinal = applyBonuses(parsed.a_score, cardA, countryA, matchup);
     const bFinal = applyBonuses(parsed.b_score, cardB, countryB, inverseForB);
 
@@ -309,11 +357,18 @@ export async function judgeRound(
       verdict: (parsed.verdict || '').trim() || '裁判沉默了。',
       funFact: (parsed.fun_fact || '').trim() || '今日无冷知识。',
       matchup,
-      latencyMs,
+      latencyMs: durationMs,
+      debug: debugBase,
     };
   } catch (e: any) {
+    const durationMs = Math.round(performance.now() - start);
+    debugBase.durationMs = durationMs;
     const msg = e?.message || String(e);
-    console.warn('[referee] LLM 调用失败，降级', msg);
-    return fallbackVerdict(cardA, countryA, cardB, countryB, msg);
+    debugBase.error = msg;
+    console.warn(`❌ LLM 调用失败（${durationMs}ms）`, msg);
+    console.groupEnd();
+    const v = fallbackVerdict(cardA, countryA, cardB, countryB, msg);
+    v.debug = debugBase;
+    return v;
   }
 }
