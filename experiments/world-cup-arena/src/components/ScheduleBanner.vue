@@ -54,6 +54,13 @@ const isToday = computed(() => {
   return featured.value.date === today;
 });
 
+/** 距离开赛多少天（仅 upcoming 状态有意义） */
+const daysToKickoff = computed(() => {
+  if (!featured.value || featured.value.status !== 'upcoming') return 0;
+  const ms = featured.value.kickoffUtc.getTime() - Date.now();
+  return Math.max(0, Math.ceil(ms / (24 * 60 * 60 * 1000)));
+});
+
 const statusLabel = computed(() => {
   if (!featured.value) return '';
   switch (featured.value.status) {
@@ -62,7 +69,9 @@ const statusLabel = computed(() => {
     case 'finished':
       return '✅ 已结束';
     default:
-      return isToday.value ? '📅 今日大戏' : '⏳ 即将开始';
+      if (isToday.value) return '📅 今日大戏';
+      if (daysToKickoff.value > 0) return `⏳ 还有 ${daysToKickoff.value} 天`;
+      return '⏳ 即将开始';
   }
 });
 </script>

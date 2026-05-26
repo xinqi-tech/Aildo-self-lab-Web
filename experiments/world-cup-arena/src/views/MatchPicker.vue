@@ -12,6 +12,7 @@ import {
   loadSchedule,
   getTodayMatches,
   getUpcomingWeek,
+  getUpcomingMatches,
   type MatchView,
 } from '@/services/scheduleService';
 
@@ -20,8 +21,8 @@ const all = ref<MatchView[]>([]);
 const loading = ref(true);
 const error = ref<string | null>(null);
 
-type TabKey = 'today' | 'week' | 'all';
-const tab = ref<TabKey>('today');
+type TabKey = 'upcoming' | 'today' | 'week' | 'all';
+const tab = ref<TabKey>('upcoming');
 
 onMounted(async () => {
   loading.value = true;
@@ -37,6 +38,8 @@ onMounted(async () => {
 const visible = computed<MatchView[]>(() => {
   if (loading.value) return [];
   switch (tab.value) {
+    case 'upcoming':
+      return getUpcomingMatches(all.value);
     case 'today':
       return getTodayMatches(all.value);
     case 'week':
@@ -48,6 +51,7 @@ const visible = computed<MatchView[]>(() => {
 });
 
 const counts = computed(() => ({
+  upcoming: getUpcomingMatches(all.value).length,
   today: getTodayMatches(all.value).length,
   week: getUpcomingWeek(all.value).length,
   all: all.value.length,
@@ -96,18 +100,21 @@ function statusBadge(m: MatchView): { label: string; cls: string } {
   <div class="picker-page">
     <header class="picker-header">
       <h1 class="title-natgeo">选择对战赛事</h1>
-      <p class="picker-sub">从 2026 真实赛程中选一场，代表其中一方上场。</p>
+      <p class="picker-sub">
+        从 2026 真实赛程中选一场，代表其中一方上场。<br />
+        <span class="picker-sub-hint">⏱ 任何时候都能玩 — 不必等到真实比赛日。</span>
+      </p>
     </header>
 
     <div class="picker-tabs mono">
       <button
-        v-for="t in (['today', 'week', 'all'] as const)"
+        v-for="t in (['upcoming', 'today', 'week', 'all'] as const)"
         :key="t"
         class="tab-btn"
         :class="{ 'is-active': tab === t }"
         @click="tab = t"
       >
-        {{ t === 'today' ? '今日' : t === 'week' ? '本周' : '全部' }}
+        {{ t === 'upcoming' ? '即将开始' : t === 'today' ? '今日' : t === 'week' ? '本周' : '全部' }}
         <span class="tab-count">{{ counts[t] }}</span>
       </button>
     </div>
@@ -116,7 +123,10 @@ function statusBadge(m: MatchView): { label: string; cls: string } {
     <div v-else-if="error" class="picker-error mono">⚠ {{ error }}</div>
 
     <div v-else-if="visible.length === 0" class="picker-empty mono">
-      <span v-if="tab === 'today'">今天没有比赛，试试"本周"或"全部"。</span>
+      <span v-if="tab === 'today'">
+        今天没有真实比赛 — 切到"即将开始"挑一场玩（开赛前默认从开幕战开始）。
+      </span>
+      <span v-else-if="tab === 'week'">本周内没有比赛 — 试试"即将开始"或"全部"。</span>
       <span v-else>这一段没有比赛。</span>
     </div>
 

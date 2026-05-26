@@ -217,3 +217,11 @@ export function getUpcomingWeek(all: MatchView[], now = new Date()): MatchView[]
     (m) => m.kickoffUtc.getTime() >= now.getTime() && m.kickoffUtc.getTime() <= cutoff
   );
 }
+
+/**
+ * 接下来 N 场未结束的比赛（live + upcoming，已按 kickoff 升序）。
+ * 开赛前永远不会空 — 是 MatchPicker 默认 tab。
+ */
+export function getUpcomingMatches(all: MatchView[], limit = 8): MatchView[] {
+  return all.filter((m) => m.status !== 'finished').slice(0, limit);
+}
