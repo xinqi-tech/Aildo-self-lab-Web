@@ -17,9 +17,32 @@ import { RouterLink } from 'vue-router';
     <nav class="nav">
       <RouterLink to="/globe" class="nav-link" active-class="is-active">地图</RouterLink>
       <RouterLink to="/match-picker" class="nav-link" active-class="is-active">对战</RouterLink>
-      <RouterLink to="/spectator" class="nav-link" active-class="is-active">观战</RouterLink>
-      <RouterLink to="/wall" class="nav-link" active-class="is-active">金句墙</RouterLink>
-      <RouterLink to="/daily" class="nav-link" active-class="is-active">今日</RouterLink>
+      <span class="nav-divider" aria-hidden="true">·</span>
+      <RouterLink
+        to="/daily"
+        class="nav-link nav-link-feature"
+        active-class="is-active"
+        title="今日聚焦国家 — NatGeo 开屏"
+      >
+        <span class="nav-icon">🌅</span> 今日
+      </RouterLink>
+      <RouterLink
+        to="/wall"
+        class="nav-link nav-link-feature"
+        active-class="is-active"
+        title="裁判金句墙 — 你的文化笔记"
+      >
+        <span class="nav-icon">📜</span> 金句墙
+      </RouterLink>
+      <RouterLink
+        to="/spectator"
+        class="nav-link nav-link-feature"
+        active-class="is-active"
+        title="AI vs AI 观战模式"
+      >
+        <span class="nav-icon">👁</span> 观战
+      </RouterLink>
+      <span class="nav-divider" aria-hidden="true">·</span>
       <RouterLink to="/settings" class="nav-link nav-link-icon" active-class="is-active">
         ⚙ 设置
       </RouterLink>
@@ -112,5 +135,22 @@ import { RouterLink } from 'vue-router';
 .nav-link-icon {
   font-family: var(--font-body);
   font-weight: 600;
+}
+
+.nav-divider {
+  color: var(--text-tertiary);
+  opacity: 0.4;
+  user-select: none;
+  margin: 0 2px;
+}
+
+.nav-link-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-icon {
+  font-size: 13px;
+  line-height: 1;
 }
 </style>
