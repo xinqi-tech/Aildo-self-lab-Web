@@ -65,6 +65,25 @@ const routes: RouteRecordRaw[] = [
     component: () => import('../views/DailyFeature.vue'),
     meta: { title: '今日 NatGeo' },
   },
+  {
+    path: '/tournament',
+    name: 'tournamentList',
+    component: () => import('../views/TournamentList.vue'),
+    meta: { title: '锦标赛存档' },
+  },
+  {
+    path: '/tournament/new',
+    name: 'tournamentNew',
+    component: () => import('../views/TournamentSetup.vue'),
+    meta: { title: '新建锦标赛' },
+  },
+  {
+    path: '/tournament/:id',
+    name: 'tournamentView',
+    component: () => import('../views/TournamentView.vue'),
+    props: true,
+    meta: { title: '锦标赛' },
+  },
   { path: '/:pathMatch(.*)*', redirect: '/globe' },
 ];
 

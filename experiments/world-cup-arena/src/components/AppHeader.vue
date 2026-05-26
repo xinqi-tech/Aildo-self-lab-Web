@@ -17,6 +17,14 @@ import { RouterLink } from 'vue-router';
     <nav class="nav">
       <RouterLink to="/globe" class="nav-link" active-class="is-active">地图</RouterLink>
       <RouterLink to="/match-picker" class="nav-link" active-class="is-active">对战</RouterLink>
+      <RouterLink
+        to="/tournament"
+        class="nav-link nav-link-feature"
+        active-class="is-active"
+        title="锦标赛 — 跑你自己的 2026 征程"
+      >
+        <span class="nav-icon">🏆</span> 锦标赛
+      </RouterLink>
       <span class="nav-divider" aria-hidden="true">·</span>
       <RouterLink
         to="/daily"
