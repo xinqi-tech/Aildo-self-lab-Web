@@ -12,5 +12,61 @@
     "emoji": "🎨",
     "attributes": { "historical": 80, "artistic": 95, "influence": 90, "uniqueness": 95 },
     "tags": ["tango", "piazzolla", "unesco", "buenos-aires"]
+  },
+  {
+    "id": "ARG_002",
+    "country": "ARG",
+    "level": "pg",
+    "name": "潘帕斯草原与高乔牛仔",
+    "nameEn": "The Pampas & Gaucho",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1700s-present",
+    "description": "潘帕斯是阿根廷中部 75 万平方公里的无树大草原，等于半个法国大。19 世纪西班牙人放养的牛野化成几百万头，孕育了游牧牛仔 gaucho：宽檐帽、皮裤 bombachas、腰间银柄 facón 短刀、boleadoras 三球流星索套牛腿。他们一人一马跟野牛群上千公里、不洗澡、把烤牛肉（asado）和马黛茶（mate）从马背带进城。José Hernández 1872 年史诗《Martín Fierro》写他们对抗政府强征当兵的命运，今天是阿根廷国民读物，每年 11 月 10 日 'gaucho 日' 全国放假。",
+    "emoji": "🤠",
+    "attributes": { "historical": 72, "artistic": 60, "influence": 65, "uniqueness": 88 },
+    "tags": ["gaucho", "pampas", "asado", "national-myth"]
+  },
+  {
+    "id": "ARG_003",
+    "country": "ARG",
+    "level": "pg",
+    "name": "博尔赫斯与无限图书馆",
+    "nameEn": "Borges & The Infinite Library",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "1899-1986",
+    "description": "豪尔赫·路易斯·博尔赫斯，布宜诺斯艾利斯人，从小在父亲的英文藏书室长大，55 岁完全失明后被任命为阿根廷国家图书馆馆长——他自嘲'上天同时给我 80 万本书和黑暗'。短篇《巴别图书馆》(1941) 设想宇宙是一座由六边形书房无限延伸的图书馆，藏着所有可能字母组合的书，因此包含所有真理和所有谎言。《阿莱夫》《环形废墟》《小径分岔的花园》——他用 5 千字短篇写完别人 500 页长篇要做的事。从未拿诺奖（评委传说嫌他政治保守），但卡尔维诺、马尔克斯、安伯托·埃科都说自己抄他。",
+    "emoji": "📖",
+    "attributes": { "historical": 75, "artistic": 92, "influence": 90, "uniqueness": 93 },
+    "tags": ["borges", "literature", "metaphysics", "buenos-aires"]
+  },
+  {
+    "id": "ARG_004",
+    "country": "ARG",
+    "level": "pg",
+    "name": "巴塔哥尼亚冰原",
+    "nameEn": "Patagonian Ice Field",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "Geological / 1520-present",
+    "description": "南北纵贯 350 公里的南巴塔哥尼亚冰原是南极洲、格陵兰之外世界第三大陆冰，养着 48 条冰川。最有名的 Perito Moreno 冰川宽 5 公里、高 70 米，每隔几年自然崩塌一次轰鸣几公里外都听得见。1520 年麦哲伦穿越南端海峡时看到岸上原住民点起篝火，把这片土地叫 Tierra del Fuego（火地岛）。19 世纪威尔士移民在 Trevelin 建殖民村，至今老人仍说威尔士语唱赞美诗。今天 El Chaltén 镇是徒步圣地，Fitz Roy 山的尖峰是 Patagonia 户外品牌 logo 原型。",
+    "emoji": "🏔",
+    "attributes": { "historical": 70, "artistic": 75, "influence": 60, "uniqueness": 92 },
+    "tags": ["patagonia", "glacier", "magellan", "unesco"]
+  },
+  {
+    "id": "ARG_005",
+    "country": "ARG",
+    "level": "pg",
+    "name": "马黛茶仪式",
+    "nameEn": "Yerba Mate Ritual",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "Pre-Columbian-present",
+    "description": "瓜拉尼原住民千年前发现 yerba mate 灌木的叶子能提神，殖民时期耶稣会传教士在密西昂内斯丛林办起种植园。今天阿根廷人均每年喝 100 升 mate，比咖啡还多。仪式：把烤碎的叶子塞进葫芦（mate 杯），插一根金属过滤吸管 bombilla，倒 70°C 热水（沸水会苦），第一个人喝完再续水传给下一个，全程不能擦吸管也不能说'谢谢'（说谢谢=不要了）。从总统到出租车司机都随身带 termo 保温瓶，公园长椅上传一壶 mate 是阿根廷人友谊的最高仪式。",
+    "emoji": "🍵",
+    "attributes": { "historical": 78, "artistic": 50, "influence": 60, "uniqueness": 90 },
+    "tags": ["mate", "guarani", "ritual", "social"]
   }
 ]

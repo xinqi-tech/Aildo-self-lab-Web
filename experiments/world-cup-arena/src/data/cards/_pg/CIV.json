@@ -12,5 +12,61 @@
     "emoji": "🏛",
     "attributes": { "historical": 50, "artistic": 80, "influence": 65, "uniqueness": 95 },
     "tags": ["basilica", "yamoussoukro", "post-colonial", "vanity-project"]
+  },
+  {
+    "id": "CIV_002",
+    "country": "CIV",
+    "level": "pg",
+    "name": "Coupé-Décalé 街头舞",
+    "nameEn": "Coupé-Décalé Dance",
+    "category": "art",
+    "rarity": "rare",
+    "era": "2002-present",
+    "description": "2002 年科特迪瓦内战爆发后，巴黎 19 区的 Ivorian 流亡青年发明了 coupé-décalé 音乐——非洲打击乐 + 自动调音电子节拍 + 法语/努希切尔语混合 rap，配合一种'切割 + 走开'（coupé décalé）的舞步：戴金链子、抖肩、扔钞票、脚步像走在街上斜溜。开山祖师 DJ Arafat（1986-2019）在阿比让街头从穷小子混成超级巨星，2019 年 31 岁车祸去世时阿比让数十万人送葬，棺材被人群抬到博物馆抢看尸体。这种音乐从西非一路席卷到刚果、塞内加尔、加蓬，今天是法语非洲青年文化代表。",
+    "emoji": "🎵",
+    "attributes": { "historical": 35, "artistic": 78, "influence": 70, "uniqueness": 88 },
+    "tags": ["coupe-decale", "dj-arafat", "abidjan", "diaspora-music"]
+  },
+  {
+    "id": "CIV_003",
+    "country": "CIV",
+    "level": "pg",
+    "name": "可可豆与全球巧克力",
+    "nameEn": "Cocoa & Global Chocolate",
+    "category": "lifestyle",
+    "rarity": "rare",
+    "era": "1880s-present",
+    "description": "科特迪瓦产全球 45% 的可可豆——你吃的每两块巧克力就有一块来自西非这个国家。19 世纪 80 年代葡萄牙殖民者从巴西带可可苗到加纳和象牙海岸，气候完美适合：常年 25-28°C + 暴雨 1500mm + 红土。今天 1500 万人靠可可吃饭（全国人口 1/4），但农民只拿到一根 King Size 巧克力棒零售价的 5-7%。雀巢 + Mondelez + Mars 三巨头年采购 200 万吨，2024 年因气候和病害可可豆期货价飙到 12000 美元/吨创历史新高，外资公司利润仍翻倍而非洲农民没涨钱。讽刺的是：科特迪瓦农民大多没吃过巧克力——'我种了 30 年可可不知道它是什么味道'。",
+    "emoji": "🍫",
+    "attributes": { "historical": 70, "artistic": 35, "influence": 88, "uniqueness": 80 },
+    "tags": ["cocoa", "chocolate", "trade", "global-supply"]
+  },
+  {
+    "id": "CIV_004",
+    "country": "CIV",
+    "level": "pg",
+    "name": "Akan Adinkra 符号",
+    "nameEn": "Akan Adinkra Symbols",
+    "category": "philosophy",
+    "rarity": "rare",
+    "era": "17th century-present",
+    "description": "Akan 民族（横跨科特迪瓦和加纳）发明的 Adinkra 视觉符号系统：每个图案对应一句格言或哲学概念。'Sankofa'（回头看的鸟）= '从过去学习不丢人'；'Gye Nyame'（除了上帝）= '我只惧怕上帝'；'Funtunfunefu-Denkyemfunefu'（双胞鳄鱼共享一胃）= '民主就是分享资源不该争'。传统上印在 adinkra 布上做葬礼袍——'Adinkra' 词源就是 'goodbye / 永别'，本是给死者穿的。今天 70 多种符号被印在公园铁门、机场墙、教科书、本地化学品 logo 上。哥伦比亚大学 1992 年正式把 Sankofa 列校徽设计元素。",
+    "emoji": "🧠",
+    "attributes": { "historical": 85, "artistic": 82, "influence": 70, "uniqueness": 95 },
+    "tags": ["akan", "adinkra", "symbols", "philosophy"]
+  },
+  {
+    "id": "CIV_005",
+    "country": "CIV",
+    "level": "pg",
+    "name": "阿比让 'Bagdad 沙巴' 与 Maquis 餐",
+    "nameEn": "Abidjan Street Maquis",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1960s-present",
+    "description": "Maquis 原指法国二战抵抗运动'游击队', 1960 年代 Ivorian 工人下班后聚集在路边露天小餐馆吃宵夜，借这个词暗示 '反叛富人餐厅'，沿用至今成全国小餐馆通称。阿比让全城 5 万家 maquis：椅子塑料、桌子木箱、夜风熏蚊；招牌菜 attiéké（木薯粒发酵后蒸熟，类似北非 couscous）+ poisson braisé（炭烤罗非鱼）+ aloko（油煎熟香蕉）；配 Bangui 棕榈酒或冰冻 Flag 啤酒。Treichville 区的 Bagdad sabbat 周末凌晨 4 点最热闹，coupé-décalé 大音箱 + 烧烤味 + 跳舞女郎扭到天亮。游客被拉去这里才算真到了非洲。",
+    "emoji": "🐟",
+    "attributes": { "historical": 55, "artistic": 50, "influence": 60, "uniqueness": 85 },
+    "tags": ["maquis", "abidjan", "street-food", "nightlife"]
   }
 ]

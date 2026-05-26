@@ -12,5 +12,61 @@
     "emoji": "🎨",
     "attributes": { "historical": 65, "artistic": 92, "influence": 80, "uniqueness": 88 },
     "tags": ["classical-music", "vienna", "tradition", "waltz"]
+  },
+  {
+    "id": "AUT_002",
+    "country": "AUT",
+    "level": "pg",
+    "name": "弗洛伊德与精神分析",
+    "nameEn": "Freud & Psychoanalysis",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "1856-1939",
+    "description": "西格蒙德·弗洛伊德，犹太医生，1881 年医学院毕业后在维也纳总医院做神经学。1885 年随沙可学催眠后转研究歇斯底里症，1900 年出《梦的解析》提出潜意识、本我/自我/超我、俄狄浦斯情结——把人类自我形象从'理性动物'拉回'被欲望驱动的动物'。诊所地址 Berggasse 19 今天是博物馆，他的红色躺椅发明了 talk therapy 模式。1938 年纳粹合并奥地利，84 岁的他靠玛丽·波拿巴公主交保释金逃去伦敦，4 个妹妹留在维也纳全部死于集中营。1939 年因口腔癌剧痛要求医生注射吗啡安乐死。",
+    "emoji": "🧠",
+    "attributes": { "historical": 85, "artistic": 60, "influence": 95, "uniqueness": 92 },
+    "tags": ["freud", "psychoanalysis", "vienna", "unconscious"]
+  },
+  {
+    "id": "AUT_003",
+    "country": "AUT",
+    "level": "pg",
+    "name": "美泉宫与哈布斯堡",
+    "nameEn": "Schönbrunn & Habsburg Dynasty",
+    "category": "historical",
+    "rarity": "rare",
+    "era": "1278-1918",
+    "description": "哈布斯堡家族 1278 年起统治奥地利 640 年，是欧洲最持久王朝——通过婚姻而非战争扩张，最盛时统治西班牙、神圣罗马帝国、低地国、米兰、那不勒斯、墨西哥。家族口号 'Bella gerant alii, tu felix Austria nube'（让别人打仗，你幸福的奥地利就结婚吧）。代价是几代近亲结婚导致下巴严重突出（'哈布斯堡下颌'）和遗传病——最后一任西班牙国王查理二世 39 岁死时智商低下、不能咀嚼食物、无后嗣，引发西班牙王位继承战争。维也纳郊外的美泉宫 1696 年起为夏宫，1441 间房 + 巴洛克花园 + 全世界最古老动物园（1752 起）。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 82, "influence": 85, "uniqueness": 85 },
+    "tags": ["habsburg", "schonbrunn", "dynasty", "unesco"]
+  },
+  {
+    "id": "AUT_004",
+    "country": "AUT",
+    "level": "pg",
+    "name": "维也纳咖啡馆文化",
+    "nameEn": "Viennese Coffee Houses",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1685-present",
+    "description": "1685 年亚美尼亚商人 Johannes Diodato 在维也纳开了第一家咖啡馆。三百年来咖啡馆是维也纳的'第二客厅'——一杯 melange（维也纳卡布奇诺）配一杯白水、一份免费报纸，可以坐 4 小时没人赶。Café Central 是托洛茨基、希特勒、列宁同期常客（1913 年三个人都在这里喝过咖啡）；Café Hawelka 出过诗人加咖啡师；Café Sacher 旁边的 Hotel Sacher 是 1832 年 16 岁学徒 Franz Sacher 发明 Sachertorte 巧克力蛋糕的源头。2011 年 UNESCO 把维也纳咖啡馆文化列人类非遗——理由是 '这是用茶杯和报纸保留下来的旧奥匈帝国精神'。",
+    "emoji": "☕",
+    "attributes": { "historical": 78, "artistic": 65, "influence": 72, "uniqueness": 88 },
+    "tags": ["coffee-house", "vienna", "unesco", "intellectual"]
+  },
+  {
+    "id": "AUT_005",
+    "country": "AUT",
+    "level": "pg",
+    "name": "维也纳古典乐派",
+    "nameEn": "Viennese Classical School",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1750-1820",
+    "description": "海顿、莫扎特、贝多芬三个人在维也纳同一座城连续 70 年定义了欧洲音乐——'古典主义'这个词直接为他们造的。海顿 1761 年起被埃斯特哈齐亲王雇 30 年当宫廷乐长，写了 104 部交响曲、68 部弦乐四重奏，被尊为'交响乐之父'。莫扎特 6 岁能即兴弹钢琴协奏曲、写完 626 部作品后 35 岁突然死于不明病，葬在维也纳无名乱葬岗。贝多芬 28 岁开始耳聋仍写了《第九'欢喜颂'》（首演时他听不见观众掌声，需指挥转身才知道）。今天 Mozarthaus 博物馆原是莫扎特公寓，他在这里写《费加罗的婚礼》。",
+    "emoji": "🎼",
+    "attributes": { "historical": 92, "artistic": 98, "influence": 95, "uniqueness": 92 },
+    "tags": ["mozart", "beethoven", "haydn", "classical-music"]
   }
 ]

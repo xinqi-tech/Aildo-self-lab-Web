@@ -12,5 +12,61 @@
     "emoji": "🎨",
     "attributes": { "historical": 65, "artistic": 95, "influence": 90, "uniqueness": 95 },
     "tags": ["sydney", "utzon", "modernism", "unesco"]
+  },
+  {
+    "id": "AUS_002",
+    "country": "AUS",
+    "level": "pg",
+    "name": "原住民梦境时代",
+    "nameEn": "Aboriginal Dreamtime",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "65,000 BC-present",
+    "description": "澳洲原住民是地球上现存最古老的活态文化，6.5 万年连续传承。他们的宇宙观叫 Tjukurpa（梦境时代）：祖先生物在创世时游历大陆，他们走过的路、留下的足迹、变成的山石都神圣，是'歌之路径'（Songlines）。一个人可以唱着这条路从达尔文走到阿德莱德 3000 公里，每句歌对应水源和地标。卡卡杜国家公园岩画 2 万年，画着已灭绝的袋狮和雷鸟。Uluru 是世界最大单体岩石（355 米高、9 公里周长），2019 年起禁止攀爬以尊重原住民圣地。原有 250 种语言现仅余 120 种活态使用。",
+    "emoji": "🧠",
+    "attributes": { "historical": 98, "artistic": 78, "influence": 70, "uniqueness": 98 },
+    "tags": ["dreamtime", "aboriginal", "uluru", "songlines"]
+  },
+  {
+    "id": "AUS_003",
+    "country": "AUS",
+    "level": "pg",
+    "name": "大堡礁",
+    "nameEn": "Great Barrier Reef",
+    "category": "historical",
+    "rarity": "legendary",
+    "era": "Geological / 500K years",
+    "description": "全长 2300 公里、从北京到广州那么远，是世界最大珊瑚礁系统、唯一从太空可见的生命建筑。2900 个独立礁体由几十亿珊瑚虫亿万年钙骨累积，养着 1500 种鱼、4000 种软体动物、6 种海龟，以及只在每年 11 月满月后 4-5 天同步释放卵子的奇观，像水下下雪。库克船长 1770 年驾 Endeavour 号撞礁，靠抛大炮和扔船锚漂走才捡回命。1981 年 UNESCO 世遗，但 1995 年以来已死 50% 珊瑚，2024 年第七次大白化事件，可能在 2050 年前完全崩塌。",
+    "emoji": "🏛",
+    "attributes": { "historical": 95, "artistic": 88, "influence": 88, "uniqueness": 98 },
+    "tags": ["coral-reef", "biodiversity", "unesco", "climate"]
+  },
+  {
+    "id": "AUS_004",
+    "country": "AUS",
+    "level": "pg",
+    "name": "Vegemite 与后院 BBQ",
+    "nameEn": "Vegemite & Backyard BBQ",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1922-present",
+    "description": "Vegemite 是 1922 年化学家 Cyril Callister 从酿酒废酵母里发明的咸黑酱（英国 Marmite 的本土版），味道介于酱油和血腥之间。澳洲人涂在烤面包加黄油是国民早餐，每个超市卖、教室便当出现，把外国人吓到尖叫——周杰伦和扎克伯格都公开说不行。配套的 Backyard BBQ（自家后院烧烤）是国民周末仪式：男主人站铁板前翻香肠 snags、配冰冻 VB 啤酒、玩 cricket 板球——'shrimp on the barbie' 这句话其实澳洲人从来不说，是 1980 年代旅游局给美国人编的广告词。",
+    "emoji": "🍳",
+    "attributes": { "historical": 58, "artistic": 35, "influence": 55, "uniqueness": 85 },
+    "tags": ["vegemite", "bbq", "food", "national-identity"]
+  },
+  {
+    "id": "AUS_005",
+    "country": "AUS",
+    "level": "pg",
+    "name": "Wi-Fi 与 CSIRO",
+    "nameEn": "Wi-Fi & CSIRO Invention",
+    "category": "tech",
+    "rarity": "rare",
+    "era": "1992-present",
+    "description": "澳洲联邦科学工业组织 CSIRO 的天体物理学家 John O'Sullivan 1977 年研究黑洞蒸发理论时发明了一种从微弱无线电信号里分离原始波形的快速傅立叶变换算法。1992 年他意识到这套数学可解决多径干扰——把它应用到无线局域网，就是今天 Wi-Fi 802.11a/g/n 的核心。1996 年 CSIRO 拿下专利，2009 年起诉戴尔、HP、英特尔、苹果、微软专利侵权，最终全球收 10 亿美元授权费。CSIRO 还发明了塑料钞票（1988 起澳元纸币改塑料防伪）、隐形眼镜溶液、雷达气象图。",
+    "emoji": "🔬",
+    "attributes": { "historical": 50, "artistic": 30, "influence": 92, "uniqueness": 80 },
+    "tags": ["wifi", "csiro", "invention", "patent"]
   }
 ]
