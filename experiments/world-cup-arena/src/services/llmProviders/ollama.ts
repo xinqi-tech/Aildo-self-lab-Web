@@ -25,8 +25,8 @@ export const OllamaProvider: LLMProvider = {
   displayName: 'Ollama (Local)',
   requiresApiKey: false,
   defaultBaseUrl: 'http://localhost:11434',
-  defaultModel: 'llama3.2',
-  suggestedModels: ['llama3.2', 'llama3.1', 'qwen2.5', 'mistral', 'gemma2'] as const,
+  defaultModel: 'qwen3',
+  suggestedModels: ['qwen3', 'qwen3:8b', 'qwen2.5', 'llama3.2', 'llama3.1', 'mistral', 'gemma2'] as const,
 
   async chat(messages: Message[], config: ProviderConfig, options: ChatOptions = {}): Promise<ChatResponse> {
     const baseUrl = effectiveBaseUrl(config.baseUrl || this.defaultBaseUrl);

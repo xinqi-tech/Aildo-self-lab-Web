@@ -140,6 +140,23 @@ function onReset() {
           <span v-else class="ping-err mono">✗ {{ pingState[p.id].result!.error }}</span>
         </span>
       </div>
+
+      <!-- ping 通后展示本地模型 chip，点击切换 model -->
+      <div
+        v-if="pingState[p.id].result?.ok && pingState[p.id].result?.models?.length"
+        class="model-chips"
+      >
+        <span class="model-chips-label mono">点击切换 model：</span>
+        <button
+          v-for="m in pingState[p.id].result!.models"
+          :key="m"
+          class="model-chip mono"
+          :class="{ 'is-current': settings.state.providers[p.id].model === m }"
+          @click="settings.updateProviderConfig(p.id, { model: m })"
+        >
+          {{ m }}
+        </button>
+      </div>
     </section>
 
     <!-- 通用设置 -->
@@ -320,6 +337,43 @@ function onReset() {
 .ping-models {
   color: var(--text-tertiary);
   font-size: 11px;
+}
+
+/* — 本地模型列表 chip — */
+.model-chips {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-thin);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.model-chips-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+.model-chip {
+  font-size: 11px;
+  padding: 4px 10px;
+  background: rgba(244, 232, 208, 0.7);
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.12s;
+}
+.model-chip:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-deep);
+}
+.model-chip.is-current {
+  background: var(--accent-gold);
+  color: var(--accent-deep);
+  border-color: var(--accent-gold);
+  font-weight: 700;
 }
 
 .seg-control {

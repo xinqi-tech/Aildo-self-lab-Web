@@ -138,12 +138,15 @@ function fillTemplate(
 
 /**
  * 降级评分：LLM 失败时按属性平均 + 相克乘数计算。
+ * errorReason 会被附在 verdict / funFact，让用户能在对战界面看到真正原因，
+ * 而不是只看到含糊的"裁判离线"。
  */
 function fallbackVerdict(
   cardA: CulturalCard,
   countryA: Country,
   cardB: CulturalCard,
-  countryB: Country
+  countryB: Country,
+  errorReason?: string
 ): RefereeVerdict {
   const matchup = matchupOf(cardA.category, cardB.category);
   const baseA = baseScoreFromAttributes(cardA);
@@ -153,11 +156,16 @@ function fallbackVerdict(
     matchup === 'buff' ? 'debuff' : matchup === 'debuff' ? 'buff' : 'neutral';
   const bScore = applyBonuses(baseB, cardB, countryB, inverseForB);
 
+  // 截断过长的错误消息（HTTP 返回体可能很长）
+  const short = errorReason ? errorReason.slice(0, 140) : '';
+
   return {
     aScore,
     bScore,
-    verdict: '（裁判离线，按属性计算）',
-    funFact: '提示：在设置里配置 LLM Provider 可以让裁判给出真正的金句与冷知识。',
+    verdict: short ? `（裁判离线：${short}）` : '（裁判离线，按属性计算）',
+    funFact: short
+      ? '⚙️ 去 /settings 检查 Provider 配置：model 名是否对、API Key 是否填、本地 Ollama 是否在跑。点 "测试连接" 会列出本地可用模型。'
+      : '提示：在设置里配置 LLM Provider 可以让裁判给出真正的金句与冷知识。',
     matchup,
     fallback: true,
   };
@@ -236,14 +244,20 @@ export async function judgeRound(
   let provider;
   try {
     provider = getProvider(providerId);
-  } catch (e) {
+  } catch (e: any) {
     console.warn('[referee] provider 不存在，降级', e);
-    return fallbackVerdict(cardA, countryA, cardB, countryB);
+    return fallbackVerdict(cardA, countryA, cardB, countryB, `provider 不存在: ${providerId}`);
   }
 
   // 必填 Key 缺失 → 直接降级
   if (provider.requiresApiKey && !providerCfg?.apiKey) {
-    return fallbackVerdict(cardA, countryA, cardB, countryB);
+    return fallbackVerdict(
+      cardA,
+      countryA,
+      cardB,
+      countryB,
+      `${provider.displayName} 需要 API Key`
+    );
   }
 
   const prompt = fillTemplate(cardA, countryA, cardB, countryB, level, matchup);
@@ -272,7 +286,14 @@ export async function judgeRound(
     const parsed = safeParseJson(res.content);
     if (!parsed || typeof parsed.a_score !== 'number' || typeof parsed.b_score !== 'number') {
       console.warn('[referee] JSON 解析失败，降级', { raw: res.content });
-      return fallbackVerdict(cardA, countryA, cardB, countryB);
+      const preview = (res.content || '').replace(/\s+/g, ' ').slice(0, 60);
+      return fallbackVerdict(
+        cardA,
+        countryA,
+        cardB,
+        countryB,
+        `LLM 返回非 JSON: "${preview}…"`
+      );
     }
 
     // LLM 给出的是 0-100 基础分（含相克），但我们要保证乘数确定生效——
@@ -290,7 +311,8 @@ export async function judgeRound(
       latencyMs,
     };
   } catch (e: any) {
-    console.warn('[referee] LLM 调用失败，降级', e?.message || e);
-    return fallbackVerdict(cardA, countryA, cardB, countryB);
+    const msg = e?.message || String(e);
+    console.warn('[referee] LLM 调用失败，降级', msg);
+    return fallbackVerdict(cardA, countryA, cardB, countryB, msg);
   }
 }
