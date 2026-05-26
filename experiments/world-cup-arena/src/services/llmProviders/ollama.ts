@@ -44,6 +44,14 @@ export const OllamaProvider: LLMProvider = {
     };
     if (options.responseFormat === 'json_object') body.format = 'json';
 
+    // qwen3 / deepseek-r1 这类 thinking 模型默认会先输出 <think>...</think>
+    // 整个 num_predict 配额可能全用于思考，最终 content 为空（用户看像超时/裁判离线）。
+    // Ollama 0.5+ 支持 API 顶层 think: false 关闭思考，直接输出最终答案。
+    // 测过 prompt 注入 /no_think 在 ollama 的 chat API 下不生效，只有 think:false 管用。
+    if (/qwen3|deepseek-r1|reasoning/i.test(model)) {
+      body.think = false;
+    }
+
     const res = await fetch(`${baseUrl}/api/chat`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
