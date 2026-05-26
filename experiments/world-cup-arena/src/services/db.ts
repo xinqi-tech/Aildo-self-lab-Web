@@ -124,3 +124,55 @@ export async function listBattles(limit = 50): Promise<SavedBattle[]> {
 export async function listVerdicts(limit = 200): Promise<SavedVerdict[]> {
   return await db.verdicts.orderBy('savedAt').reverse().limit(limit).toArray();
 }
+
+/**
+ * 金句墙查询：按 savedAt 倒序，可选 since（毫秒时间戳，>= since 才返回）。
+ * 不限制条数（金句墙要全展示），如果将来真的爆了再加分页。
+ */
+export async function queryVerdicts(opts: { since?: number; limit?: number } = {}): Promise<
+  SavedVerdict[]
+> {
+  let q = db.verdicts.orderBy('savedAt').reverse();
+  if (opts.since != null) {
+    q = q.filter((v) => v.savedAt >= (opts.since as number));
+  }
+  if (opts.limit) q = q.limit(opts.limit);
+  return await q.toArray();
+}
+
+/** 删除一条金句 */
+export async function deleteVerdict(id: number): Promise<void> {
+  await db.verdicts.delete(id);
+}
+
+/**
+ * 查含传奇卡的回合金句：扫 battles 表，找到 rounds 里 rarity='legendary' 的回合，
+ * 返回对应 verdicts。
+ * （Dexie 没法直接对嵌套数组建索引，所以走全表扫；个人项目数据量不会超过几百局。）
+ */
+export async function queryLegendaryVerdicts(): Promise<SavedVerdict[]> {
+  const allBattles = await db.battles.toArray();
+  const legendBattleIds: number[] = [];
+  const legendRoundIndexes: Record<number, Set<number>> = {};
+  for (const b of allBattles) {
+    if (!b.id) continue;
+    const idxs = new Set<number>();
+    for (const r of b.rounds) {
+      if (r.aCard?.rarity === 'legendary' || r.bCard?.rarity === 'legendary') {
+        idxs.add(r.index);
+      }
+    }
+    if (idxs.size > 0) {
+      legendBattleIds.push(b.id);
+      legendRoundIndexes[b.id] = idxs;
+    }
+  }
+  if (legendBattleIds.length === 0) return [];
+  const verdicts = await db.verdicts
+    .where('battleId')
+    .anyOf(legendBattleIds)
+    .toArray();
+  return verdicts
+    .filter((v) => legendRoundIndexes[v.battleId]?.has(v.roundIndex))
+    .sort((a, b) => b.savedAt - a.savedAt);
+}
