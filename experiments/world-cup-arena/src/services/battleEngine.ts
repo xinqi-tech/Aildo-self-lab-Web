@@ -14,6 +14,7 @@ import type { Country } from '@/data/countries';
 import { COUNTRY_BY_ISO3 } from '@/data/countries';
 import type { MatchView } from '@/services/scheduleService';
 import { loadCardsForCountry, type AnyContentLevel } from '@/services/cardPoolService';
+import { maybeReplaceWithLegend } from '@/services/legendDrop';
 import { judgeRound, type RefereeVerdict } from '@/services/refereeService';
 import type { RoundRecord, SavedBattle } from '@/services/db';
 import { saveBattle, saveBattleVerdicts } from '@/services/db';
@@ -95,14 +96,25 @@ export function initBattle(
   const aPool = loadCardsForCountry(aCountry.iso3, contentLevel);
   const bPool = loadCardsForCountry(bCountry.iso3, contentLevel);
 
+  let aHand = draw5(aPool);
+  let bHand = draw5(bPool);
+
+  // 球星彩蛋（design.md §3.6 ②）：5% 概率把玩家手牌某张替换为该国传奇卡。
+  // AI 手牌不替换，避免对手太强。每张手牌独立判定。
+  if (playerSide === 'a') {
+    aHand = aHand.map((c) => maybeReplaceWithLegend(c, aCountry.iso3));
+  } else {
+    bHand = bHand.map((c) => maybeReplaceWithLegend(c, bCountry.iso3));
+  }
+
   return {
     match,
     aCountry,
     bCountry,
     playerSide,
     contentLevel,
-    aHand: draw5(aPool),
-    bHand: draw5(bPool),
+    aHand,
+    bHand,
     rounds: [],
     currentRound: 0,
     aWins: 0,

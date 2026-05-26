@@ -40,6 +40,12 @@ const categoryEmoji = computed(() => CATEGORY_EMOJI[props.card.category]);
 const categoryLabel = computed(() => CATEGORY_LABELS[props.card.category]);
 const rarityColor = computed(() => RARITY_COLORS[props.card.rarity]);
 const levelLabel = computed(() => LEVEL_LABELS[props.card.level]);
+/**
+ * 球星彩蛋（design.md §3.6 ②）专属高亮，而非所有 rarity=legendary 的文化卡。
+ * 文化卡如"探戈 / 大航海时代"等 rarity 也是 legendary 但不属彩蛋传奇。
+ * 用 id 含 `_legend_` 作为稳定标识（_legend/ 目录所有卡 id 格式 `<ISO3>_legend_NNN`）。
+ */
+const isLegendary = computed(() => props.card.id.includes('_legend_'));
 
 const attrItems = computed(() => [
   { key: 'historical', label: '历史', value: props.card.attributes.historical },
@@ -92,6 +98,7 @@ function onLeave() {
       'is-selectable': selectable,
       'is-selected': selected,
       'is-compact': compact,
+      'is-legendary': isLegendary,
     }"
     :style="{ '--cat-color': categoryColor, '--rar-color': rarityColor }"
     @click="onClick"
@@ -150,8 +157,8 @@ function onLeave() {
         <span v-for="t in card.tags" :key="t" class="tag mono">#{{ t }}</span>
       </div>
 
-      <!-- 角标：内容尺度 -->
-      <div class="level-corner mono">{{ levelLabel }}</div>
+      <!-- 角标：传奇卡显示 ⭐ LEGEND，否则显示内容尺度 -->
+      <div class="level-corner mono">{{ isLegendary ? '⭐ LEGEND' : levelLabel }}</div>
     </template>
   </div>
 
@@ -452,6 +459,51 @@ function onLeave() {
   border-radius: 1px;
   letter-spacing: 0.05em;
   transform: rotate(8deg);
+}
+
+/* ─── 传奇卡（球星彩蛋） ────────────────────────────
+   外发光 + 角标变成 ⭐ LEGEND 渐变金色。
+   不能用 ::before（卡牌外层 mask 会裁掉），所以直接复用 level-corner
+   把文本切换为 LEGEND + 给整张卡加 box-shadow 呼吸。
+   注意：mask 会让 box-shadow 也被裁，但卡内仍能看到金色描边边缘。
+   ──────────────────────────────────────────────── */
+.cul-card.is-legendary {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 1px;
+  animation: legend-glow 2.4s ease-in-out infinite alternate;
+}
+.cul-card.is-legendary .level-corner {
+  background: linear-gradient(135deg, #f4e8d0 0%, var(--accent-gold) 50%, #f4e8d0 100%);
+  background-size: 200% 200%;
+  color: var(--accent-deep);
+  font-weight: 700;
+  font-size: 9px;
+  padding: 2px 7px;
+  letter-spacing: 0.12em;
+  animation: legend-shimmer 3s linear infinite;
+  box-shadow: 0 0 6px rgba(212, 160, 23, 0.7);
+}
+@keyframes legend-glow {
+  from {
+    outline-color: rgba(212, 160, 23, 0.55);
+  }
+  to {
+    outline-color: rgba(212, 160, 23, 1);
+  }
+}
+@keyframes legend-shimmer {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 200% 0%;
+  }
+}
+.cul-card.is-legendary .art-emoji {
+  filter: drop-shadow(0 0 8px rgba(212, 160, 23, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
+}
+.cul-card.is-legendary .card-name {
+  text-shadow: 0 0 6px rgba(212, 160, 23, 0.35);
 }
 
 </style>
