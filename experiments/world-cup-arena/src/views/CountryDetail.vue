@@ -8,7 +8,7 @@
  *   - 本届卡牌（必做）：按 contentLevel 列出该国所有卡
  *   - AI 解说（必做）：调当前 LLM provider 介绍该国
  */
-import { computed, onMounted, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { COUNTRY_BY_ISO3, GROUP_COLORS } from '@/data/countries';
 import { useSettingsStore } from '@/stores/settings';
@@ -16,6 +16,14 @@ import { loadCardsForCountry } from '@/services/cardPoolService';
 import { getProvider } from '@/services/llmProviders';
 import countryIntroTemplate from '@/prompts/countryIntro.txt?raw';
 import CulturalCard from '@/components/CulturalCard.vue';
+import {
+  getBrief,
+  type BriefKind,
+  type HistoryContent,
+  type CultureContent,
+  type FootballContent,
+  type BriefResult,
+} from '@/services/countryBriefService';
 
 const route = useRoute();
 const router = useRouter();
@@ -88,6 +96,90 @@ async function generateIntro() {
   } finally {
     aiLoading.value = false;
   }
+}
+
+// ── 历史 / 文化 / 足球 brief 状态 ─────────────────────
+interface BriefSlot<T> {
+  data: T | null;
+  raw: string | null;
+  loading: boolean;
+  error: string | null;
+  cached: boolean;
+  generatedAt: number | null;
+  provider: string | null;
+  model: string | null;
+}
+
+function emptySlot<T>(): BriefSlot<T> {
+  return {
+    data: null,
+    raw: null,
+    loading: false,
+    error: null,
+    cached: false,
+    generatedAt: null,
+    provider: null,
+    model: null,
+  };
+}
+
+const historySlot = ref<BriefSlot<HistoryContent>>(emptySlot());
+const cultureSlot = ref<BriefSlot<CultureContent>>(emptySlot());
+const footballSlot = ref<BriefSlot<FootballContent>>(emptySlot());
+
+function slotOf(kind: BriefKind) {
+  if (kind === 'history') return historySlot;
+  if (kind === 'culture') return cultureSlot;
+  return footballSlot;
+}
+
+async function loadBrief(kind: BriefKind, force = false) {
+  if (!country.value) return;
+  const slotRef = slotOf(kind);
+  if (slotRef.value.loading) return;
+  if (slotRef.value.data && !force) return; // 已有数据 + 非强制 → 跳过
+  slotRef.value = { ...slotRef.value, loading: true, error: null };
+  const res = (await getBrief(country.value, kind, force)) as BriefResult<any>;
+  slotRef.value = {
+    data: res.content,
+    raw: res.raw || null,
+    loading: false,
+    error: res.error || null,
+    cached: res.cached,
+    generatedAt: res.generatedAt || null,
+    provider: res.provider || null,
+    model: res.model || null,
+  };
+}
+
+/** 切到 history/culture/football tab 时自动触发首次加载 */
+watch(
+  [tab, iso3, () => settings.state.contentLevel],
+  ([t, _iso, _lvl], [oldT, oldIso, oldLvl]) => {
+    if (t === 'history' || t === 'culture' || t === 'football') {
+      // 国家或尺度变了 → 清掉旧数据
+      if (oldIso !== _iso || oldLvl !== _lvl) {
+        historySlot.value = emptySlot();
+        cultureSlot.value = emptySlot();
+        footballSlot.value = emptySlot();
+      }
+      loadBrief(t as BriefKind);
+    }
+  },
+  { immediate: true }
+);
+
+/** 相对时间显示 */
+function formatAgo(ts: number | null): string {
+  if (!ts) return '';
+  const ms = Date.now() - ts;
+  const min = Math.floor(ms / 60_000);
+  if (min < 1) return '刚刚';
+  if (min < 60) return `${min} 分钟前`;
+  const hour = Math.floor(min / 60);
+  if (hour < 24) return `${hour} 小时前`;
+  const day = Math.floor(hour / 24);
+  return `${day} 天前`;
 }
 </script>
 
@@ -167,18 +259,182 @@ async function generateIntro() {
         </div>
       </section>
 
-      <!-- 历史 / 文化 / 足球 占位 -->
-      <section v-else-if="tab === 'history'" class="tab-panel nat-card placeholder">
-        <p>历史时间轴 · 内容待补充</p>
-        <p class="hint mono">建议：4-8 个重大事件，含具体年份 + 一句话评述</p>
+      <!-- 历史 ───────────────────────────────────────── -->
+      <section v-else-if="tab === 'history'" class="tab-panel nat-card brief-panel">
+        <header class="brief-header">
+          <h3 class="brief-title title-natgeo">🕰 历史时间轴</h3>
+          <div class="brief-meta">
+            <span v-if="historySlot.generatedAt" class="brief-meta-item mono">
+              ⏱ {{ formatAgo(historySlot.generatedAt) }}
+              <span v-if="historySlot.model">· {{ historySlot.model }}</span>
+              <span v-if="historySlot.cached" class="brief-cached">· 缓存</span>
+            </span>
+            <button
+              class="nat-btn brief-regen"
+              :disabled="historySlot.loading"
+              @click="loadBrief('history', true)"
+            >
+              🔄 {{ historySlot.loading ? '撰写中…' : historySlot.data ? '重新生成' : '生成历史' }}
+            </button>
+          </div>
+        </header>
+
+        <div v-if="historySlot.loading" class="brief-loading">
+          📜 LLM 正在撰写 {{ country.nameZh }} 的历史时间轴…
+          <p class="brief-loading-hint mono">首次冷启动可能 30s+</p>
+        </div>
+        <div v-else-if="historySlot.error" class="brief-error">
+          <p class="brief-error-msg mono">⚠ {{ historySlot.error }}</p>
+          <button class="nat-btn nat-btn-gold" @click="loadBrief('history', true)">重试</button>
+          <details v-if="historySlot.raw" class="brief-raw">
+            <summary class="mono">原始返回</summary>
+            <pre class="brief-raw-pre mono">{{ historySlot.raw }}</pre>
+          </details>
+        </div>
+        <template v-else-if="historySlot.data">
+          <p class="brief-summary">{{ historySlot.data.summary }}</p>
+          <ol class="timeline">
+            <li v-for="(ev, i) in historySlot.data.timeline" :key="i" class="timeline-item">
+              <div class="timeline-marker">
+                <span class="timeline-dot"></span>
+                <span v-if="i < historySlot.data.timeline.length - 1" class="timeline-line"></span>
+              </div>
+              <div class="timeline-body">
+                <span class="timeline-year mono">{{ ev.year }}</span>
+                <h4 class="timeline-event">{{ ev.event }}</h4>
+                <p class="timeline-detail">{{ ev.detail }}</p>
+              </div>
+            </li>
+          </ol>
+        </template>
       </section>
-      <section v-else-if="tab === 'culture'" class="tab-panel nat-card placeholder">
-        <p>艺术 / 音乐 / 文学 / 节日 / 习俗 · 内容待补充</p>
-        <p class="hint mono">建议：每项 2-3 张图 + 100 字简介</p>
+
+      <!-- 文化 ───────────────────────────────────────── -->
+      <section v-else-if="tab === 'culture'" class="tab-panel nat-card brief-panel">
+        <header class="brief-header">
+          <h3 class="brief-title title-natgeo">🎭 文化全景</h3>
+          <div class="brief-meta">
+            <span v-if="cultureSlot.generatedAt" class="brief-meta-item mono">
+              ⏱ {{ formatAgo(cultureSlot.generatedAt) }}
+              <span v-if="cultureSlot.model">· {{ cultureSlot.model }}</span>
+              <span v-if="cultureSlot.cached" class="brief-cached">· 缓存</span>
+            </span>
+            <button
+              class="nat-btn brief-regen"
+              :disabled="cultureSlot.loading"
+              @click="loadBrief('culture', true)"
+            >
+              🔄 {{ cultureSlot.loading ? '撰写中…' : cultureSlot.data ? '重新生成' : '生成文化' }}
+            </button>
+          </div>
+        </header>
+
+        <div v-if="cultureSlot.loading" class="brief-loading">
+          🎨 LLM 正在描绘 {{ country.nameZh }} 的文化景观…
+          <p class="brief-loading-hint mono">首次冷启动可能 30s+</p>
+        </div>
+        <div v-else-if="cultureSlot.error" class="brief-error">
+          <p class="brief-error-msg mono">⚠ {{ cultureSlot.error }}</p>
+          <button class="nat-btn nat-btn-gold" @click="loadBrief('culture', true)">重试</button>
+          <details v-if="cultureSlot.raw" class="brief-raw">
+            <summary class="mono">原始返回</summary>
+            <pre class="brief-raw-pre mono">{{ cultureSlot.raw }}</pre>
+          </details>
+        </div>
+        <template v-else-if="cultureSlot.data">
+          <p class="brief-summary">{{ cultureSlot.data.summary }}</p>
+          <div class="culture-grid">
+            <article class="culture-card">
+              <h4 class="culture-card-title">🎨 艺术</h4>
+              <p class="culture-card-body">{{ cultureSlot.data.art }}</p>
+            </article>
+            <article class="culture-card">
+              <h4 class="culture-card-title">📖 文学</h4>
+              <p class="culture-card-body">{{ cultureSlot.data.literature }}</p>
+            </article>
+            <article class="culture-card">
+              <h4 class="culture-card-title">🎊 节日</h4>
+              <p class="culture-card-body">{{ cultureSlot.data.festival }}</p>
+            </article>
+            <article class="culture-card">
+              <h4 class="culture-card-title">🍜 饮食</h4>
+              <p class="culture-card-body">{{ cultureSlot.data.cuisine }}</p>
+            </article>
+            <article class="culture-card culture-card-wide">
+              <h4 class="culture-card-title">🧠 哲学 / 信仰</h4>
+              <p class="culture-card-body">{{ cultureSlot.data.philosophy }}</p>
+            </article>
+          </div>
+        </template>
       </section>
-      <section v-else-if="tab === 'football'" class="tab-panel nat-card placeholder">
-        <p>本届阵容 · 历届世界杯成绩 · 传奇球星 · 内容待补充</p>
-        <p class="hint mono">数据源建议：openfootball + Wikipedia</p>
+
+      <!-- 足球 ───────────────────────────────────────── -->
+      <section v-else-if="tab === 'football'" class="tab-panel nat-card brief-panel">
+        <header class="brief-header">
+          <h3 class="brief-title title-natgeo">⚽ 足球篇</h3>
+          <div class="brief-meta">
+            <span v-if="footballSlot.generatedAt" class="brief-meta-item mono">
+              ⏱ {{ formatAgo(footballSlot.generatedAt) }}
+              <span v-if="footballSlot.model">· {{ footballSlot.model }}</span>
+              <span v-if="footballSlot.cached" class="brief-cached">· 缓存</span>
+            </span>
+            <button
+              class="nat-btn brief-regen"
+              :disabled="footballSlot.loading"
+              @click="loadBrief('football', true)"
+            >
+              🔄 {{ footballSlot.loading ? '撰写中…' : footballSlot.data ? '重新生成' : '生成足球' }}
+            </button>
+          </div>
+        </header>
+
+        <div v-if="footballSlot.loading" class="brief-loading">
+          ⚽ LLM 正在整理 {{ country.nameZh }} 的世界杯档案…
+          <p class="brief-loading-hint mono">首次冷启动可能 30s+</p>
+        </div>
+        <div v-else-if="footballSlot.error" class="brief-error">
+          <p class="brief-error-msg mono">⚠ {{ footballSlot.error }}</p>
+          <button class="nat-btn nat-btn-gold" @click="loadBrief('football', true)">重试</button>
+          <details v-if="footballSlot.raw" class="brief-raw">
+            <summary class="mono">原始返回</summary>
+            <pre class="brief-raw-pre mono">{{ footballSlot.raw }}</pre>
+          </details>
+        </div>
+        <template v-else-if="footballSlot.data">
+          <p class="brief-summary">{{ footballSlot.data.summary }}</p>
+
+          <div class="football-section">
+            <h4 class="football-section-title">🏆 世界杯历届成绩</h4>
+            <div v-if="footballSlot.data.world_cup_history.length === 0" class="football-empty mono">
+              迄今未踢过世界杯正赛
+            </div>
+            <ol v-else class="wc-list">
+              <li v-for="r in footballSlot.data.world_cup_history" :key="r.year" class="wc-row">
+                <span class="wc-year mono">{{ r.year }}</span>
+                <span class="wc-result">{{ r.result }}</span>
+              </li>
+            </ol>
+          </div>
+
+          <div v-if="footballSlot.data.legends.length" class="football-section">
+            <h4 class="football-section-title">⭐ 传奇球星</h4>
+            <ul class="legends-list">
+              <li v-for="(l, i) in footballSlot.data.legends" :key="i" class="legend-item">
+                {{ l }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="football-section">
+            <h4 class="football-section-title">🎯 风格</h4>
+            <p class="football-prose">{{ footballSlot.data.style }}</p>
+          </div>
+
+          <div class="football-section football-current">
+            <h4 class="football-section-title">⚡ 2026 本届展望</h4>
+            <p class="football-prose">{{ footballSlot.data.current_2026 }}</p>
+          </div>
+        </template>
       </section>
 
       <!-- 本届卡牌 -->
@@ -338,19 +594,6 @@ async function generateIntro() {
   padding: var(--space-5);
   min-height: 280px;
 }
-.tab-panel.placeholder {
-  text-align: center;
-  color: var(--text-secondary);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  justify-content: center;
-}
-.tab-panel.placeholder .hint {
-  font-size: 11px;
-  color: var(--text-tertiary);
-}
-
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -446,5 +689,287 @@ async function generateIntro() {
   line-height: 1.8;
   color: var(--text-primary);
   white-space: pre-wrap;
+}
+
+/* ── Brief 通用 ─────────────────────────────────── */
+.brief-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.brief-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--border-thin);
+  padding-bottom: var(--space-3);
+  flex-wrap: wrap;
+}
+.brief-title {
+  font-size: 22px;
+  color: var(--accent-deep);
+  margin: 0;
+}
+.brief-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.brief-meta-item {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+}
+.brief-cached {
+  color: var(--accent-gold);
+}
+.brief-regen {
+  font-size: 11px;
+  padding: 4px 12px;
+}
+
+.brief-summary {
+  font-family: var(--font-serif-cn);
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--text-primary);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(212, 160, 23, 0.06);
+  border-left: 3px solid var(--accent-gold);
+  margin: 0;
+}
+
+.brief-loading {
+  text-align: center;
+  padding: var(--space-7) var(--space-4);
+  color: var(--text-secondary);
+  font-family: var(--font-serif-cn);
+  font-size: 15px;
+}
+.brief-loading-hint {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: var(--space-2);
+}
+.brief-error {
+  text-align: center;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+.brief-error-msg {
+  color: var(--text-error);
+  font-size: 12px;
+  max-width: 480px;
+  word-break: break-word;
+}
+.brief-raw {
+  width: 100%;
+  text-align: left;
+  margin-top: var(--space-2);
+}
+.brief-raw summary {
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+.brief-raw-pre {
+  max-height: 240px;
+  overflow: auto;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.04);
+  padding: var(--space-2);
+  margin-top: var(--space-2);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── 历史 timeline ─────────────────────────────── */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-3) 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+}
+.timeline-marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+}
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  border: 2px solid var(--bg-parchment);
+  box-shadow: 0 0 0 1px var(--accent-gold);
+  flex-shrink: 0;
+  z-index: 1;
+}
+.timeline-line {
+  position: absolute;
+  top: 18px;
+  bottom: -16px;
+  left: 50%;
+  width: 2px;
+  background: var(--accent-gold);
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+.timeline-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 2px;
+}
+.timeline-year {
+  font-size: 11px;
+  color: var(--accent-gold);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.timeline-event {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 15px;
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+.timeline-detail {
+  margin: 0;
+  font-family: var(--font-serif-cn);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ── 文化 grid ──────────────────────────────────── */
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+.culture-card {
+  background: rgba(244, 232, 208, 0.4);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  border-top: 2px solid var(--accent-gold);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.culture-card-wide {
+  grid-column: 1 / -1;
+}
+.culture-card-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 13px;
+  color: var(--accent-deep);
+  letter-spacing: 0.04em;
+}
+.culture-card-body {
+  margin: 0;
+  font-family: var(--font-serif-cn);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+/* ── 足球 ────────────────────────────────────────── */
+.football-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.football-section-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 14px;
+  color: var(--accent-deep);
+  letter-spacing: 0.05em;
+  border-bottom: 1px dashed var(--border-thin);
+  padding-bottom: 4px;
+}
+.football-prose {
+  margin: 0;
+  font-family: var(--font-serif-cn);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+.football-current {
+  padding: var(--space-3) var(--space-4);
+  background: rgba(212, 160, 23, 0.08);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent-gold);
+}
+.football-current .football-section-title {
+  border-bottom: none;
+  color: var(--accent-deep);
+}
+.wc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 6px;
+}
+.wc-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: 4px 10px;
+  background: rgba(244, 232, 208, 0.4);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--accent-gold);
+}
+.wc-year {
+  font-size: 12px;
+  color: var(--accent-gold);
+  font-weight: 700;
+  min-width: 48px;
+}
+.wc-result {
+  font-family: var(--font-serif-cn);
+  font-size: 12px;
+  color: var(--text-primary);
+}
+.football-empty {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  padding: var(--space-3);
+  text-align: center;
+}
+.legends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.legend-item {
+  padding: 8px 12px;
+  background: rgba(244, 232, 208, 0.4);
+  border-left: 3px solid var(--accent-gold);
+  font-family: var(--font-serif-cn);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-primary);
 }
 </style>
