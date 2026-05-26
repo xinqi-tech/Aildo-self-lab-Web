@@ -12,5 +12,61 @@
     "emoji": "🏛",
     "attributes": { "historical": 98, "artistic": 80, "influence": 95, "uniqueness": 95 },
     "tags": ["pyramid", "khufu", "giza", "ancient-wonder"]
+  },
+  {
+    "id": "EGY_002",
+    "country": "EGY",
+    "level": "pg",
+    "name": "图坦卡蒙黄金面具",
+    "nameEn": "Tutankhamun's Golden Mask",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1323 BC / 1922 AD",
+    "description": "图坦卡蒙 9 岁登基、19 岁神秘暴毙（CT 扫描显示腿骨折感染 + 镰刀型贫血），葬在帝王谷一座小墓里 3245 年没被盗。1922 年 11 月 4 日英国考古学家 Howard Carter 在 5 季无收获后偶然发现门口——'我看到了奇妙的东西'——5000 件随葬品 + 实心金棺（110 公斤）+ 黄金面具（11 公斤 + 蓝青金石 + 红玛瑙）。今天藏开罗 Egyptian Museum，2024 年起迁入 Grand Egyptian Museum（吉萨金字塔旁的新博物馆，2024 年开馆是 21 世纪世界最大单体博物馆 5 万平方米）。Carter 团队 9 人其中 6 人在 10 年内死于不明病或意外，被《泰晤士报》炒成'法老的诅咒'。其实 Carter 自己活到 64 岁老死。",
+    "emoji": "🎨",
+    "attributes": { "historical": 95, "artistic": 95, "influence": 92, "uniqueness": 98 },
+    "tags": ["tutankhamun", "pharaoh", "carter", "discovery"]
+  },
+  {
+    "id": "EGY_003",
+    "country": "EGY",
+    "level": "pg",
+    "name": "亚历山大图书馆",
+    "nameEn": "Library of Alexandria",
+    "category": "philosophy",
+    "rarity": "legendary",
+    "era": "295 BC-642 AD",
+    "description": "公元前 295 年托勒密一世在亚历山大港建立的古代世界最大图书馆，藏 40-70 万卷莎草纸卷轴——所有希腊、罗马、巴比伦、印度、波斯著作都被翻译或抄录。馆长由欧几里得（几何原本）、阿基米德（求圆周率）、埃拉托色尼（测地球周长）等顶尖学者轮流担任。所有进港船只必须把船上书交给馆方抄录，正本留下、副本归还。何时被毁众说纷纭：公元前 48 年凯撒打庞培时火烧船帆延烧码头部分书；公元 391 年基督教皇帝狄奥多西禁异教烧 Serapis 神庙副馆；公元 642 年阿拉伯哈里发 Omar 占领后据传命令'若书与古兰经一致则无用、若不一致则有害，烧之'。今天阿斯旺新建 Bibliotheca Alexandrina (2002) 是它的精神继承。",
+    "emoji": "🧠",
+    "attributes": { "historical": 98, "artistic": 70, "influence": 95, "uniqueness": 95 },
+    "tags": ["alexandria", "library", "hellenistic", "knowledge"]
+  },
+  {
+    "id": "EGY_004",
+    "country": "EGY",
+    "level": "pg",
+    "name": "Koshary 三层国民主食",
+    "nameEn": "Koshary — Egyptian Street Food",
+    "category": "lifestyle",
+    "rarity": "common",
+    "era": "1860s-present",
+    "description": "Koshary 是埃及国民街头主食：白米 + 通心粉 + 短面 + 黑扁豆 + 鹰嘴豆 + 番茄醋酱 + 油炸洋葱碎 + dakka 大蒜辣椒酱，全堆在一只大碗里。19 世纪英国占领期间从印度炒杂菜 khichari + 意大利移民通心粉 + 埃及传统扁豆饭融合成。开罗最有名的 Koshary Abou Tarek 1950 年开张，4 层楼 24 小时营业，一碗 5 公斤大份 50 埃磅（1 美元）。规矩：把每层调料倒在饭上后用大勺竖直插进去搅拌（搅碎洋葱碎让油渗下层）。素食友好、超饱腹、能量 800 卡——是开罗 2000 万低收入工人的命脉。穆斯林斋月 iftar 开斋宴必备。",
+    "emoji": "🍚",
+    "attributes": { "historical": 60, "artistic": 25, "influence": 60, "uniqueness": 85 },
+    "tags": ["koshary", "cairo", "street-food", "vegetarian"]
+  },
+  {
+    "id": "EGY_005",
+    "country": "EGY",
+    "level": "pg",
+    "name": "Umm Kulthum 阿拉伯歌后",
+    "nameEn": "Umm Kulthum — Voice of Arabs",
+    "category": "art",
+    "rarity": "legendary",
+    "era": "1898-1975",
+    "description": "Umm Kulthum 1898 年生在尼罗河三角洲穷村，父亲是清真寺伊玛目教她古兰经诵读发音控制。1923 年到开罗在妓院唱赚生活费，1930 年代成阿拉伯世界第一明星——每月第一个周四晚 9 点直播演唱会，整个中东街道空无一人，从开罗到巴格达到达喀尔到拉巴特，连出租车司机都靠路边收音机听。每首歌 30-60 分钟，靠改编古典 maqam 调式 + 即兴反复 + 无数次重唱同一句歌词制造高潮。1975 年她去世，葬礼 400 万人涌进开罗街头送葬——比纳赛尔总统葬礼人还多。今天阿拉伯所有歌手都说自己是她的徒弟，Beyoncé 2022 年说 'Umm Kulthum 是我的偶像'。她的演唱会全集 350 首歌仍是 Spotify 阿拉伯区第一播放。",
+    "emoji": "🎵",
+    "attributes": { "historical": 80, "artistic": 98, "influence": 92, "uniqueness": 95 },
+    "tags": ["umm-kulthum", "arab-music", "cairo", "voice-of-arabs"]
   }
 ]
