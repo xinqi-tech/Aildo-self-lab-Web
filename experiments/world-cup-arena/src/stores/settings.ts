@@ -10,6 +10,8 @@ export interface SettingsState {
   activeProvider: ProviderId;
   providers: Record<ProviderId, ProviderConfig>;
   refereeTemperature: number;
+  /** 裁判 LLM 调用超时（毫秒）。本地 Ollama 8B 模型 Mac CPU 首次可能 60-90s */
+  refereeTimeoutMs: number;
   contentLevel: ContentLevel; // 默认 X，无下限
   audioEnabled: boolean;
 }
@@ -29,6 +31,7 @@ function defaultState(): SettingsState {
       ])
     ) as Record<ProviderId, ProviderConfig>,
     refereeTemperature: 0.3,
+    refereeTimeoutMs: 120_000, // 2 分钟，覆盖本地大模型冷启动
     contentLevel: 'X',
     audioEnabled: false,
   };

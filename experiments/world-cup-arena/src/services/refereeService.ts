@@ -262,6 +262,7 @@ export async function judgeRound(
 
   const prompt = fillTemplate(cardA, countryA, cardB, countryB, level, matchup);
   const temperature = settings.state.refereeTemperature ?? 0.3;
+  const timeoutMs = settings.state.refereeTimeoutMs ?? 120_000;
 
   try {
     const start = performance.now();
@@ -276,9 +277,9 @@ export async function judgeRound(
           { role: 'user', content: prompt },
         ],
         providerCfg,
-        { temperature, responseFormat: 'json_object', maxTokens: 600 }
+        { temperature, responseFormat: 'json_object', maxTokens: 400 }
       ),
-      30_000,
+      timeoutMs,
       'Referee LLM'
     );
     const latencyMs = Math.round(performance.now() - start);

@@ -50,6 +50,28 @@ onMounted(async () => {
 const state = computed(() => battle.state);
 const judging = computed(() => battle.judging);
 
+// 沉思计时（让用户知道 LLM 还在思考，不是卡死）
+const judgingElapsedMs = ref(0);
+let judgingTimer: number | null = null;
+watch(judging, (nowJudging) => {
+  if (nowJudging) {
+    judgingElapsedMs.value = 0;
+    const start = performance.now();
+    judgingTimer = window.setInterval(() => {
+      judgingElapsedMs.value = performance.now() - start;
+    }, 200);
+  } else {
+    if (judgingTimer != null) {
+      clearInterval(judgingTimer);
+      judgingTimer = null;
+    }
+  }
+});
+const judgingElapsedSec = computed(() => (judgingElapsedMs.value / 1000).toFixed(1));
+const judgingTimeoutSec = computed(() =>
+  Math.round((settings.state.refereeTimeoutMs ?? 120000) / 1000)
+);
+
 const playerHand = computed(() => {
   if (!state.value) return [];
   return state.value.playerSide === 'a' ? state.value.aHand : state.value.bHand;
@@ -165,6 +187,10 @@ watch(
       <section class="play-zone" :class="{ 'is-judging': judging }">
         <div v-if="judging" class="judging-indicator mono">
           📜 裁判沉思中…
+          <span class="judging-timer">{{ judgingElapsedSec }}s / {{ judgingTimeoutSec }}s</span>
+          <span class="judging-hint">
+            本地模型首次推理较慢，超时可在 /settings 调大
+          </span>
         </div>
         <div v-else-if="lastRound" class="last-round-result">
           <div class="round-cards">
@@ -392,6 +418,22 @@ watch(
   color: var(--accent-deep);
   letter-spacing: 0.15em;
   animation: pulse 1.4s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.judging-timer {
+  font-size: 12px;
+  color: var(--accent-gold);
+  letter-spacing: 0.08em;
+  animation: none;
+}
+.judging-hint {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
+  animation: none;
 }
 @keyframes pulse {
   0%, 100% { opacity: 0.5; }

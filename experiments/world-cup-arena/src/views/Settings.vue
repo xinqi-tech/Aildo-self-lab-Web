@@ -176,6 +176,25 @@ function onReset() {
       </div>
 
       <div class="row">
+        <label class="row-label">裁判超时（秒）</label>
+        <div class="timeout-row">
+          <input
+            class="nat-input mono small-input"
+            type="number"
+            min="10"
+            max="600"
+            step="5"
+            :value="Math.round((settings.state.refereeTimeoutMs ?? 120000) / 1000)"
+            @input="settings.state.refereeTimeoutMs =
+              Math.max(10, parseInt(($event.target as HTMLInputElement).value || '120', 10)) * 1000"
+          />
+          <span class="timeout-hint mono">
+            本地 8B 模型 Mac CPU 首次冷启动可能需要 60-90 秒
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
         <label class="row-label">内容尺度</label>
         <div class="seg-control">
           <label
@@ -314,6 +333,17 @@ function onReset() {
 
 .small-input {
   max-width: 100px;
+}
+.timeout-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.timeout-hint {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.04em;
 }
 
 .ping-row {
