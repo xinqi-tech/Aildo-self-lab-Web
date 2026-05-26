@@ -13,6 +13,14 @@ import { loadSchedule, type MatchView } from '@/services/scheduleService';
 import { useBattleStore } from '@/stores/battle';
 import { useSettingsStore } from '@/stores/settings';
 import CulturalCard from '@/components/CulturalCard.vue';
+import {
+  getTournament,
+  saveTournament,
+  type Tournament,
+  type TournamentMatch,
+} from '@/services/tournamentDb';
+import { applyPlayerMatchResult, advanceTournament } from '@/services/tournamentEngine';
+import { COUNTRY_BY_ISO3 } from '@/data/countries';
 
 // 内联：维度小条形图（0-25 范围）
 const DimBar = defineComponent({
@@ -41,20 +49,77 @@ const selectedCardId = ref<string | null>(null);
 const matchId = String(route.query.matchId || '');
 const side = (route.query.side as 'a' | 'b') || 'a';
 
+// Tournament 集成：query.tournament + query.returnTo
+const tournamentIdQuery = route.query.tournament ? Number(route.query.tournament) : null;
+const returnToQuery = (route.query.returnTo as string) || null;
+const tournamentRef = ref<Tournament | null>(null);
+const tournamentMatchRef = ref<TournamentMatch | null>(null);
+
+/** 把 tournament 内的一场比赛转成 Battle 引擎所需的 MatchView 形状 */
+function makeMatchViewFromTournament(
+  t: Tournament,
+  m: TournamentMatch
+): MatchView | null {
+  const team1 = COUNTRY_BY_ISO3[m.aIso3];
+  const team2 = COUNTRY_BY_ISO3[m.bIso3];
+  if (!team1 || !team2) return null;
+  const now = new Date();
+  return {
+    id: m.id,
+    round: m.stage === 'group' ? `Group ${m.group} R${m.round}` : m.stage.toUpperCase(),
+    date: now.toISOString().slice(0, 10),
+    localTime: '00:00',
+    utcOffsetMin: 0,
+    kickoffUtc: now,
+    team1Name: team1.nameEn,
+    team2Name: team2.nameEn,
+    team1,
+    team2,
+    group: m.group ? `Group ${m.group}` : undefined,
+    ground: t.name,
+    status: 'live',
+  };
+}
+
 onMounted(async () => {
   if (!matchId) {
     router.replace('/match-picker');
     return;
   }
   try {
-    const all = await loadSchedule();
-    const match: MatchView | undefined = all.find((m) => m.id === matchId);
-    if (!match) {
-      initError.value = `找不到赛程 ${matchId}`;
-      return;
+    let match: MatchView | undefined;
+
+    if (tournamentIdQuery && Number.isFinite(tournamentIdQuery)) {
+      const t = await getTournament(tournamentIdQuery);
+      if (!t) {
+        initError.value = `找不到锦标赛存档 #${tournamentIdQuery}`;
+        return;
+      }
+      tournamentRef.value = t;
+      const tm = t.matches.find((mm) => mm.id === matchId);
+      if (!tm) {
+        initError.value = `锦标赛中找不到比赛 ${matchId}`;
+        return;
+      }
+      tournamentMatchRef.value = tm;
+      const mv = makeMatchViewFromTournament(t, tm);
+      if (!mv) {
+        initError.value = `比赛 ${matchId} 双方未确定`;
+        return;
+      }
+      match = mv;
+    } else {
+      const all = await loadSchedule();
+      match = all.find((m) => m.id === matchId);
+      if (!match) {
+        initError.value = `找不到赛程 ${matchId}`;
+        return;
+      }
     }
+
     battle.reset();
-    battle.start(match, side, settings.state.contentLevel);
+    const lvl = tournamentRef.value?.contentLevel ?? settings.state.contentLevel;
+    battle.start(match, side, lvl);
   } catch (e: any) {
     initError.value = e?.message || '初始化失败';
   } finally {
@@ -140,12 +205,38 @@ async function playSelected() {
   const cid = selectedCardId.value;
   selectedCardId.value = null;
   await battle.play(cid);
-  // 5 回合打完 → 自动结算 → 跳结果页
+  // 5 回合打完 → 自动结算
   if (state.value && state.value.currentRound >= 5) {
     try {
       const finalState = await battle.finish();
-      const id = finalState.savedBattleId;
-      router.push(id ? `/battle/result/${id}` : '/match-picker');
+      const battleId = finalState.savedBattleId;
+
+      // ── Tournament 集成：回写 + advance + 跳 returnTo ──
+      if (tournamentRef.value && tournamentMatchRef.value && finalState.winner) {
+        try {
+          const aTotal = finalState.rounds.reduce((s, r) => s + r.aScore, 0);
+          const bTotal = finalState.rounds.reduce((s, r) => s + r.bScore, 0);
+          applyPlayerMatchResult(tournamentMatchRef.value.id, tournamentRef.value, {
+            aWins: finalState.aWins,
+            bWins: finalState.bWins,
+            aTotal,
+            bTotal,
+            winner: finalState.winner,
+            battleId,
+          });
+          advanceTournament(tournamentRef.value);
+          await saveTournament(tournamentRef.value);
+        } catch (e) {
+          console.warn('[battle] tournament 回写失败', e);
+        }
+        // 跳 returnTo（默认回 /tournament/:id）
+        const target = returnToQuery || `/tournament/${tournamentRef.value.id}`;
+        router.push(target);
+        return;
+      }
+
+      // 普通模式：跳对局结果页
+      router.push(battleId ? `/battle/result/${battleId}` : '/match-picker');
     } catch (e) {
       console.error('结算失败', e);
     }
@@ -157,6 +248,11 @@ function backToPicker() {
     if (!confirm('放弃当前对战？进度不会保存。')) return;
   }
   battle.reset();
+  // tournament 模式 → 回 tournament 主页（保留 returnTo 优先级）
+  if (tournamentRef.value) {
+    router.push(returnToQuery || `/tournament/${tournamentRef.value.id}`);
+    return;
+  }
   router.push('/match-picker');
 }
 
